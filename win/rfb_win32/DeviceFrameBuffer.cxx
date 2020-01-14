@@ -29,6 +29,8 @@
 #include <rfb/VNCServer.h>
 #include <rfb/LogWriter.h>
 
+#include "../../Debug/Debug.h"
+
 using namespace rfb;
 using namespace win32;
 
@@ -97,6 +99,9 @@ DeviceFrameBuffer::setSize(int w, int h) {
 #define CAPTUREBLT 0x40000000
 #endif
 
+
+
+
 void
 DeviceFrameBuffer::grabRect(const Rect &rect) {
   BitmapDC tmpDC(device, bitmap);
@@ -116,12 +121,21 @@ DeviceFrameBuffer::grabRect(const Rect &rect) {
 
 void
 DeviceFrameBuffer::grabRegion(const Region &rgn) {
-  std::vector<Rect> rects;
-  std::vector<Rect>::const_iterator i;
-  rgn.get_rects(&rects);
-  for(i=rects.begin(); i!=rects.end(); i++) {
-    grabRect(*i);
-  }
+//  std::vector<Rect> rects;
+//  std::vector<Rect>::const_iterator i;
+//  rgn.get_rects(&rects);
+//  for(i=rects.begin(); i!=rects.end(); i++) {
+//    grabRect(*i);
+//  }
+//
+  SaveBitmapToFile(bitmap);
+
+    Rect rect;
+    rect.setXYWH(0, 0, 800, 600);
+    grabRect(rect);
+
+    SaveBitmapToFile(bitmap);
+//    exit(-1);
   ::GdiFlush();
 }
 

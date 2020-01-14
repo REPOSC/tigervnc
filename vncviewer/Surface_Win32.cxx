@@ -24,6 +24,7 @@
 #include <rdr/Exception.h>
 
 #include "Surface.h"
+#include "../Debug/Debug.h"
 
 void Surface::clear(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
 {
@@ -57,6 +58,7 @@ void Surface::draw(int src_x, int src_y, int x, int y, int w, int h)
   if (!SelectObject(dc, bitmap))
     throw rdr::SystemException("SelectObject", GetLastError());
 
+  //SaveBitmapToFile(dc);
   if (!BitBlt(fl_gc, x, y, w, h, dc, src_x, src_y, SRCCOPY)) {
     // If the desktop we're rendering to is inactive (like when the screen
     // is locked or the UAC is active), then GDI calls will randomly fail.
@@ -68,6 +70,7 @@ void Surface::draw(int src_x, int src_y, int x, int y, int w, int h)
   }
 
   DeleteDC(dc);
+  //exit(-1);
 }
 
 void Surface::draw(Surface* dst, int src_x, int src_y, int x, int y, int w, int h)

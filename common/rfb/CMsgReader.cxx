@@ -73,9 +73,11 @@ void CMsgReader::readMsg()
       readServerCutText();
       break;
     case msgTypeFramebufferUpdate:
+        /*-----------Callback-----------*/
       readFramebufferUpdate();
       break;
     case msgTypeServerFence:
+        /*-----------交替執行-----------*/
       readFence();
       break;
     case msgTypeEndOfContinuousUpdates:
@@ -300,6 +302,7 @@ void CMsgReader::readFramebufferUpdate()
 {
   is->skip(1);
   nUpdateRectsLeft = is->readU16();
+    /*-----------------------Callback-----------------------*/
   handler->framebufferUpdateStart();
 }
 

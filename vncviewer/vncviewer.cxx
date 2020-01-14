@@ -130,47 +130,18 @@ void about_vncviewer()
 
 void run_mainloop()
 {
-  int next_timer;
+ int next_timer;
 
   next_timer = Timer::checkTimeouts();
   if (next_timer == 0)
-    next_timer = INT_MAX;
+   next_timer = INT_MAX;
 
   if (Fl::wait((double)next_timer / 1000.0) < 0.0) {
     vlog.error(_("Internal FLTK error. Exiting."));
     exit(-1);
   }
+
 }
-
-#ifdef __APPLE__
-static void about_callback(Fl_Widget *widget, void *data)
-{
-  about_vncviewer();
-}
-
-static void new_connection_cb(Fl_Widget *widget, void *data)
-{
-  const char *argv[2];
-  pid_t pid;
-
-  pid = fork();
-  if (pid == -1) {
-    vlog.error(_("Error starting new TigerVNC Viewer: %s"), strerror(errno));
-    return;
-  }
-
-  if (pid != 0)
-    return;
-
-  argv[0] = argv0;
-  argv[1] = NULL;
-
-  execvp(argv[0], (char * const *)argv);
-
-  vlog.error(_("Error starting new TigerVNC Viewer: %s"), strerror(errno));
-  _exit(1);
-}
-#endif
 
 static void CleanupSignalHandler(int sig)
 {
@@ -190,17 +161,11 @@ static void init_fltk()
   Fl::scheme("gtk+");
   Fl::background(220, 220, 220);
 
-  // macOS has a slightly brighter default background though
-#ifdef __APPLE__
-  Fl::background(240, 240, 240);
-#endif
-
   // Proper Gnome Shell integration requires that we set a sensible
   // WM_CLASS for the window.
   Fl_Window::default_xclass("vncviewer");
 
   // Set the default icon for all windows.
-#ifdef WIN32
   HICON lg, sm;
 
   lg = (HICON)LoadImage(GetModuleHandle(NULL), MAKEINTRESOURCE(IDI_ICON),
@@ -213,52 +178,6 @@ static void init_fltk()
                         LR_DEFAULTCOLOR | LR_SHARED);
 
   Fl_Window::default_icons(lg, sm);
-#elif ! defined(__APPLE__)
-  const int icon_sizes[] = {48, 32, 24, 16};
-
-  Fl_PNG_Image *icons[4];
-  int count;
-
-  count = 0;
-
-  // FIXME: Follow icon theme specification
-  for (size_t i = 0;i < sizeof(icon_sizes)/sizeof(icon_sizes[0]);i++) {
-      char icon_path[PATH_MAX];
-      bool exists;
-
-      sprintf(icon_path, "%s/icons/hicolor/%dx%d/apps/tigervnc.png",
-              DATA_DIR, icon_sizes[i], icon_sizes[i]);
-
-#ifndef WIN32
-      struct stat st;
-      if (stat(icon_path, &st) != 0)
-#else
-      struct _stat st;
-      if (_stat(icon_path, &st) != 0)
-          return(false);
-#endif
-        exists = false;
-      else
-        exists = true;
-
-      if (exists) {
-          icons[count] = new Fl_PNG_Image(icon_path);
-          if (icons[count]->w() == 0 ||
-              icons[count]->h() == 0 ||
-              icons[count]->d() != 4) {
-              delete icons[count];
-              continue;
-          }
-
-          count++;
-      }
-  }
-
-  Fl_Window::default_icons((const Fl_RGB_Image**)icons, count);
-
-  for (int i = 0;i < count;i++)
-      delete icons[i];
-#endif
 
   // This makes the "icon" in dialogs rounded, which fits better
   // with the above schemes.
@@ -282,37 +201,6 @@ static void init_fltk()
   fl_cancel = _("Cancel");
   fl_close  = _("Close");
 
-#ifdef __APPLE__
-  /* Needs trailing space */
-  static char fltk_about[16];
-  snprintf(fltk_about, sizeof(fltk_about), "%s ", _("About"));
-  Fl_Mac_App_Menu::about = fltk_about;
-  static char fltk_hide[16];
-  snprintf(fltk_hide, sizeof(fltk_hide), "%s ", _("Hide"));
-  Fl_Mac_App_Menu::hide = fltk_hide;
-  static char fltk_quit[16];
-  snprintf(fltk_quit, sizeof(fltk_quit), "%s ", _("Quit"));
-  Fl_Mac_App_Menu::quit = fltk_quit;
-
-  Fl_Mac_App_Menu::print = ""; // Don't want the print item
-  Fl_Mac_App_Menu::services = _("Services");
-  Fl_Mac_App_Menu::hide_others = _("Hide Others");
-  Fl_Mac_App_Menu::show = _("Show All");
-
-  fl_mac_set_about(about_callback, NULL);
-
-  Fl_Sys_Menu_Bar *menubar;
-  char buffer[1024];
-  menubar = new Fl_Sys_Menu_Bar(0, 0, 500, 25);
-  // Fl_Sys_Menu_Bar overrides methods without them being virtual,
-  // which means we cannot use our generic Fl_Menu_ helpers.
-  if (fltk_menu_escape(p_("SysMenu|", "&File"),
-                       buffer, sizeof(buffer)) < sizeof(buffer))
-      menubar->add(buffer, 0, 0, 0, FL_SUBMENU);
-  if (fltk_menu_escape(p_("SysMenu|File|", "&New Connection"),
-                       buffer, sizeof(buffer)) < sizeof(buffer))
-      menubar->insert(1, buffer, FL_COMMAND | 'n', new_connection_cb);
-#endif
 }
 
 static void mkvnchomedir()
@@ -351,24 +239,11 @@ static void usage(const char *programName)
           "\n"
           "usage: %s [parameters] [host][:displayNum]\n"
           "       %s [parameters] [host][::port]\n"
-#ifndef WIN32
-          "       %s [parameters] [unix socket]\n"
-#endif
           "       %s [parameters] -listen [port]\n"
           "       %s [parameters] [.tigervnc file]\n",
           programName, programName,
-#ifndef WIN32
-          programName,
-#endif
-          programName, programName);
 
-#if !defined(WIN32) && !defined(__APPLE__)
-  fprintf(stderr,"\n"
-          "Options:\n\n"
-          "  -display Xdisplay  - Specifies the X display for the viewer window\n"
-          "  -geometry geometry - Initial position of the main VNC viewer window. See the\n"
-          "                       man page for details.\n");
-#endif
+          programName, programName);
 
   fprintf(stderr,"\n"
           "Parameters can be turned on with -<param> or off with -<param>=0\n"
@@ -422,82 +297,6 @@ potentiallyLoadConfigurationFile(char *vncServerName)
   }
 }
 
-#ifndef WIN32
-static int
-interpretViaParam(char *remoteHost, int *remotePort, int localPort)
-{
-  const int SERVER_PORT_OFFSET = 5900;
-  char *pos = strchr(vncServerName, ':');
-  if (pos == NULL)
-    *remotePort = SERVER_PORT_OFFSET;
-  else {
-    int portOffset = SERVER_PORT_OFFSET;
-    size_t len;
-    *pos++ = '\0';
-    len = strlen(pos);
-    if (*pos == ':') {
-      /* Two colons is an absolute port number, not an offset. */
-      pos++;
-      len--;
-      portOffset = 0;
-    }
-    if (!len || strspn (pos, "-0123456789") != len )
-      return 1;
-    *remotePort = atoi(pos) + portOffset;
-  }
-
-  if (*vncServerName != '\0')
-    strncpy(remoteHost, vncServerName, VNCSERVERNAMELEN);
-  else
-    strncpy(remoteHost, "localhost", VNCSERVERNAMELEN);
-
-  remoteHost[VNCSERVERNAMELEN - 1] = '\0';
-
-  snprintf(vncServerName, VNCSERVERNAMELEN, "localhost::%d", localPort);
-  vncServerName[VNCSERVERNAMELEN - 1] = '\0';
-
-  return 0;
-}
-
-static void
-createTunnel(const char *gatewayHost, const char *remoteHost,
-             int remotePort, int localPort)
-{
-  const char *cmd = getenv("VNC_VIA_CMD");
-  char *cmd2, *percent;
-  char lport[10], rport[10];
-  sprintf(lport, "%d", localPort);
-  sprintf(rport, "%d", remotePort);
-  setenv("G", gatewayHost, 1);
-  setenv("H", remoteHost, 1);
-  setenv("R", rport, 1);
-  setenv("L", lport, 1);
-  if (!cmd)
-    cmd = "/usr/bin/ssh -f -L \"$L\":\"$H\":\"$R\" \"$G\" sleep 20";
-  /* Compatibility with TigerVNC's method. */
-  cmd2 = strdup(cmd);
-  while ((percent = strchr(cmd2, '%')) != NULL)
-    *percent = '$';
-  system(cmd2);
-  free(cmd2);
-}
-
-static int mktunnel()
-{
-  const char *gatewayHost;
-  char remoteHost[VNCSERVERNAMELEN];
-  int localPort = findFreeTcpPort();
-  int remotePort;
-
-  if (interpretViaParam(remoteHost, &remotePort, localPort) != 0)
-    return 1;
-  gatewayHost = (const char*)via;
-  createTunnel(gatewayHost, remoteHost, remotePort, localPort);
-
-  return 0;
-}
-#endif /* !WIN32 */
-
 int main(int argc, char** argv)
 {
   UserDialog dlg;
@@ -533,7 +332,7 @@ int main(int argc, char** argv)
   signal(SIGINT, CleanupSignalHandler);
   signal(SIGTERM, CleanupSignalHandler);
 
-  init_fltk();
+  //init_fltk();
 
   Configuration::enableViewerParams();
 
@@ -593,19 +392,6 @@ int main(int argc, char** argv)
 #endif
 
   Socket *sock = NULL;
-
-#ifndef WIN32
-  /* Specifying -via and -listen together is nonsense */
-  if (listenMode && strlen(via.getValueStr()) > 0) {
-    // TRANSLATORS: "Parameters" are command line arguments, or settings
-    // from a file or the Windows registry.
-    vlog.error(_("Parameters -listen and -via are incompatible"));
-    if (alertOnFatalError)
-      fl_alert(_("Parameters -listen and -via are incompatible"));
-    exit_vncviewer();
-    return 1;
-  }
-#endif
 
   if (listenMode) {
     std::list<SocketListener*> listeners;
@@ -677,7 +463,7 @@ int main(int argc, char** argv)
   while (!exitMainloop)
     run_mainloop();
 
-  delete cc;
+  //delete cc;
 
   if (exitError != NULL && alertOnFatalError)
     fl_alert("%s", exitError);

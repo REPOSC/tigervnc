@@ -114,6 +114,7 @@ CConn::CConn(const char* vncServerName, network::Socket* socket=NULL)
     }
   }
 
+  /*-----------------------Callback-----------------------*/
   Fl::add_fd(sock->getFd(), FL_READ | FL_EXCEPT, socketEvent, this);
 
   // See callback below
@@ -256,6 +257,7 @@ void CConn::socketEvent(FL_SOCKET fd, void *data)
     // processMsg() only processes one message, so we need to loop
     // until the buffers are empty or things will stall.
     do {
+        /*-----------------------Callback-----------------------*/
       cc->processMsg();
 
       // Make sure that the FLTK handling and the timers gets some CPU
@@ -266,7 +268,7 @@ void CConn::socketEvent(FL_SOCKET fd, void *data)
        // Also check if we need to stop reading and terminate
        if (should_exit())
          break;
-    } while (cc->getInStream()->checkNoWait(1));
+    } while (cc->sock->inStream().checkNoWait(1));
   } catch (rdr::EndOfStream& e) {
     vlog.info("%s", e.str());
     exit_vncviewer();
@@ -295,8 +297,10 @@ void CConn::initDone()
 
   serverPF = server.pf();
 
-  desktop = new DesktopWindow(server.width(), server.height(),
-                              server.name(), serverPF, this);
+ desktop = new DesktopWindow(server.width(), server.height(),
+                             server.name(), serverPF, this);
+//    desktop = new DesktopWindow(50, 50,
+//                              server.name(), serverPF, this);
   fullColourPF = desktop->getPreferredPF();
 
   // Force a switch to the format and encoding we'd like
@@ -358,6 +362,7 @@ void CConn::framebufferUpdateEnd()
   updateCount++;
 
   Fl::remove_timeout(handleUpdateTimeout, this);
+
   desktop->updateWindow();
 
   // Compute new settings based on updated bandwidth values
@@ -566,6 +571,7 @@ void CConn::handleUpdateTimeout(void *data)
 
   assert(self);
 
+  /*-----------------------Callback-----------------------*/
   self->desktop->updateWindow();
 
   Fl::repeat_timeout(1.0, handleUpdateTimeout, data);

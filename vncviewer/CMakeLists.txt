@@ -11,6 +11,7 @@ set(VNCVIEWER_SOURCES
   Surface.cxx
   OptionsDialog.cxx
   PlatformPixelBuffer.cxx
+  "../Debug/Debug.cpp"
   Viewport.cxx
   parameters.cxx
   keysym2ucs.c
@@ -39,7 +40,7 @@ if(WIN32)
 elseif(APPLE)
   set(VNCVIEWER_SOURCES ${VNCVIEWER_SOURCES} Surface_OSX.cxx)
 else()
-  set(VNCVIEWER_SOURCES ${VNCVIEWER_SOURCES} Surface_X11.cxx)
+  set(VNCVIEWER_SOURCES ${VNCVIEWER_SOURCES} Surface_X11.cxx ../Debug/Debug.h ../Debug/Debug.cpp)
 endif()
 
 if(WIN32 AND NOT CMAKE_BUILD_TYPE STREQUAL "Debug")

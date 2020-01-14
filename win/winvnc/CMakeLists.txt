@@ -8,6 +8,7 @@ add_executable(winvnc4 WIN32
   STrayIcon.cxx
   VNCServerService.cxx
   VNCServerWin32.cxx
+  ../../Debug/Debug.cpp
   winvnc.cxx
   winvnc.rc)
 

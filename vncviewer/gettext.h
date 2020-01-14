@@ -17,6 +17,7 @@
 
 #ifndef _LIBGETTEXT_H
 #define _LIBGETTEXT_H 1
+#define LC_MESSAGES 0
 
 /* NLS can be disabled through the configure --disable-nls option
    or through "#define ENABLE NLS 0" before including this file.  */

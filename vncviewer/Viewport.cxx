@@ -227,7 +227,9 @@ void Viewport::updateWindow()
   Rect r;
 
   r = frameBuffer->getDamage();
-  damage(FL_DAMAGE_USER1, r.tl.x + x(), r.tl.y + y(), r.width(), r.height());
+  //damage(FL_DAMAGE_USER1, r.tl.x + x(), r.tl.y + y(), r.width(), r.height());
+    redraw();
+    /*-----------------------Callback-----------------------draw()-----------------------*/
 }
 
 static const char * dotcursor_xpm[] = {
@@ -536,6 +538,7 @@ void Viewport::draw()
   if ((W == 0) || (H == 0))
     return;
 
+    /*-----------------------Callback-----------------------*/
   frameBuffer->draw(X - x(), Y - y(), X, Y, W, H);
 }
 

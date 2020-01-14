@@ -49,6 +49,8 @@ namespace rfb {
 
     int imageBufIdealSize;
 
+      void readFramebufferUpdate();
+
   protected:
     void readSetColourMapEntries();
     void readBell();
@@ -57,9 +59,7 @@ namespace rfb {
     void readFence();
     void readEndOfContinuousUpdates();
 
-    void readFramebufferUpdate();
-
-    void readRect(const Rect& r, int encoding);
+      void readRect(const Rect& r, int encoding);
 
     void readSetXCursor(int width, int height, const Point& hotspot);
     void readSetCursor(int width, int height, const Point& hotspot);

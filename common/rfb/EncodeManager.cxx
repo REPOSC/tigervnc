@@ -340,9 +340,7 @@ void EncodeManager::doUpdate(bool allowLossy, const Region& changed_,
     if (conn->client.supportsEncoding(pseudoEncodingLastRect))
       nRects = 0xFFFF;
     else {
-      nRects = 0;
-      if (conn->client.supportsEncoding(encodingCopyRect))
-        nRects += copied.numRects();
+      nRects = copied.numRects();
       nRects += computeNumRects(changed);
       nRects += computeNumRects(cursorRegion);
     }

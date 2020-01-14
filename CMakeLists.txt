@@ -33,6 +33,16 @@ set(MAN_DIR "${DATA_DIR}/man")
 set(LOCALE_DIR "${DATA_DIR}/locale")
 set(DOC_DIR "${CMAKE_INSTALL_PREFIX}/share/doc/${CMAKE_PROJECT_NAME}-${VERSION}")
 
+set(ZLIB_LIBRARY "d:/vnc/zlib-1.2.11/libz.a")
+set(ZLIB_INCLUDE_DIR "d:/vnc/zlib-1.2.11")
+set(JPEG_LIBRARY "d:/vnc/libjpeg-turbo-2.0.3/cmake-build-debug/libjpeg.a")
+set(JPEG_INCLUDE_DIR "d:/vnc/libjpeg-turbo-2.0.3")
+set(FLTK_BASE_LIBRARY "d:/vnc/fltk-1.3.5/cmake-build-debug/lib/libfltk.a")
+set(FLTK_IMAGES_LIBRARY "d:/vnc/fltk-1.3.5/cmake-build-debug/lib/libfltk_images.a")
+set(FLTK_INCLUDE_DIR "d:/vnc/fltk-1.3.5")
+set(GETTEXT_INCLUDE_DIR "c:/Program Files (x86)/GnuWin32/include")
+
+
 if(WIN32)
 set(BIN_DIR "${CMAKE_INSTALL_PREFIX}")
 set(DOC_DIR "${CMAKE_INSTALL_PREFIX}")
@@ -74,8 +84,8 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wformat=2")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wformat=2")
 # Make sure we catch these issues whilst developing
 IF(CMAKE_BUILD_TYPE MATCHES Debug)
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Werror -Werror=vla")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Werror=vla")
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 ENDIF()
 
 option(ENABLE_ASAN "Enable address sanitizer support" OFF)

@@ -80,10 +80,11 @@ void CConnection::setFramebuffer(ModifiablePixelBuffer* fb)
 {
   decoder.flush();
 
-  if (fb) {
-    assert(fb->width() == server.width());
-    assert(fb->height() == server.height());
-  }
+  /*-----------------Modified-----------------*/
+//  if (fb) {
+//    assert(fb->width() == server.width());
+//    assert(fb->height() == server.height());
+//  }
 
   if ((framebuffer != NULL) && (fb != NULL)) {
     Rect rect;
@@ -136,6 +137,7 @@ void CConnection::processMsg()
   case RFBSTATE_SECURITY:         processSecurityMsg();      break;
   case RFBSTATE_SECURITY_RESULT:  processSecurityResultMsg(); break;
   case RFBSTATE_INITIALISATION:   processInitMsg();          break;
+          /*-----------------------Callback-----------------------*/
   case RFBSTATE_NORMAL:           reader_->readMsg();        break;
   case RFBSTATE_UNINITIALISED:
     throw Exception("CConnection::processMsg: not initialised yet?");
@@ -400,8 +402,9 @@ void CConnection::serverInit(int width, int height,
 
   initDone();
   assert(framebuffer != NULL);
-  assert(framebuffer->width() == server.width());
-  assert(framebuffer->height() == server.height());
+    /*-----------------Modified-----------------*/
+//  assert(framebuffer->width() == server.width());
+//  assert(framebuffer->height() == server.height());
 
   // We want to make sure we call SetEncodings at least once
   encodingChange = true;
@@ -425,13 +428,14 @@ void CConnection::readAndDecodeRect(const Rect& r, int encoding,
 
 void CConnection::framebufferUpdateStart()
 {
+
   CMsgHandler::framebufferUpdateStart();
 
   assert(framebuffer != NULL);
 
   // Note: This might not be true if continuous updates are supported
   pendingUpdate = false;
-
+    /*-----------------------Callback-----------------------*/
   requestNewUpdate();
 }
 
