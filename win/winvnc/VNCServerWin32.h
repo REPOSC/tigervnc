@@ -49,7 +49,7 @@ namespace winvnc {
     virtual ~VNCServerWin32();
 
     // Run the server in the current thread
-    int run();
+    int run(HWND hwnd);
 
     // Cause the run() call to return
     // THREAD-SAFE

@@ -30,6 +30,7 @@
 #include <rfb_win32/AboutDialog.h>
 #include <rfb_win32/MsgBox.h>
 #include <network/TcpSocket.h>
+#include "preprocess.h"
 
 using namespace winvnc;
 using namespace rfb;
@@ -234,7 +235,8 @@ static void processParams(int argc, char** argv) {
 // -=- main
 //
 
-int WINAPI WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdShow) {
+int WINAPI after_WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdShow,
+        HWND hwnd) {
   int result = 0;
 
   try {
@@ -271,8 +273,9 @@ int WINAPI WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdSho
     if (runServer) {
       // Start the network subsystem and run the server
       VNCServerWin32 server;
-      result = server.run();
+      result = server.run(hwnd);
     } else if (runAsService) {
+      /* 先不管这里 */
       VNCServerService service;
       service.start();
       result = service.getStatus().dwWin32ExitCode;
@@ -285,4 +288,9 @@ int WINAPI WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdSho
 
   vlog.debug("WinVNC process quitting");
   return result;
+}
+
+int WINAPI WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdShow){
+    HWND hwnd = before_WinMain();
+    return after_WinMain(inst, prevInst, cmdLine, cmdShow, hwnd);
 }

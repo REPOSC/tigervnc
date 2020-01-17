@@ -155,7 +155,7 @@ void VNCServerWin32::regConfigChanged() {
 }
 
 
-int VNCServerWin32::run() {
+int VNCServerWin32::run(HWND hwnd) {
   {
     os::AutoMutex a(runLock);
     thread_id = GetCurrentThreadId();

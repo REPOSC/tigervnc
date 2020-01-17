@@ -1,6 +1,7 @@
 include_directories(${CMAKE_BINARY_DIR}/win ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(winvnc4 WIN32
+  preprocess.cpp
   buildTime.cxx
   ControlPanel.cxx
   ManagedListener.cxx

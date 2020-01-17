@@ -97,8 +97,8 @@
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_1">
-				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_1.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="manager">
+				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/manager.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -114,14 +114,14 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_1"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 manager"/>
 					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_1/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_1.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="manager/fast">
+				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/manager.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -137,53 +137,7 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_1/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test_2">
-				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/vnc/tigervnc/common"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_2"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test_2/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="D:/vnc/tigervnc/common"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
-					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_2/fast"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 manager/fast"/>
 					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
@@ -196,7 +150,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -224,7 +178,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -252,7 +206,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -281,7 +235,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -310,7 +264,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -338,7 +292,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -366,7 +320,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -393,7 +347,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -420,7 +374,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -449,7 +403,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -478,7 +432,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -507,7 +461,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -536,7 +490,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -566,7 +520,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -596,7 +550,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -627,7 +581,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -658,7 +612,7 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -689,7 +643,7 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -720,7 +674,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -751,7 +705,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -792,7 +746,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -822,7 +776,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -852,7 +806,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -882,7 +836,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -912,7 +866,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -942,7 +896,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -972,7 +926,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1002,7 +956,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1032,7 +986,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1062,7 +1016,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1092,7 +1046,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1120,7 +1074,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1148,7 +1102,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1176,7 +1130,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1204,7 +1158,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1232,7 +1186,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1762,11 +1716,8 @@
 		<Unit filename="D:/vnc/tigervnc/common/rfb/util.h">
 			<Option target="rfb"/>
 		</Unit>
-		<Unit filename="D:/vnc/tigervnc/manager/main.cpp">
-			<Option target="test_1"/>
-		</Unit>
 		<Unit filename="D:/vnc/tigervnc/manager/test.cpp">
-			<Option target="test_2"/>
+			<Option target="manager"/>
 		</Unit>
 		<Unit filename="D:/vnc/tigervnc/release/tigervnc.iss.in">
 			<Option target="installer"/>
@@ -2131,6 +2082,12 @@
 			<Option target="winvnc4"/>
 		</Unit>
 		<Unit filename="D:/vnc/tigervnc/win/winvnc/buildTime.cxx">
+			<Option target="winvnc4"/>
+		</Unit>
+		<Unit filename="D:/vnc/tigervnc/win/winvnc/preprocess.cpp">
+			<Option target="winvnc4"/>
+		</Unit>
+		<Unit filename="D:/vnc/tigervnc/win/winvnc/preprocess.h">
 			<Option target="winvnc4"/>
 		</Unit>
 		<Unit filename="D:/vnc/tigervnc/win/winvnc/winvnc.cxx">
