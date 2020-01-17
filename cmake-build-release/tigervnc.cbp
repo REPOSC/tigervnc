@@ -8,98 +8,98 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Modules\;CMake Files\release\;CMake Files\manager\;CMake Files\common\;CMake Files\common\os\;CMake Files\common\rdr\;CMake Files\common\network\;CMake Files\common\Xregion\;CMake Files\common\rfb\;CMake Files\win\;CMake Files\win\rfb_win32\;CMake Files\win\vncconfig\;CMake Files\win\winvnc\;CMake Files\win\wm_hooks\;CMake Files\vncviewer\;CMake Files\media\;CMake Files\tests\;CMake Files\tests\perf\;CMake Files\tests\unit\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="installer">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 installer"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 installer"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_1">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/manager/test_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/manager"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -114,15 +114,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 test_1"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_1"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_1/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/manager/test_1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/manager"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -137,15 +137,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 test_1/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_1/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_2">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/manager/test_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/manager"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -160,15 +160,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 test_2"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_2"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_2/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/manager/test_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/manager"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/manager/test_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/manager"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -183,15 +183,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 test_2/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 test_2/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/manager/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="os">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/os/libos.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/os"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/os/libos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/os"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -200,7 +200,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -211,15 +211,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 os"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 os"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="os/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/os/libos.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/os"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/os/libos.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/os"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -228,7 +228,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -239,15 +239,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 os/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/os/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 os/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/os/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rdr">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/rdr/librdr.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/rdr"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/rdr/librdr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/rdr"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -256,7 +256,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="d:/vnc/zlib-1.2.11"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
@@ -268,15 +268,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 rdr"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 rdr"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rdr/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/rdr/librdr.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/rdr"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/rdr/librdr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/rdr"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -285,7 +285,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="d:/vnc/zlib-1.2.11"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
@@ -297,15 +297,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 rdr/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 rdr/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rdr/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="network">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/network/libnetwork.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/network"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/network/libnetwork.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/network"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -314,7 +314,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -325,15 +325,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 network"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 network"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="network/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/network/libnetwork.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/network"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/network/libnetwork.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/network"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -342,7 +342,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -353,15 +353,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 network/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/network/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 network/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/network/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Xregion">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/Xregion/libXregion.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/Xregion"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/Xregion/libXregion.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/Xregion"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -370,7 +370,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
@@ -380,15 +380,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 Xregion"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 Xregion"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Xregion/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/Xregion/libXregion.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/Xregion"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/Xregion/libXregion.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/Xregion"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -397,7 +397,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
@@ -407,15 +407,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 Xregion/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 Xregion/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/Xregion/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rfb">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/rfb/librfb.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/rfb"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/rfb/librfb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/rfb"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -424,7 +424,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
@@ -436,15 +436,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 rfb"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 rfb"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rfb/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/common/rfb/librfb.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/common/rfb"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/common/rfb/librfb.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/common/rfb"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -453,7 +453,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
@@ -465,15 +465,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 rfb/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 rfb/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/common/rfb/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rfb_win32">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/librfb_win32.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/librfb_win32.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/rfb_win32"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -481,9 +481,8 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
@@ -495,15 +494,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 rfb_win32"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 rfb_win32"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rfb_win32/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/librfb_win32.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/librfb_win32.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/rfb_win32"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -511,9 +510,8 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
@@ -525,15 +523,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 rfb_win32/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 rfb_win32/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/rfb_win32/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vncconfig">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/vncconfig.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/vncconfig"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/vncconfig/vncconfig.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/vncconfig"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="gcc"/>
@@ -541,12 +539,11 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug/win"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release/win"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
@@ -556,15 +553,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 vncconfig"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 vncconfig"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vncconfig/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/vncconfig.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/vncconfig"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/vncconfig/vncconfig.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/vncconfig"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="gcc"/>
@@ -572,12 +569,11 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug/win"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release/win"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
@@ -587,15 +583,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 vncconfig/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 vncconfig/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/vncconfig/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="winvnc4">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/winvnc/winvnc4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/winvnc"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/winvnc/winvnc4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/winvnc"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="gcc"/>
@@ -603,12 +599,11 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug/win"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release/win"/>
 					<Add directory="D:/vnc/tigervnc/win/winvnc"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -619,15 +614,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 winvnc4"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 winvnc4"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="winvnc4/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/winvnc/winvnc4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/winvnc"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/winvnc/winvnc4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/winvnc"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="gcc"/>
@@ -635,12 +630,11 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug/win"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release/win"/>
 					<Add directory="D:/vnc/tigervnc/win/winvnc"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -651,15 +645,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 winvnc4/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 winvnc4/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/winvnc/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="wm_hooks">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/wm_hooks.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/wm_hooks.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/wm_hooks"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
@@ -667,12 +661,11 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug/win"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release/win"/>
 					<Add directory="D:/vnc/tigervnc/win/wm_hooks"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -683,15 +676,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 wm_hooks"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 wm_hooks"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="wm_hooks/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/wm_hooks.dll" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/wm_hooks.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/win/wm_hooks"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
@@ -699,12 +692,11 @@
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
-					<Add option="-D_DEBUG"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="D:/vnc/tigervnc/win"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug/win"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release/win"/>
 					<Add directory="D:/vnc/tigervnc/win/wm_hooks"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -715,24 +707,24 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 wm_hooks/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 wm_hooks/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/win/wm_hooks/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vncviewer">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/vncviewer/vncviewer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/vncviewer"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/vncviewer/vncviewer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/vncviewer"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -746,24 +738,24 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 vncviewer"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 vncviewer"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="vncviewer/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/vncviewer/vncviewer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/vncviewer"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/vncviewer/vncviewer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/vncviewer"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-16 09:17&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -777,25 +769,25 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 vncviewer/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 vncviewer/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/vncviewer/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="icons">
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/media"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/media"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/media/Makefile&quot;  VERBOSE=1 icons"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/media/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/media/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/media/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/media/Makefile&quot;  VERBOSE=1 icons"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/media/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/media/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/media/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fbperf">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/fbperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/fbperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -804,7 +796,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -817,15 +809,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 fbperf"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 fbperf"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fbperf/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/fbperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/fbperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -834,7 +826,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -847,15 +839,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 fbperf/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 fbperf/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_util">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/libtest_util.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/libtest_util.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -864,7 +856,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -877,15 +869,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 test_util"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 test_util"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test_util/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/libtest_util.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/libtest_util.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -894,7 +886,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -907,15 +899,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 test_util/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 test_util/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="convperf">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/convperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/convperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -924,7 +916,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -937,15 +929,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 convperf"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 convperf"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="convperf/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/convperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/convperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -954,7 +946,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -967,15 +959,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 convperf/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 convperf/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="encperf">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/encperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/encperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -984,7 +976,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -997,15 +989,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 encperf"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 encperf"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="encperf/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/encperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/encperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1014,7 +1006,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -1027,15 +1019,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 encperf/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 encperf/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="decperf">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/decperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/decperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1044,7 +1036,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -1057,15 +1049,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 decperf"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 decperf"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="decperf/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/perf/decperf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/perf"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/perf/decperf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/perf"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1074,7 +1066,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="d:/vnc/fltk-1.3.5"/>
 					<Add directory="c:/Program Files (x86)/GnuWin32/include"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
@@ -1087,15 +1079,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 decperf/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 decperf/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/perf/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="conv">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/unit/conv.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/unit"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/unit/conv.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/unit"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1104,7 +1096,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -1115,15 +1107,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 conv"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 conv"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="conv/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/unit/conv.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/unit"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/unit/conv.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/unit"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1132,7 +1124,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -1143,15 +1135,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 conv/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 conv/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="convertlf">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/unit/convertlf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/unit"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/unit/convertlf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/unit"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1160,7 +1152,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -1171,15 +1163,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 convertlf"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 convertlf"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="convertlf/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/unit/convertlf.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/unit"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/unit/convertlf.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/unit"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1188,7 +1180,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -1199,15 +1191,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 convertlf/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 convertlf/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hostport">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/unit/hostport.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/unit"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/unit/hostport.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/unit"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1216,7 +1208,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -1227,15 +1219,15 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 hostport"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 hostport"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="hostport/fast">
-				<Option output="D:/vnc/tigervnc/cmake-build-debug/tests/unit/hostport.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/vnc/tigervnc/cmake-build-debug/tests/unit"/>
+				<Option output="D:/vnc/tigervnc/cmake-build-release/tests/unit/hostport.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/vnc/tigervnc/cmake-build-release/tests/unit"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1244,7 +1236,7 @@
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
-					<Add directory="D:/vnc/tigervnc/cmake-build-debug"/>
+					<Add directory="D:/vnc/tigervnc/cmake-build-release"/>
 					<Add directory="D:/vnc/tigervnc/common"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -1255,10 +1247,10 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 hostport/fast"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-debug/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 hostport/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/vnc/tigervnc/cmake-build-release/tests/unit/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -1272,7 +1264,7 @@
 			<Option target="winvnc4"/>
 			<Option target="vncviewer"/>
 		</Unit>
-		<Unit filename="D:/vnc/tigervnc/cmake-build-debug/vncviewer/vncviewer.rc">
+		<Unit filename="D:/vnc/tigervnc/cmake-build-release/vncviewer/vncviewer.rc">
 			<Option target="vncviewer"/>
 		</Unit>
 		<Unit filename="D:/vnc/tigervnc/common/Xregion/Region.c">

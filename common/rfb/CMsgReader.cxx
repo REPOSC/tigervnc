@@ -30,6 +30,7 @@
 #include <rfb/util.h>
 #include <rfb/CMsgHandler.h>
 #include <rfb/CMsgReader.h>
+#include "../../Grepper/Runtime.h"
 
 static rfb::LogWriter vlog("CMsgReader");
 
@@ -56,6 +57,7 @@ void CMsgReader::readServerInit()
   CharArray name(is->readString());
   handler->serverInit(width, height, pf, name.buf);
 }
+
 
 void CMsgReader::readMsg()
 {
@@ -92,6 +94,8 @@ void CMsgReader::readMsg()
     int y = is->readU16();
     int w = is->readU16();
     int h = is->readU16();
+
+    //getDemoXYWH(x, y, w, h);
     int encoding = is->readS32();
 
     switch (encoding) {

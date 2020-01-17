@@ -121,14 +121,14 @@ DeviceFrameBuffer::grabRect(const Rect &rect) {
 
 void
 DeviceFrameBuffer::grabRegion(const Region &rgn) {
-//  std::vector<Rect> rects;
-//  std::vector<Rect>::const_iterator i;
-//  rgn.get_rects(&rects);
+  std::vector<Rect> rects;
+  std::vector<Rect>::const_iterator i;
+  rgn.get_rects(&rects);
 //  for(i=rects.begin(); i!=rects.end(); i++) {
 //    grabRect(*i);
 //  }
 //
-  SaveBitmapToFile(bitmap);
+// SaveBitmapToFile(bitmap);
 
     Rect rect;
     rect.setXYWH(0, 0, 800, 600);

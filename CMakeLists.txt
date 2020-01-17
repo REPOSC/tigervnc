@@ -41,7 +41,7 @@ set(FLTK_BASE_LIBRARY "d:/vnc/fltk-1.3.5/cmake-build-debug/lib/libfltk.a")
 set(FLTK_IMAGES_LIBRARY "d:/vnc/fltk-1.3.5/cmake-build-debug/lib/libfltk_images.a")
 set(FLTK_INCLUDE_DIR "d:/vnc/fltk-1.3.5")
 set(GETTEXT_INCLUDE_DIR "c:/Program Files (x86)/GnuWin32/include")
-
+add_subdirectory(manager)
 
 if(WIN32)
 set(BIN_DIR "${CMAKE_INSTALL_PREFIX}")
