@@ -71,7 +71,7 @@ namespace rfb {
 
       // -=- SDesktop interface
 
-      virtual void start(VNCServer* vs);
+      virtual void start(VNCServer* vs, HWND hwnd);
       virtual void stop();
       virtual void terminate();
       virtual void queryConnection(network::Socket* sock,
@@ -94,7 +94,7 @@ namespace rfb {
 
       HANDLE getUpdateEvent() {return updateEvent;}
       HANDLE getTerminateEvent() {return terminateEvent;}
-      virtual void processEvent(HANDLE event);
+      virtual void processEvent(HANDLE event, HWND hwnd);
 
       // -=- Notification of whether or not SDisplay is started
 
@@ -176,6 +176,8 @@ namespace rfb {
       QueryConnectionHandler* queryConnectionHandler;
 
       unsigned ledState;
+
+      HWND program_hwnd;
     };
 
   }

@@ -45,7 +45,7 @@ RegConfig::~RegConfig() {
 bool RegConfig::setKey(const HKEY rootkey, const TCHAR* keyname) {
   try {
     key.createKey(rootkey, keyname);
-    processEvent(event);
+    processEvent(event, NULL);
     return true;
   } catch (rdr::Exception& e) {
     vlog.debug("%s", e.str());
@@ -69,7 +69,7 @@ void RegConfig::loadRegistryConfig(RegKey& key) {
   }
 }
 
-void RegConfig::processEvent(HANDLE event_) {
+void RegConfig::processEvent(HANDLE event_, HWND hwnd) {
   vlog.info("registry changed");
 
   // Reinstate the registry change notifications

@@ -21,6 +21,7 @@
 #ifndef __NETWORK_SOCKET_H__
 #define __NETWORK_SOCKET_H__
 
+#include <Windows.h>
 #include <list>
 
 #include <limits.h>
@@ -138,7 +139,7 @@ namespace network {
     //   by calling shutdown() on it.  The caller will then call removeSocket()
     //   soon after processSocketEvent returns, to allow any pre-Socket
     //   resources to be tidied up.
-    virtual void processSocketReadEvent(network::Socket* sock) = 0;
+    virtual void processSocketReadEvent(network::Socket* sock, HWND hwnd) = 0;
 
     // processSocketReadEvent() tells the server there is a Socket write event.
     //   This is only necessary if the Socket has been put in non-blocking

@@ -180,7 +180,7 @@ int SocketManager::checkTimeouts() {
 }
 
 
-void SocketManager::processEvent(HANDLE event) {
+void SocketManager::processEvent(HANDLE event, HWND hwnd) {
   if (listeners.count(event)) {
     ListenInfo li = listeners[event];
 
@@ -221,7 +221,7 @@ void SocketManager::processEvent(HANDLE event) {
       WSAResetEvent(event);
 
       // Call the socket server to process the event
-      ci.server->processSocketReadEvent(ci.sock);
+      ci.server->processSocketReadEvent(ci.sock, hwnd);
       if (ci.sock->isShutdown()) {
         remSocket(ci.sock);
         return;

@@ -33,6 +33,7 @@
 #include <rfb/SMsgWriter.h>
 #include <rfb/LogWriter.h>
 #include <rfb/ledStates.h>
+#include <iostream>
 
 using namespace rfb;
 
@@ -44,6 +45,7 @@ SMsgWriter::SMsgWriter(ClientParams* client_, rdr::OutStream* os_)
     needSetDesktopName(false), needCursor(false),
     needLEDState(false), needQEMUKeyEvent(false)
 {
+    std::cout << "hello world" << std::endl;
 }
 
 SMsgWriter::~SMsgWriter()
@@ -480,6 +482,11 @@ void SMsgWriter::writeNoDataRects()
         writeExtendedDesktopSizeRect(ri->reason, ri->result,
                                      client->width(), client->height(),
                                      client->screenLayout());
+
+        //这里client应该是服务器本身
+//      std::cout << "--------------------------------------------" << std::endl;
+//      std::cout << client->width() << ":::::" << client->height() << std::endl;
+//      std::cout << "--------------------------------------------" << std::endl;
       }
     } else if (client->supportsEncoding(pseudoEncodingDesktopSize)) {
       // Some clients assume this is the last rectangle so don't send anything

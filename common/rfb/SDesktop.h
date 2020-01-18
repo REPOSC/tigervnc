@@ -59,7 +59,7 @@ namespace rfb {
     // set via the VNCServer's setPixelBuffer() method by the time this call
     // returns.
 
-    virtual void start(VNCServer* vs) = 0;
+    virtual void start(VNCServer* vs, HWND hwnd) = 0;
 
     // stop() is called by the server when there are no longer any
     // authenticated clients, and therefore the desktop can cease any
@@ -115,47 +115,6 @@ namespace rfb {
 
   protected:
     virtual ~SDesktop() {}
-  };
-
-  // -=- SStaticDesktop
-  //     Trivial implementation of the SDesktop interface, which provides
-  //     dummy input handlers and event processing routine, and exports
-  //     a plain black desktop of the specified format.
-  class SStaticDesktop : public SDesktop {
-  public:
-    SStaticDesktop(const Point& size) : server(0), buffer(0) {
-      PixelFormat pf;
-      const rdr::U8 black[4] = { 0, 0, 0, 0 };
-      buffer = new ManagedPixelBuffer(pf, size.x, size.y);
-      if (buffer)
-        buffer->fillRect(buffer->getRect(), black);
-    }
-    SStaticDesktop(const Point& size, const PixelFormat& pf) : buffer(0) {
-      const rdr::U8 black[4] = { 0, 0, 0, 0 };
-      buffer = new ManagedPixelBuffer(pf, size.x, size.y);
-      if (buffer)
-        buffer->fillRect(buffer->getRect(), black);
-    }
-    virtual ~SStaticDesktop() {
-      if (buffer) delete buffer;
-    }
-
-    virtual void start(VNCServer* vs) {
-      server = vs;
-      server->setPixelBuffer(buffer);
-    }
-    virtual void stop() {
-      server->setPixelBuffer(0);
-      server = 0;
-    }
-    virtual void queryConnection(network::Socket* sock,
-                                 const char* userName) {
-      server->approveConnection(sock, true, NULL);
-    }
-
-  protected:
-    VNCServer* server;
-    ManagedPixelBuffer* buffer;
   };
 
 };

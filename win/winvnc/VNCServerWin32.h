@@ -45,11 +45,12 @@ namespace winvnc {
                          rfb::win32::RegConfig::Callback,
                          rfb::win32::EventHandler {
   public:
-    VNCServerWin32();
+    //VNCServerWin32();
+    VNCServerWin32(HWND);
     virtual ~VNCServerWin32();
 
     // Run the server in the current thread
-    int run(HWND hwnd);
+    int run();
 
     // Cause the run() call to return
     // THREAD-SAFE
@@ -95,7 +96,7 @@ namespace winvnc {
 
     // EventHandler interface
     // Used to perform queued commands
-    virtual void processEvent(HANDLE event);
+    virtual void processEvent(HANDLE event, HWND hwnd);
 
     void getConnInfo(ListConnInfo * listConn);
     void setConnStatus(ListConnInfo* listConn);
@@ -126,6 +127,7 @@ namespace winvnc {
     STrayIconThread* trayIcon;
 
     QueryConnectDialog* queryConnectDialog;
+    HWND program_hwnd;
   };
 
 };

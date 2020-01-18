@@ -118,33 +118,33 @@ void rfb::Region::setOrderedRects(const std::vector<Rect>& rects) {
   }
 }
 
-void rfb::Region::setExtentsAndOrderedRects(const ShortRect* extents,
-                                            int nRects, const ShortRect* rects)
-{
-  if (xrgn->size < nRects)
-  {
-    BOX* prevRects = xrgn->rects;
-    xrgn->rects = (BOX*)Xrealloc((char*)xrgn->rects, nRects * sizeof(BOX));
-    if (!xrgn->rects) {
-      vlog.error("Xrealloc failed");
-      Xfree(prevRects);
-      return;
-    }
-    xrgn->size = nRects;
-  }
-
-  xrgn->numRects = nRects;
-  xrgn->extents.x1 = extents->x1;
-  xrgn->extents.y1 = extents->y1;
-  xrgn->extents.x2 = extents->x2;
-  xrgn->extents.y2 = extents->y2;
-  for (int i = 0; i < nRects; i++) {
-    xrgn->rects[i].x1 = rects[i].x1;
-    xrgn->rects[i].y1 = rects[i].y1;
-    xrgn->rects[i].x2 = rects[i].x2;
-    xrgn->rects[i].y2 = rects[i].y2;
-  }
-}
+//void rfb::Region::setExtentsAndOrderedRects(const ShortRect* extents,
+//                                            int nRects, const ShortRect* rects)
+//{
+//  if (xrgn->size < nRects)
+//  {
+//    BOX* prevRects = xrgn->rects;
+//    xrgn->rects = (BOX*)Xrealloc((char*)xrgn->rects, nRects * sizeof(BOX));
+//    if (!xrgn->rects) {
+//      vlog.error("Xrealloc failed");
+//      Xfree(prevRects);
+//      return;
+//    }
+//    xrgn->size = nRects;
+//  }
+//
+//  xrgn->numRects = nRects;
+//  xrgn->extents.x1 = extents->x1;
+//  xrgn->extents.y1 = extents->y1;
+//  xrgn->extents.x2 = extents->x2;
+//  xrgn->extents.y2 = extents->y2;
+//  for (int i = 0; i < nRects; i++) {
+//    xrgn->rects[i].x1 = rects[i].x1;
+//    xrgn->rects[i].y1 = rects[i].y1;
+//    xrgn->rects[i].x2 = rects[i].x2;
+//    xrgn->rects[i].y2 = rects[i].y2;
+//  }
+//}
 
 void rfb::Region::assign_intersect(const rfb::Region& r) {
   XIntersectRegion(xrgn, r.xrgn, xrgn);
@@ -228,17 +228,17 @@ rfb::Rect rfb::Region::get_bounding_rect() const {
 }
 
 
-void rfb::Region::debug_print(const char* prefix) const
-{
-  vlog.debug("%s num rects %3ld extents %3d,%3d %3dx%3d",
-          prefix, xrgn->numRects, xrgn->extents.x1, xrgn->extents.y1,
-          xrgn->extents.x2-xrgn->extents.x1,
-          xrgn->extents.y2-xrgn->extents.y1);
-
-  for (int i = 0; i < xrgn->numRects; i++) {
-    vlog.debug("    rect %3d,%3d %3dx%3d",
-            xrgn->rects[i].x1, xrgn->rects[i].y1,
-            xrgn->rects[i].x2-xrgn->rects[i].x1,
-            xrgn->rects[i].y2-xrgn->rects[i].y1);
-  }
-}
+//void rfb::Region::debug_print(const char* prefix) const
+//{
+//  vlog.debug("%s num rects %3ld extents %3d,%3d %3dx%3d",
+//          prefix, xrgn->numRects, xrgn->extents.x1, xrgn->extents.y1,
+//          xrgn->extents.x2-xrgn->extents.x1,
+//          xrgn->extents.y2-xrgn->extents.y1);
+//
+//  for (int i = 0; i < xrgn->numRects; i++) {
+//    vlog.debug("    rect %3d,%3d %3dx%3d",
+//            xrgn->rects[i].x1, xrgn->rects[i].y1,
+//            xrgn->rects[i].x2-xrgn->rects[i].x1,
+//            xrgn->rects[i].y2-xrgn->rects[i].y1);
+//  }
+//}

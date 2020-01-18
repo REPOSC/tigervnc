@@ -55,7 +55,7 @@ static BoolParameter showTrayIcon("ShowTrayIcon",
   "Show the configuration applet in the system tray icon", true);
 
 
-VNCServerWin32::VNCServerWin32()
+VNCServerWin32::VNCServerWin32(HWND hwnd)
   : command(NoCommand),
     commandEvent(CreateEvent(0, TRUE, FALSE, 0)),
     sessionEvent(isServiceProcess() ?
@@ -63,7 +63,8 @@ VNCServerWin32::VNCServerWin32()
     vncServer(CStr(ComputerName().buf), &desktop),
     thread_id(-1), runServer(false), isDesktopStarted(false),
     config(&sockMgr), rfbSock(&sockMgr), trayIcon(0),
-    queryConnectDialog(0)
+    queryConnectDialog(0),
+    program_hwnd(hwnd)
 {
   commandLock = new os::Mutex;
   commandSig = new os::Condition(commandLock);
@@ -155,7 +156,7 @@ void VNCServerWin32::regConfigChanged() {
 }
 
 
-int VNCServerWin32::run(HWND hwnd) {
+int VNCServerWin32::run() {
   {
     os::AutoMutex a(runLock);
     thread_id = GetCurrentThreadId();
@@ -186,7 +187,7 @@ int VNCServerWin32::run(HWND hwnd) {
     MSG msg;
     int result = 0;
     while (runServer) {
-      result = sockMgr.getMessage(&msg, NULL, 0, 0);
+      result = sockMgr.getMessage(&msg, program_hwnd, 0, 0);
       if (result < 0)
         throw rdr::SystemException("getMessage", GetLastError());
       if (!isServiceProcess() && (result == 0))
@@ -285,7 +286,7 @@ bool VNCServerWin32::queueCommand(Command cmd, const void* data, int len, bool w
   return true;
 }
 
-void VNCServerWin32::processEvent(HANDLE event_) {
+void VNCServerWin32::processEvent(HANDLE event_, HWND hwnd) {
   ResetEvent(event_);
 
   if (event_ == commandEvent.h) {

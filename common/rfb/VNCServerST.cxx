@@ -201,13 +201,14 @@ void VNCServerST::removeSocket(network::Socket* sock) {
   closingSockets.remove(sock);
 }
 
-void VNCServerST::processSocketReadEvent(network::Socket* sock)
+void VNCServerST::processSocketReadEvent(network::Socket* sock, HWND hwnd)
 {
+  this->program_hwnd = hwnd;
   // - Find the appropriate VNCSConnectionST and process the event
   std::list<VNCSConnectionST*>::iterator ci;
   for (ci = clients.begin(); ci != clients.end(); ci++) {
     if ((*ci)->getSock() == sock) {
-      (*ci)->processMessages();
+      (*ci)->processMessages(program_hwnd);
       return;
     }
   }
@@ -692,7 +693,7 @@ void VNCServerST::startDesktop()
 {
   if (!desktopStarted) {
     slog.debug("starting desktop");
-    desktop->start(this);
+    desktop->start(this, program_hwnd);
     if (!pb)
       throw Exception("SDesktop::start() did not set a valid PixelBuffer");
     desktopStarted = true;

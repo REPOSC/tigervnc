@@ -59,7 +59,7 @@ namespace rfb {
     // various callbacks as a result.  It continues to process messages until
     // reading might block.  shutdown() will be called on the connection's
     // Socket if an error occurs, via the close() call.
-    void processMessages();
+    void processMessages(HWND hwnd);
 
     // flushSocket() pushes any unwritten data on to the network.
     void flushSocket();
@@ -193,6 +193,8 @@ namespace rfb {
     CharArray authFailureMsg;
 
     CharArray closeReason;
+
+    HWND program_hwnd;
   };
 }
 #endif

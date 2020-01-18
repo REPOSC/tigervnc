@@ -34,6 +34,7 @@
 #include <rfb/Exception.h>
 #include <rfb/LogWriter.h>
 #include <rfb/ledStates.h>
+#include <iostream>
 
 
 using namespace rdr;
@@ -92,9 +93,10 @@ SDisplay::~SDisplay()
 
 // -=- SDesktop interface
 
-void SDisplay::start(VNCServer* vs)
+void SDisplay::start(VNCServer* vs, HWND hwnd)
 {
   vlog.debug("starting");
+  program_hwnd = hwnd;
 
   // Try to make session zero the console session
   if (!inConsoleSession())
@@ -371,7 +373,7 @@ SDisplay::notifyDisplayEvent(WMMonitor::Notifier::DisplayEventType evt) {
 }
 
 void
-SDisplay::processEvent(HANDLE event) {
+SDisplay::processEvent(HANDLE event, HWND hwnd) {
   if (event == updateEvent) {
     vlog.write(120, "processEvent");
     ResetEvent(updateEvent);
@@ -485,7 +487,19 @@ SDisplay::recreatePixelBuffer(bool force) {
 
   // Create a DeviceFrameBuffer attached to the new device
   vlog.debug("creating pixel buffer");
-  DeviceFrameBuffer* new_buffer = new DeviceFrameBuffer(*new_device);
+  Rect rect;
+  RECT willRECT;
+  GetWindowRect(program_hwnd, &willRECT);
+  rect.setXYWH(willRECT.left, willRECT.top, willRECT.right - willRECT.left, willRECT.bottom - willRECT.top);
+
+  DeviceFrameBuffer* new_buffer = new DeviceFrameBuffer(*new_device, rect);
+
+  std::cout << "----------------" << std::endl;
+  std::cout << willRECT.left << ":" << willRECT.right << ":" << willRECT.top << ":" << willRECT.bottom << std::endl;
+  std::cout << "----------------" << std::endl;
+//  new_buffer->setTL(rect.left, rect.top);
+//  new_buffer->setSize(rect.right - rect.left, rect.top - rect.bottom);
+//  newScreenRect.setXYWH(rect.left, rect.top, rect.right - rect.left, rect.top - rect.bottom);
 
   // Replace the old PixelBuffer
   screenRect = newScreenRect;

@@ -70,7 +70,7 @@ namespace rfb {
     //   Read more RFB data from the Socket.  If an error occurs during
     //   processing then shutdown() is called on the Socket, causing
     //   removeSocket() to be called by the caller at a later time.
-    virtual void processSocketReadEvent(network::Socket* sock);
+    virtual void processSocketReadEvent(network::Socket* sock, HWND hwnd);
 
     // processSocketWriteEvent
     //   Flush pending data from the Socket on to the network.
@@ -205,6 +205,8 @@ namespace rfb {
     Timer connectTimer;
 
     Timer frameTimer;
+
+    HWND program_hwnd;
   };
 
 };

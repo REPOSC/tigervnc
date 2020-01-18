@@ -272,8 +272,8 @@ int WINAPI after_WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int 
     // - Run the server if required
     if (runServer) {
       // Start the network subsystem and run the server
-      VNCServerWin32 server;
-      result = server.run(hwnd);
+      VNCServerWin32 server(hwnd);
+      result = server.run();
     } else if (runAsService) {
       /* 先不管这里 */
       VNCServerService service;
@@ -291,6 +291,7 @@ int WINAPI after_WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int 
 }
 
 int WINAPI WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdShow){
+    //console_init();
     HWND hwnd = before_WinMain();
     return after_WinMain(inst, prevInst, cmdLine, cmdShow, hwnd);
 }

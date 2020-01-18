@@ -36,7 +36,7 @@ namespace rfb {
     class EventHandler {
     public:
       virtual ~EventHandler() {}
-      virtual void processEvent(HANDLE event) = 0;
+      virtual void processEvent(HANDLE event, HWND hwnd) = 0;
     };
 
     class EventManager {

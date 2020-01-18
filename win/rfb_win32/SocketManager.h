@@ -70,7 +70,7 @@ namespace rfb {
 
     protected:
       virtual int checkTimeouts();
-      virtual void processEvent(HANDLE event);
+      virtual void processEvent(HANDLE event, HWND hwnd);
       virtual void remSocket(network::Socket* sock);
 
       struct ConnInfo {

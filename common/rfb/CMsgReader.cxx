@@ -30,7 +30,6 @@
 #include <rfb/util.h>
 #include <rfb/CMsgHandler.h>
 #include <rfb/CMsgReader.h>
-#include "../../Grepper/Runtime.h"
 
 static rfb::LogWriter vlog("CMsgReader");
 

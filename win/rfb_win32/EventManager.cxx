@@ -75,7 +75,7 @@ BOOL EventManager::getMessage(MSG* msg, HWND hwnd, UINT minMsg, UINT maxMsg) {
       result = WaitForMultipleObjects(eventCount, events, FALSE, 0);
       if (result == WAIT_TIMEOUT) {
         // - No events are set, so check for messages
-        if (PeekMessage(msg, hwnd, minMsg, maxMsg, PM_REMOVE)) 
+        if (PeekMessage(msg, NULL, minMsg, maxMsg, PM_REMOVE))
           return msg->message != WM_QUIT;
 
         // - Block waiting for an event to be set, or a message
@@ -83,18 +83,18 @@ BOOL EventManager::getMessage(MSG* msg, HWND hwnd, UINT minMsg, UINT maxMsg) {
                                            QS_ALLINPUT);
         if (result == WAIT_OBJECT_0 + eventCount) {
           // - Return the message, if any
-          if (PeekMessage(msg, hwnd, minMsg, maxMsg, PM_REMOVE)) 
+          if (PeekMessage(msg, NULL, minMsg, maxMsg, PM_REMOVE))
             return msg->message != WM_QUIT;
           continue;
         }
       }
     } else
-      return GetMessage(msg, hwnd, minMsg, maxMsg);
+      return GetMessage(msg, NULL, minMsg, maxMsg);
 
     if ((result >= WAIT_OBJECT_0) && (result < (WAIT_OBJECT_0 + eventCount))) {
       // - An event was set - call the handler
       int index = result - WAIT_OBJECT_0;
-      handlers[index]->processEvent(events[index]);
+      handlers[index]->processEvent(events[index], hwnd);
     } else if (result == WAIT_FAILED) {
       // - An error has occurred, so return the error status code
       return -1;

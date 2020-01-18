@@ -63,7 +63,7 @@ namespace rfb {
 
     class DeviceFrameBuffer : public DIBSectionBuffer {
     public:
-      DeviceFrameBuffer(HDC deviceContext, const Rect& area_=Rect());
+      DeviceFrameBuffer(HDC deviceContext, const Rect & willCoords, const Rect& area_=Rect());
       virtual ~DeviceFrameBuffer();
 
       // - FrameBuffer overrides
@@ -85,6 +85,7 @@ namespace rfb {
       void setIgnoreGrabErrors(bool ie) {ignoreGrabErrors=ie;}
       
       static BoolParameter useCaptureBlt;
+      void setTL(int left, int top);
 
     protected:
       // Translate supplied Desktop coordinates into Device-relative coordinates
@@ -94,6 +95,7 @@ namespace rfb {
       HDC device;
       Rect deviceCoords;
       bool ignoreGrabErrors;
+
     };
 
   };

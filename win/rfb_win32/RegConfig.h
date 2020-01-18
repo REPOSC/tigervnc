@@ -56,7 +56,7 @@ namespace rfb {
       static void loadRegistryConfig(RegKey& key);
     protected:
       // EventHandler interface and trigger event
-      virtual void processEvent(HANDLE event);
+      virtual void processEvent(HANDLE event, HWND hwnd);
 
       EventManager* eventMgr;
       Handle event;

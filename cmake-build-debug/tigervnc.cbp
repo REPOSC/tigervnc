@@ -150,7 +150,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -178,7 +178,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -206,7 +206,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -235,7 +235,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -264,7 +264,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -292,7 +292,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -320,7 +320,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -347,7 +347,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -374,7 +374,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -403,7 +403,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -432,7 +432,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -462,7 +462,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -492,7 +492,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -523,7 +523,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -554,7 +554,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -586,7 +586,7 @@
 				<Option type="0"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -618,7 +618,7 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -650,7 +650,7 @@
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add option="-D_DEBUG"/>
@@ -682,7 +682,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -713,7 +713,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -754,7 +754,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -784,7 +784,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -814,7 +814,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -844,7 +844,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -874,7 +874,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -904,7 +904,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -934,7 +934,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -964,7 +964,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -994,7 +994,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1024,7 +1024,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1054,7 +1054,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1082,7 +1082,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1110,7 +1110,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1138,7 +1138,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1166,7 +1166,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>
@@ -1194,7 +1194,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-17 09:34&quot;"/>
+					<Add option="-DBUILD_TIMESTAMP=&quot;2020-01-18 08:35&quot;"/>
 					<Add option="-D_WIN32_WINNT=0x0600"/>
 					<Add option="-DHAVE_CONFIG_H"/>
 					<Add directory="d:/vnc/libjpeg-turbo-2.0.3"/>

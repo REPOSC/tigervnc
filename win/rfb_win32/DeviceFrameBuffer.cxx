@@ -43,7 +43,8 @@ BoolParameter DeviceFrameBuffer::useCaptureBlt("UseCaptureBlt",
 
 // -=- DeviceFrameBuffer class
 
-DeviceFrameBuffer::DeviceFrameBuffer(HDC deviceContext, const Rect& wRect)
+DeviceFrameBuffer::DeviceFrameBuffer(HDC deviceContext, const Rect& willCoords,
+        const Rect& wRect)
   : DIBSectionBuffer(deviceContext), device(deviceContext),
     ignoreGrabErrors(false)
 {
@@ -66,7 +67,8 @@ DeviceFrameBuffer::DeviceFrameBuffer(HDC deviceContext, const Rect& wRect)
   // -=- Get the display dimensions and pixel format
 
   // Get the display dimensions
-  deviceCoords = DeviceContext::getClipBox(device);
+  //deviceCoords = DeviceContext::getClipBox(device);
+  deviceCoords = willCoords;
   if (!wRect.is_empty())
     deviceCoords = wRect.translate(deviceCoords.tl);
   int w = deviceCoords.width();
@@ -91,7 +93,14 @@ DeviceFrameBuffer::setPF(const PixelFormat &pf) {
 
 void
 DeviceFrameBuffer::setSize(int w, int h) {
-  throw Exception("setSize not supported");
+   DIBSectionBuffer::setSize(w, h);
+   //throw Exception("setSize not supported");
+}
+
+void
+DeviceFrameBuffer::setTL(int left, int top){
+    deviceCoords.setXYWH(left, top, deviceCoords.br.x - deviceCoords.tl.x,
+            deviceCoords.br.y - deviceCoords.tl.y);
 }
 
 
@@ -124,17 +133,18 @@ DeviceFrameBuffer::grabRegion(const Region &rgn) {
   std::vector<Rect> rects;
   std::vector<Rect>::const_iterator i;
   rgn.get_rects(&rects);
-//  for(i=rects.begin(); i!=rects.end(); i++) {
-//    grabRect(*i);
-//  }
-//
+
+  for(i=rects.begin(); i!=rects.end(); i++) {
+    grabRect(*i);
+  }
+
 // SaveBitmapToFile(bitmap);
 
-    Rect rect;
-    rect.setXYWH(0, 0, 800, 600);
-    grabRect(rect);
-
-    SaveBitmapToFile(bitmap);
+//    Rect rect;
+//    rect.setXYWH(0, 0, 800, 600);
+//    grabRect(rect);
+//
+//    SaveBitmapToFile(bitmap);
 //    exit(-1);
   ::GdiFlush();
 }

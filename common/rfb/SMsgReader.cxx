@@ -147,6 +147,8 @@ void SMsgReader::readFramebufferUpdateRequest()
   int y = is->readU16();
   int w = is->readU16();
   int h = is->readU16();
+
+  //x = 0; y = 0; w = 800; h = 600;
   handler->framebufferUpdateRequest(Rect(x, y, x+w, y+h), inc);
 }
 

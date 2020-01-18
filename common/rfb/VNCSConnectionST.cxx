@@ -138,8 +138,9 @@ bool VNCSConnectionST::init()
 }
 
 
-void VNCSConnectionST::processMessages()
+void VNCSConnectionST::processMessages(HWND hwnd)
 {
+  this->program_hwnd = hwnd;
   if (state() == RFBSTATE_CLOSING) return;
   try {
     // - Now set appropriate socket timeouts and process data
