@@ -11,3 +11,7 @@ CMakeCache.txt
 Makefile
 Makefile.in
 config.h
+cmake-build-debug/*
+!cmake-build-debug/.gitkeep
+cmake-build-release/*
+!cmake-build-release/.gitkeep
