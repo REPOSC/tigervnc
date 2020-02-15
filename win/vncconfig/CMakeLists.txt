@@ -4,7 +4,7 @@ add_executable(vncconfig WIN32
   Legacy.cxx
   PasswordDialog.cxx
   vncconfig.cxx
-  ../../Debug/Debug.cpp
+        ../../debug/Debug.cpp
   vncconfig.rc)
 
 target_link_libraries(vncconfig rfb_win32 rfb network rdr ws2_32.lib)

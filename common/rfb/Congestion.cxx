@@ -48,7 +48,7 @@
 #include <rfb/LogWriter.h>
 #include <rfb/util.h>
 
-// Debug output on what the congestion control is up to
+// debug output on what the congestion control is up to
 #undef CONGESTION_DEBUG
 
 // Dump socket congestion window debug trace to disk

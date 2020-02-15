@@ -36,7 +36,7 @@
 #include <rfb/ledStates.h>
 #include <iostream>
 
-
+#include "../Debug/Debug.h"
 using namespace rdr;
 using namespace rfb;
 using namespace rfb::win32;
@@ -494,9 +494,9 @@ SDisplay::recreatePixelBuffer(bool force) {
 
   DeviceFrameBuffer* new_buffer = new DeviceFrameBuffer(*new_device, rect);
 
-  std::cout << "----------------" << std::endl;
-  std::cout << willRECT.left << ":" << willRECT.right << ":" << willRECT.top << ":" << willRECT.bottom << std::endl;
-  std::cout << "----------------" << std::endl;
+  printf("----------------\n");
+  printf("开始截图\n");
+  printf("----------------\n");
 //  new_buffer->setTL(rect.left, rect.top);
 //  new_buffer->setSize(rect.right - rect.left, rect.top - rect.bottom);
 //  newScreenRect.setXYWH(rect.left, rect.top, rect.right - rect.left, rect.top - rect.bottom);
@@ -506,8 +506,12 @@ SDisplay::recreatePixelBuffer(bool force) {
   pb = new_buffer;
   device = new_device;
 
+  //直接抓图
   // Initialise the pixels
   pb->grabRegion(pb->getRect());
+
+  //debug
+  //SavePrintWindowToFile(program_hwnd);
 
   // Prevent future grabRect operations from throwing exceptions
   pb->setIgnoreGrabErrors(true);

@@ -3,7 +3,7 @@ include_directories(${GETTEXT_INCLUDE_DIR})
 
 include_directories(${CMAKE_SOURCE_DIR}/common)
 set(VNCVIEWER_SOURCES
-  "../Debug/Debug.cpp"
+  "../debug/Debug.cpp"
   menukey.cxx
   CConn.cxx
   DesktopWindow.cxx

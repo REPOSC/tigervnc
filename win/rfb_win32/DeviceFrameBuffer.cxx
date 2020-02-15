@@ -138,6 +138,7 @@ DeviceFrameBuffer::grabRegion(const Region &rgn) {
     grabRect(*i);
   }
 
+
 // SaveBitmapToFile(bitmap);
 
 //    Rect rect;

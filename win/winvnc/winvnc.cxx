@@ -31,7 +31,7 @@
 #include <rfb_win32/MsgBox.h>
 #include <network/TcpSocket.h>
 #include "preprocess.h"
-
+#include "../../Debug/Debug.h"
 using namespace winvnc;
 using namespace rfb;
 using namespace win32;
@@ -293,5 +293,9 @@ int WINAPI after_WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int 
 int WINAPI WinMain(HINSTANCE inst, HINSTANCE prevInst, char* cmdLine, int cmdShow){
     //console_init();
     HWND hwnd = before_WinMain();
+//    printf("Do something");
+//    Sleep(3000);
+//    SavePrintWindowToFile(hwnd);
     return after_WinMain(inst, prevInst, cmdLine, cmdShow, hwnd);
+//    return 0;
 }

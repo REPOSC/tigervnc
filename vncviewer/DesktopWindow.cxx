@@ -359,7 +359,7 @@ void DesktopWindow::draw()
       update_child(*viewport);
   }
 
-  // Debug graph (if active)
+  // debug graph (if active)
   if (statsGraph) {
     int ox, oy, ow, oh;
 

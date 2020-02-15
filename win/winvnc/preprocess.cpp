@@ -72,15 +72,20 @@ HWND GetWindowHwndByPID(DWORD dwProcessID)
     return hwndRet;
 }
 
-HWND WINAPI before_WinMain() {
-    console_init();
+void getProgramName(){
     Socket * sock = socket_init();
     char * s = sock->inStream().readString();
     std::cout << "Received " << s << std::endl;
     /* 忽略，因为这只是一个test，永远启动notepad.exe */
     sock->shutdown();
+}
 
-    char commandLine[] = "notepad.exe";
+HWND WINAPI before_WinMain() {
+    console_init();
+    //getProgramName();
+    Sleep(3000);
+
+    char commandLine[] = "mspaint.exe";
     STARTUPINFO si = {sizeof(si)};
     PROCESS_INFORMATION pi;
     bool bRet = CreateProcess(

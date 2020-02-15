@@ -95,11 +95,21 @@ void SConnection::initialiseProtocol()
 void SConnection::processMsg()
 {
   switch (state_) {
-  case RFBSTATE_PROTOCOL_VERSION: processVersionMsg();      break;
-  case RFBSTATE_SECURITY_TYPE:    processSecurityTypeMsg(); break;
-  case RFBSTATE_SECURITY:         processSecurityMsg();     break;
-  case RFBSTATE_INITIALISATION:   processInitMsg();         break;
-  case RFBSTATE_NORMAL:           reader_->readMsg();       break;
+  case RFBSTATE_PROTOCOL_VERSION:
+      //printf("1\n");
+      processVersionMsg();      break;
+  case RFBSTATE_SECURITY_TYPE:
+      //printf("2\n");
+      processSecurityTypeMsg(); break;
+  case RFBSTATE_SECURITY:
+      //printf("3\n");
+      processSecurityMsg();     break;
+  case RFBSTATE_INITIALISATION:
+      //printf("4\n");
+      processInitMsg();         break;
+  case RFBSTATE_NORMAL:
+      //printf("5\n");
+      reader_->readMsg();       break;
   case RFBSTATE_QUERYING:
     throw Exception("SConnection::processMsg: bogus data from client while "
                     "querying");
