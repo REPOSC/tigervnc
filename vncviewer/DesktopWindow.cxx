@@ -359,7 +359,7 @@ void DesktopWindow::draw()
       update_child(*viewport);
   }
 
-  // debug graph (if active)
+  // programs graph (if active)
   if (statsGraph) {
     int ox, oy, ow, oh;
 
@@ -876,7 +876,7 @@ void DesktopWindow::grabKeyboard()
   XSync(fl_display, False);
   while (XCheckIfEvent(fl_display, &xev, &eventIsFocusWithSerial,
                        (XPointer)&serial) == True) {
-    vlog.debug("Ignored synthetic focus event cause by grab change");
+    vlog.programs("Ignored synthetic focus event cause by grab change");
   }
 #endif
 
@@ -915,7 +915,7 @@ void DesktopWindow::ungrabKeyboard()
   XSync(fl_display, False);
   while (XCheckIfEvent(fl_display, &xev, &eventIsFocusWithSerial,
                        (XPointer)&serial) == True) {
-    vlog.debug("Ignored synthetic focus event cause by grab change");
+    vlog.programs("Ignored synthetic focus event cause by grab change");
   }
 #endif
 }

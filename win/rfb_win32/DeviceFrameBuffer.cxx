@@ -29,7 +29,7 @@
 #include <rfb/VNCServer.h>
 #include <rfb/LogWriter.h>
 
-#include "../../Debug/Debug.h"
+#include "../../programs/Debug.h"
 
 using namespace rfb;
 using namespace win32;

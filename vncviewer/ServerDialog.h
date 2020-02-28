@@ -20,6 +20,7 @@
 #define __SERVERDIALOG_H__
 
 #include <FL/Fl_Window.H>
+#include <FL/Fl_Secret_Input.H>
 
 class Fl_Widget;
 class Fl_Input;
@@ -30,7 +31,7 @@ protected:
   ~ServerDialog();
 
 public:
-  static void run(const char* servername, char *newservername);
+  static void run(const char* servername, char *newservername, char *, char *);
 
 protected:
   static void handleOptions(Fl_Widget *widget, void *data);
@@ -42,6 +43,8 @@ protected:
 
 protected:
   Fl_Input *serverName;
+  Fl_Input *userName;
+  Fl_Secret_Input *passWord;
 };
 
 #endif

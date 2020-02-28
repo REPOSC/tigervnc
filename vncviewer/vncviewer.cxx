@@ -32,6 +32,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/stat.h>
+#include <string.h>
 
 #ifdef WIN32
 #include <os/winerrno.h>
@@ -88,6 +89,8 @@ static const char *argv0 = NULL;
 
 static bool exitMainloop = false;
 static const char *exitError = NULL;
+
+bool login(const char *, const char *);
 
 static const char *about_text()
 {
@@ -392,7 +395,7 @@ int main(int argc, char** argv)
 #endif
 
   Socket *sock = NULL;
-
+    char username[100], password[100];
   if (listenMode) {
     std::list<SocketListener*> listeners;
     try {
@@ -447,15 +450,21 @@ int main(int argc, char** argv)
     }
   } else {
     if (vncServerName[0] == '\0') {
-      ServerDialog::run(defaultServerName, vncServerName);
+
+      ServerDialog::run(defaultServerName, vncServerName, username, password);
       if (vncServerName[0] == '\0')
         return 1;
     }
+
 
 #ifndef WIN32
     if (strlen (via.getValueStr()) > 0 && mktunnel() != 0)
       usage(argv[0]);
 #endif
+  }
+
+  if (!login(username, password)){
+      return -1;
   }
 
   CConn *cc = new CConn(vncServerName, sock);
@@ -469,4 +478,21 @@ int main(int argc, char** argv)
     fl_alert("%s", exitError);
 
   return 0;
+}
+
+bool login(const char * username, const char * password) {
+    const char * serverHost = "127.0.0.1";
+    const int serverPort = 12346;
+    TcpSocket * sock = new TcpSocket(serverHost, serverPort);
+    sock->outStream().writeString("l");
+    sock->outStream().writeString(username);
+    sock->outStream().writeString(password);
+    sock->outStream().flush();
+
+    char result = sock->inStream().readString()[0];
+    sock->shutdown();
+    if (result == 's'){
+        return true;
+    }
+    return false;
 }

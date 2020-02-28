@@ -1,9 +1,11 @@
 //
 // Created by Administrator on 2019/12/10.
 //
-
+#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_NON_CONFORMING_SWPRINTFS
 #include <string>
 #include <vector>
+#include <Windows.h>
 
 #ifndef TIGERVNC_DEBUG_H
 #define TIGERVNC_DEBUG_H

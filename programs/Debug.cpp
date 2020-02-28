@@ -2,35 +2,48 @@
 // Created by Administrator on 2019/12/10.
 //
 
-#include "../win/rfb_win32/IconInfo.h"
-
-#include <rfb/LogWriter.h>
 #include "Debug.h"
 #include <vector>
 
 int allbmpsServer = 0;
 int allbmpsClient = 0;
 
+inline void printRect(RECT r) {
+    printf("%d %d %d %d\n", r.left, r.top, r.right, r.bottom);
+}
+
 bool SavePrintWindowToFile(HWND hwnd) {
-    HDC hDC = GetDC(hwnd);
-    HDC hTargetDC = CreateCompatibleDC(hDC);
-    RECT rect = { 0 };
+    //printf("%d\n", hwnd);
+    WINDOWINFO wi;
+    wi.cbSize = sizeof(WINDOWINFO);
+    GetWindowInfo(hwnd, &wi);
 
-    if (!GetWindowRect(hwnd, &rect)) {
-        exit(-1);
+    RECT rc = {
+        wi.rcWindow.left,
+        wi.rcWindow.top,
+        wi.rcWindow.right,
+        wi.rcWindow.bottom
+    };
+    //printRect(rc);
+
+    HDC hdcScreen = GetDC(NULL);
+    HDC hdc = CreateCompatibleDC(hdcScreen);
+    HBITMAP hbmp = CreateCompatibleBitmap(hdcScreen,
+        wi.rcWindow.right - wi.rcWindow.left,
+        wi.rcWindow.bottom - wi.rcWindow.top);
+    SelectObject(hdc, hbmp);
+
+    if (!PrintWindow(hwnd, hdc, 0)) {
+        printf("ERROR: %d\n", GetLastError());
+        return FALSE;
     }
+    SaveBitmapToFile(hbmp);
 
-    printf("%ld %ld %ld %ld\n", rect.left, rect.right, rect.top,
-           rect.bottom);
-    HBITMAP hBitmap = CreateCompatibleBitmap(hDC, rect.right - rect.left,
-                                             rect.bottom - rect.top);
-    SelectObject(hTargetDC, hBitmap);
-    PrintWindow(hwnd, hTargetDC, PW_CLIENTONLY);
-    SaveBitmapToFile(hBitmap);
+    DeleteDC(hdc);
+    DeleteObject(hbmp);
 
-    DeleteObject(hBitmap);
-    ReleaseDC(hwnd, hDC);
-    DeleteDC(hTargetDC);
+    ReleaseDC(NULL, hdcScreen);
+
     return TRUE;
 }
 

@@ -15,7 +15,7 @@ matrix:
     - sudo apt-get install -y libgnutls-dev libfltk1.3-dev fluid
     - sudo apt-get install -y libxtst-dev libxdamage-dev libxfixes-dev libxrandr-dev
     script:
-    - cmake -DCMAKE_BUILD_TYPE=debug . && make
+    - cmake -DCMAKE_BUILD_TYPE=programs . && make
 
   - language: java
     # We're not compatible with the newer java

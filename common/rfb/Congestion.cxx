@@ -48,10 +48,10 @@
 #include <rfb/LogWriter.h>
 #include <rfb/util.h>
 
-// debug output on what the congestion control is up to
+// programs output on what the congestion control is up to
 #undef CONGESTION_DEBUG
 
-// Dump socket congestion window debug trace to disk
+// Dump socket congestion window programs trace to disk
 #undef CONGESTION_TRACE
 
 using namespace rfb;
@@ -108,7 +108,7 @@ void Congestion::updatePosition(unsigned pos)
   if (msBetween(&lastSent, &now) > __rfbmax(baseRTT*2, 100)) {
 
 #ifdef CONGESTION_DEBUG
-    vlog.debug("Connection idle for %d ms, resetting congestion control",
+    vlog.programs("Connection idle for %d ms, resetting congestion control",
                msBetween(&lastSent, &now));
 #endif
 
@@ -428,7 +428,7 @@ void Congestion::updateCongestion()
     // spike means packet loss. Adjust the window and go directly
     // to congestion avoidance.
 #ifdef CONGESTION_DEBUG
-    vlog.debug("Latency spike! Backing off...");
+    vlog.programs("Latency spike! Backing off...");
 #endif
     congWindow = congWindow * baseRTT / minRTT;
     inSlowStart = false;
@@ -480,7 +480,7 @@ void Congestion::updateCongestion()
     congWindow = MAXIMUM_WINDOW;
 
 #ifdef CONGESTION_DEBUG
-  vlog.debug("RTT: %d/%d ms (%d ms), Window: %d KiB, Bandwidth: %g Mbps%s",
+  vlog.programs("RTT: %d/%d ms (%d ms), Window: %d KiB, Bandwidth: %g Mbps%s",
              minRTT, minCongestedRTT, baseRTT, congWindow / 1024,
              congWindow * 8.0 / baseRTT / 1000.0,
              inSlowStart ? " (slow start)" : "");

@@ -192,7 +192,7 @@ inputDesktopSelected() {
   if (!CloseDesktop(input))
     vlog.debug("unable to close input desktop:%lu", GetLastError());
 
-  // *** vlog.debug("current=%s, input=%s", currentname, inputname);
+  // *** vlog.programs("current=%s, input=%s", currentname, inputname);
   bool result = strcmp(currentname, inputname) == 0;
   return result;
 }

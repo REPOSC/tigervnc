@@ -303,37 +303,37 @@ TcpListener::TcpListener(int sock) : SocketListener(sock)
 {
 }
 
-TcpListener::TcpListener(const struct sockaddr *listenaddr,
-                         socklen_t listenaddrlen)
-{
-  int one = 1;
-  vnc_sockaddr_t sa;
-  int sock;
 
-  if ((sock = socket (listenaddr->sa_family, SOCK_STREAM, 0)) < 0)
-    throw SocketException("unable to create listening socket", errorNumber);
+void TcpListener::CreateByAddr(const struct sockaddr * listenaddr,
+        socklen_t listenaddrlen){
+    int one = 1;
+    vnc_sockaddr_t sa;
+    int sock;
 
-  memcpy (&sa, listenaddr, listenaddrlen);
+    if ((sock = socket (listenaddr->sa_family, SOCK_STREAM, 0)) < 0)
+        throw SocketException("unable to create listening socket", errorNumber);
+
+    memcpy (&sa, listenaddr, listenaddrlen);
 #ifdef IPV6_V6ONLY
-  if (listenaddr->sa_family == AF_INET6) {
-    if (setsockopt (sock, IPPROTO_IPV6, IPV6_V6ONLY, (char*)&one, sizeof(one))) {
-      int e = errorNumber;
-      closesocket(sock);
-      throw SocketException("unable to set IPV6_V6ONLY", e);
+    if (listenaddr->sa_family == AF_INET6) {
+        if (setsockopt (sock, IPPROTO_IPV6, IPV6_V6ONLY, (char*)&one, sizeof(one))) {
+            int e = errorNumber;
+            closesocket(sock);
+            throw SocketException("unable to set IPV6_V6ONLY", e);
+        }
     }
-  }
 #endif /* defined(IPV6_V6ONLY) */
 
 #ifdef FD_CLOEXEC
-  // - By default, close the socket on exec()
+    // - By default, close the socket on exec()
   fcntl(sock, F_SETFD, FD_CLOEXEC);
 #endif
 
-  // SO_REUSEADDR is broken on Windows. It allows binding to a port
-  // that already has a listening socket on it. SO_EXCLUSIVEADDRUSE
-  // might do what we want, but requires investigation.
+    // SO_REUSEADDR is broken on Windows. It allows binding to a port
+    // that already has a listening socket on it. SO_EXCLUSIVEADDRUSE
+    // might do what we want, but requires investigation.
 #ifndef WIN32
-  if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR,
+    if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR,
                  (char *)&one, sizeof(one)) < 0) {
     int e = errorNumber;
     closesocket(sock);
@@ -341,13 +341,19 @@ TcpListener::TcpListener(const struct sockaddr *listenaddr,
   }
 #endif
 
-  if (bind(sock, &sa.u.sa, listenaddrlen) == -1) {
-    int e = errorNumber;
-    closesocket(sock);
-    throw SocketException("failed to bind socket", e);
-  }
+    if (bind(sock, &sa.u.sa, listenaddrlen) == -1) {
+        int e = errorNumber;
+        closesocket(sock);
+        throw SocketException("failed to bind socket", e);
+    }
 
-  listen(sock);
+    listen(sock);
+}
+
+TcpListener::TcpListener(const struct sockaddr *listenaddr,
+                         socklen_t listenaddrlen)
+{
+    CreateByAddr(listenaddr, listenaddrlen);
 }
 
 Socket* TcpListener::createSocket(int fd) {

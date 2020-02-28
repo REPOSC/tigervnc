@@ -39,7 +39,7 @@
 #include "rfb/Exception.h"
 
 ServerDialog::ServerDialog()
-  : Fl_Window(450, 160, _("VNC Viewer: Connection Details"))
+  : Fl_Window(450, 300, _("VNC Viewer: Connection Details"))
 {
   int x, y;
   Fl_Button *button;
@@ -53,13 +53,19 @@ ServerDialog::ServerDialog()
   
   serverName = new Fl_Input(x, y, w() - margin*2 - server_label_width, INPUT_HEIGHT, _("VNC server:"));
 
+  y += 2 * margin;
+
+  userName = new Fl_Input(x, y, w() - margin*2 - server_label_width, INPUT_HEIGHT, _("Username:"));
+
+  y += 2 * margin;
+
+  passWord = new Fl_Secret_Input(x, y, w() - margin*2 - server_label_width, INPUT_HEIGHT, _("Password:"));
+
+
   int adjust = (w() - 20) / 4;
   int button_width = adjust - margin/2;
 
-  x = margin;
-  y = margin + margin/2 + INPUT_HEIGHT;
-
-  y += margin/2;
+  y += 2 * margin;
 
   button = new Fl_Button(x, y, button_width, BUTTON_HEIGHT, _("Options..."));
   button->callback(this->handleOptions, this);
@@ -107,7 +113,8 @@ ServerDialog::~ServerDialog()
 }
 
 
-void ServerDialog::run(const char* servername, char *newservername)
+void ServerDialog::run(const char* servername, char *newservername,
+        char * username, char * password)
 {
   ServerDialog dialog;
 
@@ -123,6 +130,9 @@ void ServerDialog::run(const char* servername, char *newservername)
 
   strncpy(newservername, dialog.serverName->value(), VNCSERVERNAMELEN);
   newservername[VNCSERVERNAMELEN - 1] = '\0';
+
+  strcpy(username, dialog.userName->value());
+  strcpy(password, dialog.passWord->value());
 }
 
 void ServerDialog::handleOptions(Fl_Widget *widget, void *data)

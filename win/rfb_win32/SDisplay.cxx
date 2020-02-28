@@ -510,7 +510,7 @@ SDisplay::recreatePixelBuffer(bool force) {
   // Initialise the pixels
   pb->grabRegion(pb->getRect());
 
-  //debug
+  //programs
   //SavePrintWindowToFile(program_hwnd);
 
   // Prevent future grabRect operations from throwing exceptions

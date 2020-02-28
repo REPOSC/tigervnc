@@ -75,6 +75,9 @@ namespace network {
 
   protected:
     virtual Socket* createSocket(int fd);
+
+    void CreateByAddr(const struct sockaddr * listenaddr,
+                                  socklen_t listenaddrlen);
   };
 
   void createLocalTcpListeners(std::list<SocketListener*> *listeners,

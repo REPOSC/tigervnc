@@ -230,13 +230,13 @@ rfb::Rect rfb::Region::get_bounding_rect() const {
 
 //void rfb::Region::debug_print(const char* prefix) const
 //{
-//  vlog.debug("%s num rects %3ld extents %3d,%3d %3dx%3d",
+//  vlog.programs("%s num rects %3ld extents %3d,%3d %3dx%3d",
 //          prefix, xrgn->numRects, xrgn->extents.x1, xrgn->extents.y1,
 //          xrgn->extents.x2-xrgn->extents.x1,
 //          xrgn->extents.y2-xrgn->extents.y1);
 //
 //  for (int i = 0; i < xrgn->numRects; i++) {
-//    vlog.debug("    rect %3d,%3d %3dx%3d",
+//    vlog.programs("    rect %3d,%3d %3dx%3d",
 //            xrgn->rects[i].x1, xrgn->rects[i].y1,
 //            xrgn->rects[i].x2-xrgn->rects[i].x1,
 //            xrgn->rects[i].y2-xrgn->rects[i].y1);
