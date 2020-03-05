@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="libjpeg-turbo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmakescripts\;CMake Files\win\;CMake Files\release\;CMake Files\simd\;CMake Files\sharedlib\;CMake Files\md5\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpeg-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libjpeg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 jpeg-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpeg-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libjpeg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 jpeg-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="turbojpeg">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libturbojpeg.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 turbojpeg"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="turbojpeg/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libturbojpeg.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 turbojpeg/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjunittest">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjunittest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjunittest"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjunittest/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjunittest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjunittest/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjbench">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjbench.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjbench"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjbench/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjbench.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjbench/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjexample">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjexample.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjexample"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjexample/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjexample.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjexample/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="turbojpeg-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libturbojpeg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 turbojpeg-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="turbojpeg-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libturbojpeg.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 turbojpeg-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjunittest-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjunittest-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjunittest-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjunittest-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjunittest-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjunittest-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjbench-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjbench-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjbench-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjbench-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/tjbench-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjbench-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cjpeg-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/cjpeg-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 cjpeg-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cjpeg-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/cjpeg-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 cjpeg-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="djpeg-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/djpeg-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 djpeg-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="djpeg-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/djpeg-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 djpeg-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpegtran-static">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/jpegtran-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 jpegtran-static"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpegtran-static/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/jpegtran-static.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 jpegtran-static/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rdjpgcom">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/rdjpgcom.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rdjpgcom"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rdjpgcom/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/rdjpgcom.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rdjpgcom/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wrjpgcom">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/wrjpgcom.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 wrjpgcom"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wrjpgcom/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/wrjpgcom.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 wrjpgcom/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testclean">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 testclean"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tjtest">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tjtest"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="installer">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 installer"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dist">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 dist"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tarball">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 tarball"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jsimdcfg">
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 jsimdcfg"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simd">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/simd.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 simd"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simd/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/simd.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 simd/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpeg">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libjpeg-62.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 jpeg"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpeg/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/libjpeg-62.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 jpeg/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cjpeg">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/cjpeg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 cjpeg"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cjpeg/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/cjpeg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 cjpeg/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="djpeg">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/djpeg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 djpeg"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="djpeg/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/djpeg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 djpeg/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpegtran">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/jpegtran.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 jpegtran"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jpegtran/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/jpegtran.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 jpegtran/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jcstest">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/jcstest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 jcstest"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jcstest/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/jcstest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/.."/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 jcstest/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/sharedlib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="md5cmp">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/md5cmp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 md5cmp"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="md5cmp/fast">
+				<Option output="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/md5cmp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug"/>
+					<Add directory="D:/Documents/libjpeg-turbo-2.0.3"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="D:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 md5cmp/fast"/>
+					<CompileFile command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/md5/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cdjpeg.c">
+			<Option target="cjpeg-static"/>
+			<Option target="djpeg-static"/>
+			<Option target="jpegtran-static"/>
+			<Option target="cjpeg"/>
+			<Option target="djpeg"/>
+			<Option target="jpegtran"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cdjpeg.h">
+			<Option target="cjpeg-static"/>
+			<Option target="djpeg-static"/>
+			<Option target="jpegtran-static"/>
+			<Option target="cjpeg"/>
+			<Option target="djpeg"/>
+			<Option target="jpegtran"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cjpeg.c">
+			<Option target="cjpeg-static"/>
+			<Option target="cjpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/installer.nsi">
+			<Option target="installer"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/pkgscripts/maketarball">
+			<Option target="tarball"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jccolor-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jccolor-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jcgray-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jcgray-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jchuff-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jcphuff-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jcsample-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jcsample-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jdcolor-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jdcolor-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jdmerge-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jdmerge-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jdsample-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jdsample-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jfdctflt-sse.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jfdctfst-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jfdctint-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jfdctint-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jidctflt-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jidctfst-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jidctint-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jidctint-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jidctred-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jquantf-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jquanti-avx2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jquanti-sse2.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jsimd.c.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug/simd/CMakeFiles/simd.dir/x86_64/jsimdcpu.asm.obj">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/djpeg.c">
+			<Option target="djpeg-static"/>
+			<Option target="djpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jaricom.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcapimin.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcapistd.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcarith.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jccoefct.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jccolor.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcdctmgr.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jchuff.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jchuff.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcicc.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcinit.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcmainct.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcmarker.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcmaster.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcomapi.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcparam.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcphuff.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcprepct.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcsample.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jcstest.c">
+			<Option target="jcstest"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jctrans.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdapimin.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdapistd.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdarith.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdatadst-tj.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdatadst.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdatasrc-tj.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdatasrc.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdcoefct.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdcoefct.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdcolor.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jddctmgr.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdhuff.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdhuff.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdicc.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdinput.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdmainct.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdmainct.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdmarker.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdmaster.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdmaster.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdmerge.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdphuff.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdpostct.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdsample.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdsample.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jdtrans.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jerror.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jerror.h">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jfdctflt.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jfdctfst.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jfdctint.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jidctflt.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jidctfst.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jidctint.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jidctred.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jmemmgr.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jmemnobs.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jpegtran.c">
+			<Option target="jpegtran-static"/>
+			<Option target="jpegtran"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jquant1.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jquant2.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jutils.c">
+			<Option target="jpeg-static"/>
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/md5/md5.c">
+			<Option target="tjunittest"/>
+			<Option target="tjunittest-static"/>
+			<Option target="md5cmp"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/md5/md5.h">
+			<Option target="tjunittest"/>
+			<Option target="tjunittest-static"/>
+			<Option target="md5cmp"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/md5/md5cmp.c">
+			<Option target="md5cmp"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/md5/md5hl.c">
+			<Option target="tjunittest"/>
+			<Option target="tjunittest-static"/>
+			<Option target="md5cmp"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdbmp.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="cjpeg-static"/>
+			<Option target="cjpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdcolmap.c">
+			<Option target="djpeg-static"/>
+			<Option target="djpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdgif.c">
+			<Option target="cjpeg-static"/>
+			<Option target="cjpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdjpgcom.c">
+			<Option target="rdjpgcom"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdppm.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="cjpeg-static"/>
+			<Option target="cjpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdswitch.c">
+			<Option target="cjpeg-static"/>
+			<Option target="djpeg-static"/>
+			<Option target="jpegtran-static"/>
+			<Option target="cjpeg"/>
+			<Option target="djpeg"/>
+			<Option target="jpegtran"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/rdtarga.c">
+			<Option target="cjpeg-static"/>
+			<Option target="cjpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jccolor-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jccolor-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jcgray-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jcgray-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jchuff-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jcphuff-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jcsample-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jcsample-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jdcolor-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jdcolor-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jdmerge-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jdmerge-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jdsample-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jdsample-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jfdctflt-sse.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jfdctfst-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jfdctint-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jfdctint-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jidctflt-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jidctfst-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jidctint-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jidctint-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jidctred-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jquantf-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jquanti-avx2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jquanti-sse2.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jsimd.c">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/x86_64/jsimdcpu.asm">
+			<Option target="simd"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjbench.c">
+			<Option target="tjbench"/>
+			<Option target="tjbench-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjexample.c">
+			<Option target="tjexample"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjunittest.c">
+			<Option target="tjunittest"/>
+			<Option target="tjunittest-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjutil.c">
+			<Option target="tjunittest"/>
+			<Option target="tjbench"/>
+			<Option target="tjunittest-static"/>
+			<Option target="tjbench-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjutil.h">
+			<Option target="tjunittest"/>
+			<Option target="tjbench"/>
+			<Option target="tjunittest-static"/>
+			<Option target="tjbench-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/transupp.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpegtran-static"/>
+			<Option target="jpegtran"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/transupp.h">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="jpegtran-static"/>
+			<Option target="jpegtran"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/turbojpeg.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/turbojpeg.h">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/win/jpeg62-memsrcdst.def">
+			<Option target="jpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/wrbmp.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="djpeg-static"/>
+			<Option target="djpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/wrgif.c">
+			<Option target="djpeg-static"/>
+			<Option target="djpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/wrjpgcom.c">
+			<Option target="wrjpgcom"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/wrppm.c">
+			<Option target="turbojpeg"/>
+			<Option target="turbojpeg-static"/>
+			<Option target="djpeg-static"/>
+			<Option target="djpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/wrtarga.c">
+			<Option target="djpeg-static"/>
+			<Option target="djpeg"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/jconfigint.h.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjbenchtest.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/tjexampletest.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmakescripts/BuildPackages.cmake">
+			<Option virtualFolder="CMake Files\cmakescripts\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmakescripts/GNUInstallDirs.cmake">
+			<Option virtualFolder="CMake Files\cmakescripts\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/cmakescripts/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\cmakescripts\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/win/jconfig.h.in">
+			<Option virtualFolder="CMake Files\win\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/release/installer.nsi.in">
+			<Option virtualFolder="CMake Files\release\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/release/libjpeg.pc.in">
+			<Option virtualFolder="CMake Files\release\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/release/libturbojpeg.pc.in">
+			<Option virtualFolder="CMake Files\release\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/release/maketarball.in">
+			<Option virtualFolder="CMake Files\release\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/simd/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\simd\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/sharedlib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sharedlib\"/>
+		</Unit>
+		<Unit filename="D:/Documents/libjpeg-turbo-2.0.3/md5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\md5\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

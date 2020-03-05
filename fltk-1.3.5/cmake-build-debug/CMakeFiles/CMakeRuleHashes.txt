@@ -1,0 +1,13 @@
+# Hashes of file build rules.
+423c1a57c13ff0203bb83510f80ea68c CMakeFiles/uninstall
+7c7574688e3324acbad8cf7b52bef1f6 test/CubeViewUI.cxx
+f6b1ff887ae628a150b42bd3219a1318 test/fast_slow.cxx
+5e0455208c7f1faf40493bf8faf06ce6 test/inactive.cxx
+9e7666332dcbd66f3ced29a6472ef793 test/keyboard_ui.cxx
+e6711fc10930d65762ced10ff204748e test/mandelbrot_ui.cxx
+f74a415d27ada80c3531757a1e030e4d test/preferences.cxx
+891326d420c30396255bf1ee63b5b11d test/radio.cxx
+c47f0df73b91030050b8fdd71404c0cc test/resize.cxx
+246c05ba456db9ecb3f67c43f0461ca6 test/tabs.cxx
+323cb5028b802406e1c049877878bf4b test/tree.cxx
+1776916190615417c2e9e9e693f1c389 test/valuators.cxx

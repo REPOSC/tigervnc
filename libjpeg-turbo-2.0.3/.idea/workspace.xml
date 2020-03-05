@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="libjpeg-turbo" targetName="turbojpeg" />
+      <config projectName="libjpeg-turbo" targetName="cjpeg-static" />
+      <config projectName="libjpeg-turbo" targetName="tjtest" />
+      <config projectName="libjpeg-turbo" targetName="installer" />
+      <config projectName="libjpeg-turbo" targetName="turbojpeg-static" />
+      <config projectName="libjpeg-turbo" targetName="tjexample" />
+      <config projectName="libjpeg-turbo" targetName="tjunittest" />
+      <config projectName="libjpeg-turbo" targetName="rdjpgcom" />
+      <config projectName="libjpeg-turbo" targetName="jpeg-static" />
+      <config projectName="libjpeg-turbo" targetName="djpeg" />
+      <config projectName="libjpeg-turbo" targetName="jpegtran-static" />
+      <config projectName="libjpeg-turbo" targetName="testclean" />
+      <config projectName="libjpeg-turbo" targetName="dist" />
+      <config projectName="libjpeg-turbo" targetName="jpeg" />
+      <config projectName="libjpeg-turbo" targetName="md5cmp" />
+      <config projectName="libjpeg-turbo" targetName="wrjpgcom" />
+      <config projectName="libjpeg-turbo" targetName="uninstall" />
+      <config projectName="libjpeg-turbo" targetName="tjbench" />
+      <config projectName="libjpeg-turbo" targetName="jpegtran" />
+      <config projectName="libjpeg-turbo" targetName="simd" />
+      <config projectName="libjpeg-turbo" targetName="tjbench-static" />
+      <config projectName="libjpeg-turbo" targetName="tjunittest-static" />
+      <config projectName="libjpeg-turbo" targetName="jcstest" />
+      <config projectName="libjpeg-turbo" targetName="djpeg-static" />
+      <config projectName="libjpeg-turbo" targetName="cjpeg" />
+      <config projectName="libjpeg-turbo" targetName="tarball" />
+      <config projectName="libjpeg-turbo" targetName="jsimdcfg" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7eda6654-8b26-4d3c-93ac-cd9084211799" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1Uh8EJG6yOdOSewXB28DpF9YDjF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="CMake Application.cjpeg-static">
+    <configuration name="cjpeg-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="cjpeg-static" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="cjpeg-static">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cjpeg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="cjpeg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="cjpeg">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dist" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="dist" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="djpeg-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="djpeg-static" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="djpeg-static">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="djpeg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="djpeg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="djpeg">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="installer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="installer" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jcstest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="jcstest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="jcstest">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jpeg-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="jpeg-static" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jpeg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="jpeg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jpegtran-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="jpegtran-static" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="jpegtran-static">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jpegtran" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="jpegtran" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="jpegtran">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsimdcfg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="jsimdcfg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="md5cmp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="md5cmp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="md5cmp">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rdjpgcom" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="rdjpgcom" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="rdjpgcom">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="simd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="simd" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tarball" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tarball" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testclean" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="testclean" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tjbench-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tjbench-static" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="tjbench-static">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tjbench" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tjbench" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="tjbench">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tjexample" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tjexample" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="tjexample">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tjtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tjtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tjunittest-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tjunittest-static" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="tjunittest-static">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tjunittest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="tjunittest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="tjunittest">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="turbojpeg-static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="turbojpeg-static" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="turbojpeg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="turbojpeg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wrjpgcom" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="libjpeg-turbo" TARGET_NAME="wrjpgcom" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="libjpeg-turbo" RUN_TARGET_NAME="wrjpgcom">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.cjpeg-static" />
+      <item itemvalue="CMake Application.dist" />
+      <item itemvalue="CMake Application.djpeg-static" />
+      <item itemvalue="CMake Application.installer" />
+      <item itemvalue="CMake Application.jpeg-static" />
+      <item itemvalue="CMake Application.jpegtran-static" />
+      <item itemvalue="CMake Application.rdjpgcom" />
+      <item itemvalue="CMake Application.tarball" />
+      <item itemvalue="CMake Application.testclean" />
+      <item itemvalue="CMake Application.tjbench" />
+      <item itemvalue="CMake Application.tjbench-static" />
+      <item itemvalue="CMake Application.tjexample" />
+      <item itemvalue="CMake Application.tjtest" />
+      <item itemvalue="CMake Application.tjunittest" />
+      <item itemvalue="CMake Application.tjunittest-static" />
+      <item itemvalue="CMake Application.turbojpeg" />
+      <item itemvalue="CMake Application.turbojpeg-static" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.wrjpgcom" />
+      <item itemvalue="CMake Application.md5cmp" />
+      <item itemvalue="CMake Application.cjpeg" />
+      <item itemvalue="CMake Application.djpeg" />
+      <item itemvalue="CMake Application.jcstest" />
+      <item itemvalue="CMake Application.jpeg" />
+      <item itemvalue="CMake Application.jpegtran" />
+      <item itemvalue="CMake Application.jsimdcfg" />
+      <item itemvalue="CMake Application.simd" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7eda6654-8b26-4d3c-93ac-cd9084211799" name="Default Changelist" comment="" />
+      <created>1575797353338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575797353338</updated>
+      <workItem from="1575797354774" duration="136000" />
+      <workItem from="1575800568194" duration="606000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1575797486338">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575797486338" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1575797490251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575797490251" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1575797490251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575797490251" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1575797490251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575797490251" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1575797490251">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575797490251" />
+  </component>
+</project>

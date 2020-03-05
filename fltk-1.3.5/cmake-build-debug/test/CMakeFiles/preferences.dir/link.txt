@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\preferences.dir/objects.a
+D:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\preferences.dir/objects.a @CMakeFiles\preferences.dir\objects1.rsp
+D:\TDM-GCC-64\bin\g++.exe -g   -Wl,-subsystem,windows -pthread -mwindows -Wl,--whole-archive CMakeFiles\preferences.dir/objects.a -Wl,--no-whole-archive  -o ..\bin\examples\preferences.exe -Wl,--out-implib,..\bin\examples\libpreferences.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\preferences.dir\linklibs.rsp

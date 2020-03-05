@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="FLTK" targetName="valuators" />
+      <config projectName="FLTK" targetName="keyboard" />
+      <config projectName="FLTK" targetName="sudoku" />
+      <config projectName="FLTK" targetName="device" />
+      <config projectName="FLTK" targetName="browser" />
+      <config projectName="FLTK" targetName="scroll" />
+      <config projectName="FLTK" targetName="fltk_gl" />
+      <config projectName="FLTK" targetName="fluid" />
+      <config projectName="FLTK" targetName="clock" />
+      <config projectName="FLTK" targetName="fltk_z" />
+      <config projectName="FLTK" targetName="overlay" />
+      <config projectName="FLTK" targetName="table" />
+      <config projectName="FLTK" targetName="arc" />
+      <config projectName="FLTK" targetName="test_help" />
+      <config projectName="FLTK" targetName="bitmap" />
+      <config projectName="FLTK" targetName="message" />
+      <config projectName="FLTK" targetName="threads" />
+      <config projectName="FLTK" targetName="fltk_forms" />
+      <config projectName="FLTK" targetName="mandelbrot" />
+      <config projectName="FLTK" targetName="tree" />
+      <config projectName="FLTK" targetName="cube" />
+      <config projectName="FLTK" targetName="line_style" />
+      <config projectName="FLTK" targetName="uninstall" />
+      <config projectName="FLTK" targetName="adjuster" />
+      <config projectName="FLTK" targetName="pixmap_browser" />
+      <config projectName="FLTK" targetName="image" />
+      <config projectName="FLTK" targetName="fltk_jpeg" />
+      <config projectName="FLTK" targetName="glpuzzle" />
+      <config projectName="FLTK" targetName="hello" />
+      <config projectName="FLTK" targetName="twowin" />
+      <config projectName="FLTK" targetName="minimum" />
+      <config projectName="FLTK" targetName="radio" />
+      <config projectName="FLTK" targetName="fltk_png" />
+      <config projectName="FLTK" targetName="fltk" />
+      <config projectName="FLTK" targetName="subwindow" />
+      <config projectName="FLTK" targetName="buttons" />
+      <config projectName="FLTK" targetName="resizebox" />
+      <config projectName="FLTK" targetName="fltk-versions" />
+      <config projectName="FLTK" targetName="resize" />
+      <config projectName="FLTK" targetName="input_choice" />
+      <config projectName="FLTK" targetName="unittests" />
+      <config projectName="FLTK" targetName="list_visuals" />
+      <config projectName="FLTK" targetName="demo" />
+      <config projectName="FLTK" targetName="preferences" />
+      <config projectName="FLTK" targetName="rotated_text" />
+      <config projectName="FLTK" targetName="native-filechooser" />
+      <config projectName="FLTK" targetName="checkers" />
+      <config projectName="FLTK" targetName="windowfocus" />
+      <config projectName="FLTK" targetName="label" />
+      <config projectName="FLTK" targetName="forms" />
+      <config projectName="FLTK" targetName="editor" />
+      <config projectName="FLTK" targetName="fltk_images" />
+      <config projectName="FLTK" targetName="gl_overlay" />
+      <config projectName="FLTK" targetName="menubar" />
+      <config projectName="FLTK" targetName="cursor" />
+      <config projectName="FLTK" targetName="doublebuffer" />
+      <config projectName="FLTK" targetName="shape" />
+      <config projectName="FLTK" targetName="blocks" />
+      <config projectName="FLTK" targetName="ask" />
+      <config projectName="FLTK" targetName="input" />
+      <config projectName="FLTK" targetName="iconize" />
+      <config projectName="FLTK" targetName="fast_slow" />
+      <config projectName="FLTK" targetName="symbols" />
+      <config projectName="FLTK" targetName="curve" />
+      <config projectName="FLTK" targetName="offscreen" />
+      <config projectName="FLTK" targetName="color_chooser" />
+      <config projectName="FLTK" targetName="fractals" />
+      <config projectName="FLTK" targetName="file_chooser" />
+      <config projectName="FLTK" targetName="CubeView" />
+      <config projectName="FLTK" targetName="output" />
+      <config projectName="FLTK" targetName="animated" />
+      <config projectName="FLTK" targetName="fonts" />
+      <config projectName="FLTK" targetName="pack" />
+      <config projectName="FLTK" targetName="colbrowser" />
+      <config projectName="FLTK" targetName="utf8" />
+      <config projectName="FLTK" targetName="boxtype" />
+      <config projectName="FLTK" targetName="inactive" />
+      <config projectName="FLTK" targetName="fullscreen" />
+      <config projectName="FLTK" targetName="tabs" />
+      <config projectName="FLTK" targetName="pixmap" />
+      <config projectName="FLTK" targetName="button" />
+      <config projectName="FLTK" targetName="tile" />
+      <config projectName="FLTK" targetName="navigation" />
+      <config projectName="FLTK" targetName="icon" />
+      <config projectName="FLTK" targetName="tiled_image" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1cb3db6-b949-4498-aece-98ca0aa0e448" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1Uh8VVXm49hRRp3dQJaHIOMetm0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="CMake Application.demo">
+    <configuration name="CubeView" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="CubeView" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="CubeView">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="adjuster" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="adjuster" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="adjuster">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="animated" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="animated" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="animated">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="arc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="arc">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ask" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="ask" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="ask">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bitmap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="bitmap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="bitmap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="blocks" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="blocks" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="blocks">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="boxtype" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="boxtype" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="boxtype">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="browser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="browser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="browser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="button" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="button" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="button">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="buttons" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="buttons" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="buttons">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="checkers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="checkers" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="checkers">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="clock" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="clock">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="colbrowser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="colbrowser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="colbrowser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="color_chooser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="color_chooser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="color_chooser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cube" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="cube" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="cube">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cursor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="cursor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="cursor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="curve" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="curve" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="curve">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="demo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="demo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="device" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="device" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="device">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doublebuffer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="doublebuffer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="doublebuffer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="editor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="editor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="editor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fast_slow" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fast_slow" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="fast_slow">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="file_chooser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="file_chooser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="file_chooser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk-versions" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk-versions" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="fltk-versions">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk_forms" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk_forms" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk_gl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk_gl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk_images" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk_images" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk_jpeg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk_jpeg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk_png" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk_png" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fltk_z" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fltk_z" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fluid" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fluid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="fluid">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fonts" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fonts" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="fonts">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="forms" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="forms" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="forms">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fractals" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fractals" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="fractals">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fullscreen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="fullscreen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="fullscreen">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gl_overlay" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="gl_overlay" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="gl_overlay">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glpuzzle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="glpuzzle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="glpuzzle">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hello" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="hello" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="hello">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="icon" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="icon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="icon">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iconize" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="iconize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="iconize">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="image" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="image" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="image">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inactive" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="inactive" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="inactive">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="input" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="input" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="input">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="input_choice" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="input_choice" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="input_choice">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="keyboard" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="keyboard" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="keyboard">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="label" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="label" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="label">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="line_style" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="line_style" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="line_style">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="list_visuals" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="list_visuals" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="list_visuals">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mandelbrot" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="mandelbrot" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="mandelbrot">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="menubar" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="menubar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="menubar">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="message" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="message" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="message">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="minimum" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="minimum" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="minimum">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="native-filechooser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="native-filechooser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="native-filechooser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="navigation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="navigation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="navigation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="offscreen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="offscreen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="offscreen">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="output" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="output" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="output">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="overlay" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="overlay" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="overlay">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pack" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="pack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="pack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pixmap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="pixmap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="pixmap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pixmap_browser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="pixmap_browser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="pixmap_browser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="preferences" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="preferences" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="preferences">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="radio" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="radio" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="radio">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="resize" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="resize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="resize">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="resizebox" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="resizebox" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="resizebox">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rotated_text" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="rotated_text" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="rotated_text">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="scroll" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="scroll" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="scroll">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shape" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="shape" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="shape">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="subwindow" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="subwindow" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="subwindow">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sudoku" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="sudoku" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="sudoku">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="symbols" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="symbols" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="symbols">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="table" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="table" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="table">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tabs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="tabs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="tabs">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_help" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="test_help" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="test_help">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="threads" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="threads" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="threads">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tile" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="tile" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="tile">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tiled_image" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="tiled_image" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="tiled_image">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tree" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="tree" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="tree">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="twowin" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="twowin" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="twowin">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unittests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="unittests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="unittests">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="utf8" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="utf8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="utf8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="valuators" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="valuators" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="valuators">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="windowfocus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FLTK" TARGET_NAME="windowfocus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FLTK" RUN_TARGET_NAME="windowfocus">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.CubeView" />
+      <item itemvalue="CMake Application.adjuster" />
+      <item itemvalue="CMake Application.animated" />
+      <item itemvalue="CMake Application.arc" />
+      <item itemvalue="CMake Application.ask" />
+      <item itemvalue="CMake Application.bitmap" />
+      <item itemvalue="CMake Application.blocks" />
+      <item itemvalue="CMake Application.boxtype" />
+      <item itemvalue="CMake Application.browser" />
+      <item itemvalue="CMake Application.button" />
+      <item itemvalue="CMake Application.buttons" />
+      <item itemvalue="CMake Application.checkers" />
+      <item itemvalue="CMake Application.clock" />
+      <item itemvalue="CMake Application.colbrowser" />
+      <item itemvalue="CMake Application.color_chooser" />
+      <item itemvalue="CMake Application.cube" />
+      <item itemvalue="CMake Application.cursor" />
+      <item itemvalue="CMake Application.curve" />
+      <item itemvalue="CMake Application.demo" />
+      <item itemvalue="CMake Application.device" />
+      <item itemvalue="CMake Application.doublebuffer" />
+      <item itemvalue="CMake Application.editor" />
+      <item itemvalue="CMake Application.fast_slow" />
+      <item itemvalue="CMake Application.file_chooser" />
+      <item itemvalue="CMake Application.fltk-versions" />
+      <item itemvalue="CMake Application.fltk" />
+      <item itemvalue="CMake Application.fltk_forms" />
+      <item itemvalue="CMake Application.fltk_gl" />
+      <item itemvalue="CMake Application.fltk_images" />
+      <item itemvalue="CMake Application.fltk_jpeg" />
+      <item itemvalue="CMake Application.fltk_png" />
+      <item itemvalue="CMake Application.fltk_z" />
+      <item itemvalue="CMake Application.fluid" />
+      <item itemvalue="CMake Application.fonts" />
+      <item itemvalue="CMake Application.forms" />
+      <item itemvalue="CMake Application.fractals" />
+      <item itemvalue="CMake Application.fullscreen" />
+      <item itemvalue="CMake Application.gl_overlay" />
+      <item itemvalue="CMake Application.glpuzzle" />
+      <item itemvalue="CMake Application.hello" />
+      <item itemvalue="CMake Application.icon" />
+      <item itemvalue="CMake Application.iconize" />
+      <item itemvalue="CMake Application.image" />
+      <item itemvalue="CMake Application.inactive" />
+      <item itemvalue="CMake Application.input" />
+      <item itemvalue="CMake Application.input_choice" />
+      <item itemvalue="CMake Application.keyboard" />
+      <item itemvalue="CMake Application.label" />
+      <item itemvalue="CMake Application.line_style" />
+      <item itemvalue="CMake Application.list_visuals" />
+      <item itemvalue="CMake Application.mandelbrot" />
+      <item itemvalue="CMake Application.menubar" />
+      <item itemvalue="CMake Application.message" />
+      <item itemvalue="CMake Application.minimum" />
+      <item itemvalue="CMake Application.native-filechooser" />
+      <item itemvalue="CMake Application.navigation" />
+      <item itemvalue="CMake Application.offscreen" />
+      <item itemvalue="CMake Application.output" />
+      <item itemvalue="CMake Application.overlay" />
+      <item itemvalue="CMake Application.pack" />
+      <item itemvalue="CMake Application.pixmap" />
+      <item itemvalue="CMake Application.pixmap_browser" />
+      <item itemvalue="CMake Application.preferences" />
+      <item itemvalue="CMake Application.radio" />
+      <item itemvalue="CMake Application.resize" />
+      <item itemvalue="CMake Application.resizebox" />
+      <item itemvalue="CMake Application.rotated_text" />
+      <item itemvalue="CMake Application.scroll" />
+      <item itemvalue="CMake Application.shape" />
+      <item itemvalue="CMake Application.subwindow" />
+      <item itemvalue="CMake Application.sudoku" />
+      <item itemvalue="CMake Application.symbols" />
+      <item itemvalue="CMake Application.table" />
+      <item itemvalue="CMake Application.tabs" />
+      <item itemvalue="CMake Application.test_help" />
+      <item itemvalue="CMake Application.threads" />
+      <item itemvalue="CMake Application.tile" />
+      <item itemvalue="CMake Application.tiled_image" />
+      <item itemvalue="CMake Application.tree" />
+      <item itemvalue="CMake Application.twowin" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.unittests" />
+      <item itemvalue="CMake Application.utf8" />
+      <item itemvalue="CMake Application.valuators" />
+      <item itemvalue="CMake Application.windowfocus" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1cb3db6-b949-4498-aece-98ca0aa0e448" name="Default Changelist" comment="" />
+      <created>1575797490372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575797490372</updated>
+      <workItem from="1575797491624" duration="172000" />
+      <workItem from="1575800106868" duration="322000" />
+      <workItem from="1575899819495" duration="1249000" />
+      <workItem from="1575947130147" duration="103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1575797581833">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575797581833" />
+    <state width="1330" height="254" key="GridCell.Tab.0.bottom" timestamp="1575908093886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1330" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575908093886" />
+    <state width="1330" height="254" key="GridCell.Tab.0.center" timestamp="1575908093885">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1330" height="254" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575908093885" />
+    <state width="1330" height="254" key="GridCell.Tab.0.left" timestamp="1575908093885">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1330" height="254" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575908093885" />
+    <state width="1330" height="254" key="GridCell.Tab.0.right" timestamp="1575908093886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1330" height="254" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575908093886" />
+    <state x="587" y="227" width="746" height="586" key="find.popup" timestamp="1575947217927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="587" y="227" width="746" height="586" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575947217927" />
+    <state x="539" y="5" key="search.everywhere.popup" timestamp="1575947176053">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575947176053" />
+  </component>
+</project>

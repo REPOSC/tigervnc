@@ -1,0 +1,53 @@
+"C:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Documents\libjpeg-turbo-2.0.3
+-- The C compiler identification is GNU 5.1.0
+-- Check for working C compiler: D:/TDM-GCC-64/bin/gcc.exe
+-- Check for working C compiler: D:/TDM-GCC-64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMAKE_BUILD_TYPE = Debug
+-- VERSION = 2.0.3, BUILD = 20191208
+-- 64-bit build (x86_64)
+-- CMAKE_INSTALL_PREFIX = c:/libjpeg-turbo-gcc64
+-- CMAKE_INSTALL_BINDIR = bin (c:/libjpeg-turbo-gcc64/bin)
+-- CMAKE_INSTALL_DATAROOTDIR =  (c:/libjpeg-turbo-gcc64)
+-- CMAKE_INSTALL_DOCDIR = doc (c:/libjpeg-turbo-gcc64/doc)
+-- CMAKE_INSTALL_INCLUDEDIR = include (c:/libjpeg-turbo-gcc64/include)
+-- CMAKE_INSTALL_LIBDIR = lib (c:/libjpeg-turbo-gcc64/lib)
+-- Shared libraries enabled (ENABLE_SHARED = 1)
+-- Static libraries enabled (ENABLE_STATIC = 1)
+-- 12-bit JPEG support disabled (WITH_12BIT = 0)
+-- Arithmetic decoding support enabled (WITH_ARITH_DEC = 1)
+-- Arithmetic encoding support enabled (WITH_ARITH_ENC = 1)
+-- TurboJPEG API library enabled (WITH_TURBOJPEG = 1)
+-- TurboJPEG Java wrapper disabled (WITH_JAVA = 0)
+-- In-memory source/destination managers enabled (WITH_MEM_SRCDST = 1)
+-- Emulating libjpeg API/ABI v6.2 (WITH_JPEG7 = 0, WITH_JPEG8 = 0)
+-- libjpeg API shared library version = 62.3.0
+-- Compiler flags =  -g
+-- Linker flags =  
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of unsigned long
+-- Check size of unsigned long - done
+-- Performing Test INLINE_WORKS
+-- Performing Test INLINE_WORKS - Success
+-- INLINE = __inline__ __attribute__((always_inline)) (FORCE_INLINE = 1)
+-- CMAKE_EXECUTABLE_SUFFIX = .exe
+-- The ASM_NASM compiler identification is NASM
+-- Found assembler: C:/Program Files/NASM/nasm.exe
+-- CMAKE_ASM_NASM_COMPILER = C:/Program Files/NASM/nasm.exe
+-- CMAKE_ASM_NASM_OBJECT_FORMAT = win64
+-- CMAKE_ASM_NASM_FLAGS =  -DWIN64 -D__x86_64__ -g
+-- SIMD extensions: x86_64 (WITH_SIMD = 1)
+-- FLOATTEST = sse
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Documents/libjpeg-turbo-2.0.3/cmake-build-debug

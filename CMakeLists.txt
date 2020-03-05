@@ -1,324 +1,1547 @@
-#
-# Setup
-#
+cmake_minimum_required(VERSION 3.14)
+project(vnc)
 
-cmake_minimum_required(VERSION 2.8.11)
-if(POLICY CMP0022)
-  cmake_policy(SET CMP0022 OLD)
-endif()
+set(CMAKE_CXX_STANDARD 14)
 
-# Internal cmake modules
-set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
+include_directories(fltk-1.3.5)
+include_directories(fltk-1.3.5/cmake-build-debug)
+include_directories(fltk-1.3.5/cmake-build-debug/FL)
+include_directories(fltk-1.3.5/cmake-build-debug/test)
+include_directories(fltk-1.3.5/FL)
+include_directories(fltk-1.3.5/fluid)
+include_directories(fltk-1.3.5/GL)
+include_directories(fltk-1.3.5/ide/VisualC2008)
+include_directories(fltk-1.3.5/ide/VisualC2010)
+include_directories(fltk-1.3.5/ide/VisualC6)
+include_directories(fltk-1.3.5/ide/Xcode4)
+include_directories("fltk-1.3.5/ide/Xcode4/Project Templates/FLTK Application/FLTK 1.3")
+include_directories(fltk-1.3.5/jpeg)
+include_directories(fltk-1.3.5/png)
+include_directories(fltk-1.3.5/src)
+include_directories(fltk-1.3.5/src/xutf8)
+include_directories(fltk-1.3.5/src/xutf8/headers)
+include_directories(fltk-1.3.5/src/xutf8/lcUniConv)
+include_directories(fltk-1.3.5/test)
+include_directories(fltk-1.3.5/zlib)
+include_directories(Gettext/include)
+include_directories(Gettext/share/gettext)
+include_directories(Gettext/share/gettext/intl)
+include_directories(gnutls)
+include_directories(gnutls/lib)
+include_directories(gnutls/lib/gnutls)
+include_directories(libjpeg-turbo-2.0.3)
+include_directories(libjpeg-turbo-2.0.3/cmake-build-debug)
+include_directories(libjpeg-turbo-2.0.3/java)
+include_directories(libjpeg-turbo-2.0.3/md5)
+include_directories(libjpeg-turbo-2.0.3/simd)
+include_directories(libjpeg-turbo-2.0.3/simd/loongson)
+include_directories(libjpeg-turbo-2.0.3/simd/mips)
+include_directories(libjpeg-turbo-2.0.3/simd/nasm)
+include_directories(libjpeg-turbo-2.0.3/simd/powerpc)
+include_directories(libjpeg-turbo-2.0.3/testimages)
+include_directories(tigervnc/cmake-build-debug)
+include_directories(tigervnc/cmake-build-debug/win)
+include_directories(tigervnc/common/network)
+include_directories(tigervnc/common/os)
+include_directories(tigervnc/common/rdr)
+include_directories(tigervnc/common/rfb)
+include_directories(tigervnc/common/Xregion)
+include_directories(tigervnc/Debug)
+include_directories(tigervnc/tests/perf)
+include_directories(tigervnc/unix/common)
+include_directories(tigervnc/unix/tx)
+include_directories(tigervnc/unix/vncconfig)
+include_directories(tigervnc/unix/x0vncserver)
+include_directories(tigervnc/unix/xserver/hw/vnc)
+include_directories(tigervnc/vncviewer)
+include_directories(tigervnc/win/logmessages)
+include_directories(tigervnc/win/rfb_win32)
+include_directories(tigervnc/win/vncconfig)
+include_directories(tigervnc/win/winvnc)
+include_directories(tigervnc/win/wm_hooks)
+include_directories(zlib-1.2.11)
+include_directories(zlib-1.2.11/contrib/blast)
+include_directories(zlib-1.2.11/contrib/infback9)
+include_directories(zlib-1.2.11/contrib/iostream)
+include_directories(zlib-1.2.11/contrib/iostream2)
+include_directories(zlib-1.2.11/contrib/iostream3)
+include_directories(zlib-1.2.11/contrib/minizip)
+include_directories(zlib-1.2.11/contrib/puff)
+include_directories(zlib-1.2.11/examples)
 
-include(CheckIncludeFiles)
-include(CheckFunctionExists)
-include(CheckLibraryExists)
-include(CheckTypeSize)
-include(CheckCSourceCompiles)
-include(CheckCXXSourceCompiles)
-include(CheckCSourceRuns)
-
-include(CMakeMacroLibtoolFile)
-
-project(tigervnc)
-set(VERSION 1.10.80)
-
-# The RC version must always be four comma-separated numbers
-set(RCVERSION 1,10,80,0)
-
-# Installation paths
-set(BIN_DIR "${CMAKE_INSTALL_PREFIX}/bin")
-set(DATA_DIR "${CMAKE_INSTALL_PREFIX}/share")
-set(MAN_DIR "${DATA_DIR}/man")
-set(LOCALE_DIR "${DATA_DIR}/locale")
-set(DOC_DIR "${CMAKE_INSTALL_PREFIX}/share/doc/${CMAKE_PROJECT_NAME}-${VERSION}")
-
-set(ZLIB_LIBRARY "d:/vnc/zlib-1.2.11/libz.a")
-set(ZLIB_INCLUDE_DIR "d:/vnc/zlib-1.2.11")
-set(JPEG_LIBRARY "d:/vnc/libjpeg-turbo-2.0.3/cmake-build-debug/libjpeg.a")
-set(JPEG_INCLUDE_DIR "d:/vnc/libjpeg-turbo-2.0.3")
-set(FLTK_BASE_LIBRARY "d:/vnc/fltk-1.3.5/cmake-build-debug/lib/libfltk.a")
-set(FLTK_IMAGES_LIBRARY "d:/vnc/fltk-1.3.5/cmake-build-debug/lib/libfltk_images.a")
-set(FLTK_INCLUDE_DIR "d:/vnc/fltk-1.3.5")
-set(GETTEXT_INCLUDE_DIR "d:/vnc/Gettext/include")
-add_subdirectory(manager)
-
-if(WIN32)
-set(BIN_DIR "${CMAKE_INSTALL_PREFIX}")
-set(DOC_DIR "${CMAKE_INSTALL_PREFIX}")
-endif()
-
-if(MSVC)
-  message(FATAL_ERROR "TigerVNC cannot be built with Visual Studio.  Please use MinGW")
-endif()
-
-if(NOT BUILD_TIMESTAMP)
-  STRING(TIMESTAMP BUILD_TIMESTAMP "%Y-%m-%d %H:%M" UTC)
-endif()
-
-# Default to optimised builds instead of programs ones. Our code has no bugs ;)
-# (CMake makes it fairly easy to toggle this back to programs if needed)
-if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Release)
-endif()
-
-message(STATUS "CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
-
-message(STATUS "VERSION = ${VERSION}")
-message(STATUS "BUILD_TIMESTAMP = ${BUILD_TIMESTAMP}")
-add_definitions(-DBUILD_TIMESTAMP="${BUILD_TIMESTAMP}")
-
-# We want to keep our asserts even in release builds so remove NDEBUG
-set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -UNDEBUG")
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -UNDEBUG")
-set(CMAKE_C_FLAGS_RELWITHDEBINFO "${CMAKE_C_FLAGS_RELWITHDEBINFO} -UNDEBUG")
-set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO} -UNDEBUG")
-set(CMAKE_C_FLAGS_MINSIZEREL "${CMAKE_C_FLAGS_MINSIZEREL} -UNDEBUG")
-set(CMAKE_CXX_FLAGS_MINSIZEREL "${CMAKE_CXX_FLAGS_MINSIZEREL} -UNDEBUG")
-
-# Make sure we get a sane C version
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=gnu99")
-
-# Tell the compiler to be stringent
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wformat=2")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wformat=2")
-# Make sure we catch these issues whilst developing
-IF(CMAKE_BUILD_TYPE MATCHES programs)
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
-ENDIF()
-
-option(ENABLE_ASAN "Enable address sanitizer support" OFF)
-if(ENABLE_ASAN AND NOT WIN32 AND NOT APPLE)
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
-endif()
-
-option(ENABLE_TSAN "Enable thread sanitizer support" OFF)
-if(ENABLE_TSAN AND NOT WIN32 AND NOT APPLE AND CMAKE_SIZEOF_VOID_P MATCHES 8)
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=thread")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=thread")
-endif()
-
-if(NOT DEFINED BUILD_WINVNC)
-  set(BUILD_WINVNC 1)
-endif()
-
-# Minimum version is Windows Vista/2008 (6.0)
-if(WIN32)
-  add_definitions(-D_WIN32_WINNT=0x0600)
-endif()
-
-if(CMAKE_SIZEOF_VOID_P MATCHES 8)
-  message(STATUS "64-bit build")
-else()
-  message(STATUS "32-bit build")
-endif()
-
-# Versions of CMake before 2.8.7 do not properly support resource compilation
-# with MinGW.  Boo!
-if(MINGW AND "${CMAKE_VERSION}" VERSION_LESS "2.8.7")
-  if(NOT DEFINED RC)
-    set(CMAKE_RC_COMPILER_INIT windres)
-  else()
-    set(CMAKE_RC_COMPILER_INIT ${RC})
-  endif()
-  enable_language(RC)
-  message(STATUS "Resource compiler: ${CMAKE_RC_COMPILER}")
-  set(CMAKE_RC_COMPILE_OBJECT
-    "<CMAKE_RC_COMPILER> <FLAGS> <DEFINES> -o <OBJECT> --output-format=coff <SOURCE>")
-endif()
-
-# MinGW64 has header support but no library support for IActiveDesktop, so we
-# need to check for both the header and library and use our own implementation
-# in common/os if either doesn't exist.
-if(WIN32)
-  check_c_source_compiles("#include <windows.h>\n#include <wininet.h>\n#include <shlobj.h>\nint main(int c, char** v) {IActiveDesktop iad; (void)iad; return 0;}" HAVE_ACTIVE_DESKTOP_H)
-  check_c_source_compiles("#include <windows.h>\n#include <wininet.h>\n#include <shlobj.h>\nint main(int c, char** v) {GUID i = CLSID_ActiveDesktop; (void)i; return 0;}" HAVE_ACTIVE_DESKTOP_L)
-endif()
-
-# X11 stuff. It's in a if() so that we can say REQUIRED
-if(UNIX AND NOT APPLE)
-  find_package(X11 REQUIRED)
-endif()
-
-# Check for zlib
-find_package(ZLIB REQUIRED)
-
-# Check for gettext
-option(ENABLE_NLS "Enable translation of program messages" ON)
-if(ENABLE_NLS)
-  # Tools
-  find_package(Gettext)
-
-  # Gettext needs iconv
-  find_package(Iconv)
-
-  if(ICONV_FOUND)
-    # Headers and libraries (copied from licq)
-    set(GETTEXT_FOUND FALSE)
-
-    find_path(GETTEXT_INCLUDE_DIR libintl.h)
-    if(GETTEXT_INCLUDE_DIR)
-      set(CMAKE_REQUIRED_LIBRARIES ${ICONV_LIBRARIES})
-      set(CMAKE_REQUIRED_FLAGS -fno-builtin-dgettext)
-      check_function_exists(dgettext LIBC_HAS_DGETTEXT)
-      if(LIBC_HAS_DGETTEXT)
-        set(GETTEXT_FOUND TRUE)
-      else()
-        find_library(LIBINTL_LIBRARY NAMES intl libintl)
-        if(LIBINTL_LIBRARY)
-          check_library_exists(${LIBINTL_LIBRARY} "dgettext" "" LIBINTL_HAS_DGETTEXT)
-          if(LIBINTL_HAS_DGETTEXT)
-            set(GETTEXT_LIBRARIES ${LIBINTL_LIBRARY} ${ICONV_LIBRARIES})
-            set(GETTEXT_FOUND TRUE)
-          endif()
-        endif()
-      endif()
-      set(CMAKE_REQUIRED_LIBRARIES)
-      set(CMAKE_REQUIRED_FLAGS)
-    endif()
-  endif()
-
-  if(NOT GETTEXT_FOUND OR NOT ICONV_FOUND)
-    message(WARNING "Gettext NOT found.  Native Language Support disabled.")
-    set(ENABLE_NLS 0)
-  endif()
-endif()
-
-# Check for libjpeg
-find_package(JPEG REQUIRED)
-
-# Warn if it doesn't seem to be the accelerated libjpeg that's found
-set(CMAKE_REQUIRED_LIBRARIES ${JPEG_LIBRARIES})
-set(CMAKE_REQUIRED_FLAGS -I${JPEG_INCLUDE_DIR})
-
-set(JPEG_TEST_SOURCE "\n
-  #include <stdio.h>\n
-  #include <jpeglib.h>\n
-  int main(void) {\n
-    struct jpeg_compress_struct cinfo;\n
-    struct jpeg_error_mgr jerr;\n
-    cinfo.err=jpeg_std_error(&jerr);\n
-    jpeg_create_compress(&cinfo);\n
-    cinfo.input_components = 3;\n
-    jpeg_set_defaults(&cinfo);\n
-    cinfo.in_color_space = JCS_EXT_RGB;\n
-    jpeg_default_colorspace(&cinfo);\n
-    return 0;\n
-  }")
-
-if(CMAKE_CROSSCOMPILING)
-  check_c_source_compiles("${JPEG_TEST_SOURCE}" FOUND_LIBJPEG_TURBO)
-else()
-  check_c_source_runs("${JPEG_TEST_SOURCE}" FOUND_LIBJPEG_TURBO)
-endif()
-
-set(CMAKE_REQUIRED_LIBRARIES)
-set(CMAKE_REQUIRED_FLAGS)
-set(CMAKE_REQUIRED_DEFINITIONS)
-
-if(NOT FOUND_LIBJPEG_TURBO)
-  message(STATUS "WARNING: You are not using libjpeg-turbo. Performance will suffer.")
-endif()
-
-include_directories(${JPEG_INCLUDE_DIR})
-
-option(BUILD_JAVA "Build Java version of the TigerVNC Viewer" FALSE)
-if(BUILD_JAVA)
-  add_subdirectory(java)
-endif()
-
-# Check for FLTK
-set(FLTK_SKIP_FLUID TRUE)
-set(FLTK_SKIP_OPENGL TRUE)
-set(FLTK_SKIP_FORMS TRUE)
-find_package(FLTK)
-
-if(UNIX AND NOT APPLE)
-  # No proper handling for extra X11 libs that FLTK might need...
-  if(X11_Xft_FOUND)
-    # Xft headers include references to fontconfig, so we need
-    # to link to that as well
-    find_library(FONTCONFIG_LIB fontconfig)
-    set(FLTK_LIBRARIES ${FLTK_LIBRARIES} ${X11_Xft_LIB} ${FONTCONFIG_LIB})
-  endif()
-  if(X11_Xinerama_FOUND)
-    set(FLTK_LIBRARIES ${FLTK_LIBRARIES} ${X11_Xinerama_LIB})
-  endif()
-  if(X11_Xfixes_FOUND)
-    set(FLTK_LIBRARIES ${FLTK_LIBRARIES} ${X11_Xfixes_LIB})
-  endif()
-  if(X11_Xcursor_FOUND)
-    set(FLTK_LIBRARIES ${FLTK_LIBRARIES} ${X11_Xcursor_LIB})
-  endif()
-  if(X11_Xrender_FOUND)
-    set(FLTK_LIBRARIES ${FLTK_LIBRARIES} ${X11_Xrender_LIB})
-  endif()
-endif()
-
-# Check for GNUTLS library
-option(ENABLE_GNUTLS "Enable protocol encryption and advanced authentication" ON)
-if(ENABLE_GNUTLS)
-  find_package(GnuTLS)
-  if (GNUTLS_FOUND)
-    include_directories(${GNUTLS_INCLUDE_DIR})
-    add_definitions("-DHAVE_GNUTLS")
-    add_definitions(${GNUTLS_DEFINITIONS})
-  endif()
-endif()
-
-# Check for PAM library
-option(ENABLE_PAM "Enable PAM authentication support" ON)
-if(ENABLE_PAM)
-  check_include_files(security/pam_appl.h HAVE_PAM_H)
-  set(CMAKE_REQUIRED_LIBRARIES -lpam)
-  check_function_exists(pam_start HAVE_PAM_START)
-  set(CMAKE_REQUIRED_LIBRARIES)
-  if(HAVE_PAM_H AND HAVE_PAM_START)
-    set(PAM_LIBS pam)
-  else()
-    set(ENABLE_PAM 0)
-  endif()
-endif()
-set(HAVE_PAM ${ENABLE_PAM})
-
-# Generate config.h and make sure the source finds it
-configure_file(config.h.in config.h)
-add_definitions(-DHAVE_CONFIG_H)
-include_directories(${CMAKE_BINARY_DIR})
-
-include(cmake/StaticBuild.cmake)
-
-add_subdirectory(common)
-
-if(WIN32)
-  add_subdirectory(win)
-else()
-  # No interest in building x related parts on Apple
-  if(NOT APPLE)
-    add_subdirectory(unix)
-  endif()
-endif()
-
-if(ENABLE_NLS)
-  add_subdirectory(po)
-endif()
-
-option(BUILD_VIEWER "Build TigerVNC viewer" ON)
-if(BUILD_VIEWER)
-  add_subdirectory(vncviewer)
-  add_subdirectory(media)
-endif()
-
-add_subdirectory(tests)
-
-
-include(cmake/BuildPackages.cmake)
-
-# uninstall
-configure_file("${CMAKE_SOURCE_DIR}/cmake/cmake_uninstall.cmake.in"
-  "cmake_uninstall.cmake" IMMEDIATE @ONLY)
-
-add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P cmake_uninstall.cmake)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+add_executable(vnc
+        fltk-1.3.5/cairo/Fl_Cairo.cxx
+        fltk-1.3.5/CMake/posixScandir.cxx
+        fltk-1.3.5/cmake-build-debug/bin/examples/browser.cxx
+        fltk-1.3.5/cmake-build-debug/bin/examples/editor.cxx
+        fltk-1.3.5/cmake-build-debug/FL/abi-version.h
+        fltk-1.3.5/cmake-build-debug/test/CubeViewUI.cxx
+        fltk-1.3.5/cmake-build-debug/test/CubeViewUI.h
+        fltk-1.3.5/cmake-build-debug/test/fast_slow.cxx
+        fltk-1.3.5/cmake-build-debug/test/fast_slow.h
+        fltk-1.3.5/cmake-build-debug/test/inactive.cxx
+        fltk-1.3.5/cmake-build-debug/test/inactive.h
+        fltk-1.3.5/cmake-build-debug/test/keyboard_ui.cxx
+        fltk-1.3.5/cmake-build-debug/test/keyboard_ui.h
+        fltk-1.3.5/cmake-build-debug/test/mandelbrot_ui.cxx
+        fltk-1.3.5/cmake-build-debug/test/mandelbrot_ui.h
+        fltk-1.3.5/cmake-build-debug/test/preferences.cxx
+        fltk-1.3.5/cmake-build-debug/test/preferences.h
+        fltk-1.3.5/cmake-build-debug/test/radio.cxx
+        fltk-1.3.5/cmake-build-debug/test/radio.h
+        fltk-1.3.5/cmake-build-debug/test/resize.cxx
+        fltk-1.3.5/cmake-build-debug/test/resize.h
+        fltk-1.3.5/cmake-build-debug/test/tabs.cxx
+        fltk-1.3.5/cmake-build-debug/test/tabs.h
+        fltk-1.3.5/cmake-build-debug/test/tree.cxx
+        fltk-1.3.5/cmake-build-debug/test/tree.h
+        fltk-1.3.5/cmake-build-debug/test/valuators.cxx
+        fltk-1.3.5/cmake-build-debug/test/valuators.h
+        fltk-1.3.5/cmake-build-debug/config.h
+        fltk-1.3.5/examples/clipboard.cxx
+        fltk-1.3.5/examples/fltk-versions.cxx
+        fltk-1.3.5/examples/howto-add_fd-and-popen.cxx
+        fltk-1.3.5/examples/howto-browser-with-icons.cxx
+        fltk-1.3.5/examples/howto-drag-and-drop.cxx
+        fltk-1.3.5/examples/howto-parse-args.cxx
+        fltk-1.3.5/examples/howto-text-over-image-button.cxx
+        fltk-1.3.5/examples/menubar-add.cxx
+        fltk-1.3.5/examples/nativefilechooser-simple-app.cxx
+        fltk-1.3.5/examples/OpenGL3-glut-test.cxx
+        fltk-1.3.5/examples/OpenGL3test.cxx
+        fltk-1.3.5/examples/progress-simple.cxx
+        fltk-1.3.5/examples/shapedwindow.cxx
+        fltk-1.3.5/examples/table-as-container.cxx
+        fltk-1.3.5/examples/table-simple.cxx
+        fltk-1.3.5/examples/table-sort.cxx
+        fltk-1.3.5/examples/table-spreadsheet-with-keyboard-nav.cxx
+        fltk-1.3.5/examples/table-spreadsheet.cxx
+        fltk-1.3.5/examples/table-with-keynav.cxx
+        fltk-1.3.5/examples/tabs-simple.cxx
+        fltk-1.3.5/examples/textdisplay-with-colors.cxx
+        fltk-1.3.5/examples/texteditor-simple.cxx
+        fltk-1.3.5/examples/tree-as-container.cxx
+        fltk-1.3.5/examples/tree-custom-draw-items.cxx
+        fltk-1.3.5/examples/tree-custom-sort.cxx
+        fltk-1.3.5/examples/tree-of-tables.cxx
+        fltk-1.3.5/examples/tree-simple.cxx
+        fltk-1.3.5/examples/wizard-simple.cxx
+        fltk-1.3.5/FL/abi-version.h
+        fltk-1.3.5/FL/dirent.h
+        fltk-1.3.5/FL/Enumerations.H
+        fltk-1.3.5/FL/filename.H
+        fltk-1.3.5/FL/Fl.H
+        fltk-1.3.5/FL/Fl_Adjuster.H
+        fltk-1.3.5/FL/fl_ask.H
+        fltk-1.3.5/FL/Fl_Bitmap.H
+        fltk-1.3.5/FL/Fl_BMP_Image.H
+        fltk-1.3.5/FL/Fl_Box.H
+        fltk-1.3.5/FL/Fl_Browser.H
+        fltk-1.3.5/FL/Fl_Browser_.H
+        fltk-1.3.5/FL/Fl_Button.H
+        fltk-1.3.5/FL/Fl_Cairo.H
+        fltk-1.3.5/FL/Fl_Cairo_Window.H
+        fltk-1.3.5/FL/Fl_Chart.H
+        fltk-1.3.5/FL/Fl_Check_Browser.H
+        fltk-1.3.5/FL/Fl_Check_Button.H
+        fltk-1.3.5/FL/Fl_Choice.H
+        fltk-1.3.5/FL/Fl_Clock.H
+        fltk-1.3.5/FL/Fl_Color_Chooser.H
+        fltk-1.3.5/FL/Fl_Copy_Surface.H
+        fltk-1.3.5/FL/Fl_Counter.H
+        fltk-1.3.5/FL/Fl_Device.H
+        fltk-1.3.5/FL/Fl_Dial.H
+        fltk-1.3.5/FL/Fl_Double_Window.H
+        fltk-1.3.5/FL/fl_draw.H
+        fltk-1.3.5/FL/Fl_Export.H
+        fltk-1.3.5/FL/Fl_File_Browser.H
+        fltk-1.3.5/FL/Fl_File_Chooser.H
+        fltk-1.3.5/FL/Fl_File_Icon.H
+        fltk-1.3.5/FL/Fl_File_Input.H
+        fltk-1.3.5/FL/Fl_Fill_Dial.H
+        fltk-1.3.5/FL/Fl_Fill_Slider.H
+        fltk-1.3.5/FL/Fl_Float_Input.H
+        fltk-1.3.5/FL/Fl_FormsBitmap.H
+        fltk-1.3.5/FL/Fl_FormsPixmap.H
+        fltk-1.3.5/FL/Fl_Free.H
+        fltk-1.3.5/FL/Fl_GIF_Image.H
+        fltk-1.3.5/FL/Fl_Gl_Window.H
+        fltk-1.3.5/FL/Fl_Group.H
+        fltk-1.3.5/FL/Fl_Help_Dialog.H
+        fltk-1.3.5/FL/Fl_Help_View.H
+        fltk-1.3.5/FL/Fl_Hold_Browser.H
+        fltk-1.3.5/FL/Fl_Hor_Fill_Slider.H
+        fltk-1.3.5/FL/Fl_Hor_Nice_Slider.H
+        fltk-1.3.5/FL/Fl_Hor_Slider.H
+        fltk-1.3.5/FL/Fl_Hor_Value_Slider.H
+        fltk-1.3.5/FL/Fl_Image.H
+        fltk-1.3.5/FL/Fl_Image_Surface.H
+        fltk-1.3.5/FL/Fl_Input.H
+        fltk-1.3.5/FL/Fl_Input_.H
+        fltk-1.3.5/FL/Fl_Input_Choice.H
+        fltk-1.3.5/FL/Fl_Int_Input.H
+        fltk-1.3.5/FL/Fl_JPEG_Image.H
+        fltk-1.3.5/FL/Fl_Light_Button.H
+        fltk-1.3.5/FL/Fl_Line_Dial.H
+        fltk-1.3.5/FL/Fl_Menu.H
+        fltk-1.3.5/FL/Fl_Menu_.H
+        fltk-1.3.5/FL/Fl_Menu_Bar.H
+        fltk-1.3.5/FL/Fl_Menu_Button.H
+        fltk-1.3.5/FL/Fl_Menu_Item.H
+        fltk-1.3.5/FL/Fl_Menu_Window.H
+        fltk-1.3.5/FL/fl_message.H
+        fltk-1.3.5/FL/Fl_Multi_Browser.H
+        fltk-1.3.5/FL/Fl_Multi_Label.H
+        fltk-1.3.5/FL/Fl_Multiline_Input.H
+        fltk-1.3.5/FL/Fl_Multiline_Output.H
+        fltk-1.3.5/FL/Fl_Native_File_Chooser.H
+        fltk-1.3.5/FL/Fl_Nice_Slider.H
+        fltk-1.3.5/FL/Fl_Object.H
+        fltk-1.3.5/FL/Fl_Output.H
+        fltk-1.3.5/FL/Fl_Overlay_Window.H
+        fltk-1.3.5/FL/Fl_Pack.H
+        fltk-1.3.5/FL/Fl_Paged_Device.H
+        fltk-1.3.5/FL/Fl_Pixmap.H
+        fltk-1.3.5/FL/Fl_Plugin.H
+        fltk-1.3.5/FL/Fl_PNG_Image.H
+        fltk-1.3.5/FL/Fl_PNM_Image.H
+        fltk-1.3.5/FL/Fl_Positioner.H
+        fltk-1.3.5/FL/Fl_PostScript.H
+        fltk-1.3.5/FL/Fl_Preferences.H
+        fltk-1.3.5/FL/Fl_Printer.H
+        fltk-1.3.5/FL/Fl_Progress.H
+        fltk-1.3.5/FL/Fl_Radio_Button.H
+        fltk-1.3.5/FL/Fl_Radio_Light_Button.H
+        fltk-1.3.5/FL/Fl_Radio_Round_Button.H
+        fltk-1.3.5/FL/Fl_Repeat_Button.H
+        fltk-1.3.5/FL/Fl_Return_Button.H
+        fltk-1.3.5/FL/Fl_RGB_Image.H
+        fltk-1.3.5/FL/Fl_Roller.H
+        fltk-1.3.5/FL/Fl_Round_Button.H
+        fltk-1.3.5/FL/Fl_Round_Clock.H
+        fltk-1.3.5/FL/Fl_Scroll.H
+        fltk-1.3.5/FL/Fl_Scrollbar.H
+        fltk-1.3.5/FL/Fl_Secret_Input.H
+        fltk-1.3.5/FL/Fl_Select_Browser.H
+        fltk-1.3.5/FL/Fl_Shared_Image.H
+        fltk-1.3.5/FL/fl_show_colormap.H
+        fltk-1.3.5/FL/fl_show_input.H
+        fltk-1.3.5/FL/Fl_Simple_Counter.H
+        fltk-1.3.5/FL/Fl_Single_Window.H
+        fltk-1.3.5/FL/Fl_Slider.H
+        fltk-1.3.5/FL/Fl_Spinner.H
+        fltk-1.3.5/FL/Fl_Sys_Menu_Bar.H
+        fltk-1.3.5/FL/Fl_Table.H
+        fltk-1.3.5/FL/Fl_Table_Row.H
+        fltk-1.3.5/FL/Fl_Tabs.H
+        fltk-1.3.5/FL/Fl_Text_Buffer.H
+        fltk-1.3.5/FL/Fl_Text_Display.H
+        fltk-1.3.5/FL/Fl_Text_Editor.H
+        fltk-1.3.5/FL/Fl_Tile.H
+        fltk-1.3.5/FL/Fl_Tiled_Image.H
+        fltk-1.3.5/FL/Fl_Timer.H
+        fltk-1.3.5/FL/Fl_Toggle_Button.H
+        fltk-1.3.5/FL/Fl_Toggle_Light_Button.H
+        fltk-1.3.5/FL/Fl_Toggle_Round_Button.H
+        fltk-1.3.5/FL/Fl_Tooltip.H
+        fltk-1.3.5/FL/Fl_Tree.H
+        fltk-1.3.5/FL/Fl_Tree_Item.H
+        fltk-1.3.5/FL/Fl_Tree_Item_Array.H
+        fltk-1.3.5/FL/Fl_Tree_Prefs.H
+        fltk-1.3.5/FL/fl_types.h
+        fltk-1.3.5/FL/fl_utf8.h
+        fltk-1.3.5/FL/Fl_Valuator.H
+        fltk-1.3.5/FL/Fl_Value_Input.H
+        fltk-1.3.5/FL/Fl_Value_Output.H
+        fltk-1.3.5/FL/Fl_Value_Slider.H
+        fltk-1.3.5/FL/Fl_Widget.H
+        fltk-1.3.5/FL/Fl_Window.H
+        fltk-1.3.5/FL/Fl_Wizard.H
+        fltk-1.3.5/FL/Fl_XBM_Image.H
+        fltk-1.3.5/FL/Fl_XPM_Image.H
+        fltk-1.3.5/FL/forms.H
+        fltk-1.3.5/FL/gl.h
+        fltk-1.3.5/FL/gl2opengl.h
+        fltk-1.3.5/FL/gl_draw.H
+        fltk-1.3.5/FL/glu.h
+        fltk-1.3.5/FL/glut.H
+        fltk-1.3.5/FL/mac.H
+        fltk-1.3.5/FL/math.h
+        fltk-1.3.5/FL/names.h
+        fltk-1.3.5/FL/platform.H
+        fltk-1.3.5/FL/win32.H
+        fltk-1.3.5/FL/x.H
+        fltk-1.3.5/fluid/about_panel.cxx
+        fltk-1.3.5/fluid/about_panel.h
+        fltk-1.3.5/fluid/align_widget.cxx
+        fltk-1.3.5/fluid/alignment_panel.cxx
+        fltk-1.3.5/fluid/alignment_panel.h
+        fltk-1.3.5/fluid/code.cxx
+        fltk-1.3.5/fluid/CodeEditor.cxx
+        fltk-1.3.5/fluid/CodeEditor.h
+        fltk-1.3.5/fluid/comments.h
+        fltk-1.3.5/fluid/ExternalCodeEditor_UNIX.cxx
+        fltk-1.3.5/fluid/ExternalCodeEditor_UNIX.h
+        fltk-1.3.5/fluid/ExternalCodeEditor_WIN32.cxx
+        fltk-1.3.5/fluid/ExternalCodeEditor_WIN32.h
+        fltk-1.3.5/fluid/factory.cxx
+        fltk-1.3.5/fluid/file.cxx
+        fltk-1.3.5/fluid/Fl_Function_Type.cxx
+        fltk-1.3.5/fluid/Fl_Group_Type.cxx
+        fltk-1.3.5/fluid/Fl_Menu_Type.cxx
+        fltk-1.3.5/fluid/Fl_Type.cxx
+        fltk-1.3.5/fluid/Fl_Type.h
+        fltk-1.3.5/fluid/Fl_Widget_Type.cxx
+        fltk-1.3.5/fluid/Fl_Widget_Type.h
+        fltk-1.3.5/fluid/Fl_Window_Type.cxx
+        fltk-1.3.5/fluid/fluid.cxx
+        fltk-1.3.5/fluid/Fluid_Image.cxx
+        fltk-1.3.5/fluid/Fluid_Image.h
+        fltk-1.3.5/fluid/function_panel.cxx
+        fltk-1.3.5/fluid/function_panel.h
+        fltk-1.3.5/fluid/print_panel.cxx
+        fltk-1.3.5/fluid/print_panel.h
+        fltk-1.3.5/fluid/Shortcut_Button.h
+        fltk-1.3.5/fluid/template_panel.cxx
+        fltk-1.3.5/fluid/template_panel.h
+        fltk-1.3.5/fluid/undo.cxx
+        fltk-1.3.5/fluid/undo.h
+        fltk-1.3.5/fluid/widget_panel.cxx
+        fltk-1.3.5/fluid/widget_panel.h
+        fltk-1.3.5/GL/glut.h
+        fltk-1.3.5/ide/VisualC2008/config.h
+        fltk-1.3.5/ide/VisualC2010/config.h
+        fltk-1.3.5/ide/VisualC6/config.h
+        "fltk-1.3.5/ide/Xcode4/Project Templates/FLTK Application/FLTK 1.3/main.cpp"
+        "fltk-1.3.5/ide/Xcode4/Project Templates/FLTK Application/FLTK 1.3/main.h"
+        fltk-1.3.5/ide/Xcode4/config.h
+        fltk-1.3.5/ide/Xcode4/fltk.pch
+        fltk-1.3.5/jpeg/jaricom.c
+        fltk-1.3.5/jpeg/jcapimin.c
+        fltk-1.3.5/jpeg/jcapistd.c
+        fltk-1.3.5/jpeg/jcarith.c
+        fltk-1.3.5/jpeg/jccoefct.c
+        fltk-1.3.5/jpeg/jccolor.c
+        fltk-1.3.5/jpeg/jcdctmgr.c
+        fltk-1.3.5/jpeg/jchuff.c
+        fltk-1.3.5/jpeg/jcinit.c
+        fltk-1.3.5/jpeg/jcmainct.c
+        fltk-1.3.5/jpeg/jcmarker.c
+        fltk-1.3.5/jpeg/jcmaster.c
+        fltk-1.3.5/jpeg/jcomapi.c
+        fltk-1.3.5/jpeg/jconfig.h
+        fltk-1.3.5/jpeg/jcparam.c
+        fltk-1.3.5/jpeg/jcprepct.c
+        fltk-1.3.5/jpeg/jcsample.c
+        fltk-1.3.5/jpeg/jctrans.c
+        fltk-1.3.5/jpeg/jdapimin.c
+        fltk-1.3.5/jpeg/jdapistd.c
+        fltk-1.3.5/jpeg/jdarith.c
+        fltk-1.3.5/jpeg/jdatadst.c
+        fltk-1.3.5/jpeg/jdatasrc.c
+        fltk-1.3.5/jpeg/jdcoefct.c
+        fltk-1.3.5/jpeg/jdcolor.c
+        fltk-1.3.5/jpeg/jdct.h
+        fltk-1.3.5/jpeg/jddctmgr.c
+        fltk-1.3.5/jpeg/jdhuff.c
+        fltk-1.3.5/jpeg/jdinput.c
+        fltk-1.3.5/jpeg/jdmainct.c
+        fltk-1.3.5/jpeg/jdmarker.c
+        fltk-1.3.5/jpeg/jdmaster.c
+        fltk-1.3.5/jpeg/jdmerge.c
+        fltk-1.3.5/jpeg/jdpostct.c
+        fltk-1.3.5/jpeg/jdsample.c
+        fltk-1.3.5/jpeg/jdtrans.c
+        fltk-1.3.5/jpeg/jerror.c
+        fltk-1.3.5/jpeg/jerror.h
+        fltk-1.3.5/jpeg/jfdctflt.c
+        fltk-1.3.5/jpeg/jfdctfst.c
+        fltk-1.3.5/jpeg/jfdctint.c
+        fltk-1.3.5/jpeg/jidctflt.c
+        fltk-1.3.5/jpeg/jidctfst.c
+        fltk-1.3.5/jpeg/jidctint.c
+        fltk-1.3.5/jpeg/jinclude.h
+        fltk-1.3.5/jpeg/jmemmgr.c
+        fltk-1.3.5/jpeg/jmemnobs.c
+        fltk-1.3.5/jpeg/jmemsys.h
+        fltk-1.3.5/jpeg/jmorecfg.h
+        fltk-1.3.5/jpeg/jpegint.h
+        fltk-1.3.5/jpeg/jpeglib.h
+        fltk-1.3.5/jpeg/jquant1.c
+        fltk-1.3.5/jpeg/jquant2.c
+        fltk-1.3.5/jpeg/jutils.c
+        fltk-1.3.5/jpeg/jversion.h
+        fltk-1.3.5/misc/doxystar.cxx
+        fltk-1.3.5/png/png.c
+        fltk-1.3.5/png/png.h
+        fltk-1.3.5/png/pngconf.h
+        fltk-1.3.5/png/pngdebug.h
+        fltk-1.3.5/png/pngerror.c
+        fltk-1.3.5/png/pngget.c
+        fltk-1.3.5/png/pnginfo.h
+        fltk-1.3.5/png/pnglibconf.h
+        fltk-1.3.5/png/pngmem.c
+        fltk-1.3.5/png/pngpread.c
+        fltk-1.3.5/png/pngpriv.h
+        fltk-1.3.5/png/pngread.c
+        fltk-1.3.5/png/pngrio.c
+        fltk-1.3.5/png/pngrtran.c
+        fltk-1.3.5/png/pngrutil.c
+        fltk-1.3.5/png/pngset.c
+        fltk-1.3.5/png/pngstruct.h
+        fltk-1.3.5/png/pngtrans.c
+        fltk-1.3.5/png/pngwio.c
+        fltk-1.3.5/png/pngwrite.c
+        fltk-1.3.5/png/pngwtran.c
+        fltk-1.3.5/png/pngwutil.c
+        fltk-1.3.5/src/xutf8/headers/case.h
+        fltk-1.3.5/src/xutf8/headers/dingbats_.h
+        fltk-1.3.5/src/xutf8/headers/spacing.h
+        fltk-1.3.5/src/xutf8/headers/symbol_.h
+        fltk-1.3.5/src/xutf8/lcUniConv/8bit_tab_to_h.c
+        fltk-1.3.5/src/xutf8/lcUniConv/armscii_8.h
+        fltk-1.3.5/src/xutf8/lcUniConv/ascii.h
+        fltk-1.3.5/src/xutf8/lcUniConv/big5.h
+        fltk-1.3.5/src/xutf8/lcUniConv/big5_emacs.h
+        fltk-1.3.5/src/xutf8/lcUniConv/cjk_tab_to_h.c
+        fltk-1.3.5/src/xutf8/lcUniConv/cp1133.h
+        fltk-1.3.5/src/xutf8/lcUniConv/cp1251.h
+        fltk-1.3.5/src/xutf8/lcUniConv/cp1255.h
+        fltk-1.3.5/src/xutf8/lcUniConv/cp1256.h
+        fltk-1.3.5/src/xutf8/lcUniConv/cp936ext.h
+        fltk-1.3.5/src/xutf8/lcUniConv/gb2312.h
+        fltk-1.3.5/src/xutf8/lcUniConv/gbk_tab_to_h.c
+        fltk-1.3.5/src/xutf8/lcUniConv/georgian_academy.h
+        fltk-1.3.5/src/xutf8/lcUniConv/georgian_ps.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_1.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_10.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_11.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_13.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_14.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_15.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_16.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_2.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_3.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_4.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_5.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_6.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_7.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_8.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_9.h
+        fltk-1.3.5/src/xutf8/lcUniConv/iso8859_9e.h
+        fltk-1.3.5/src/xutf8/lcUniConv/jisx0201.h
+        fltk-1.3.5/src/xutf8/lcUniConv/jisx0208.h
+        fltk-1.3.5/src/xutf8/lcUniConv/jisx0212.h
+        fltk-1.3.5/src/xutf8/lcUniConv/koi8_c.h
+        fltk-1.3.5/src/xutf8/lcUniConv/koi8_r.h
+        fltk-1.3.5/src/xutf8/lcUniConv/koi8_u.h
+        fltk-1.3.5/src/xutf8/lcUniConv/ksc5601.h
+        fltk-1.3.5/src/xutf8/lcUniConv/mulelao.h
+        fltk-1.3.5/src/xutf8/lcUniConv/tatar_cyr.h
+        fltk-1.3.5/src/xutf8/lcUniConv/tcvn.h
+        fltk-1.3.5/src/xutf8/lcUniConv/tis620.h
+        fltk-1.3.5/src/xutf8/lcUniConv/ucs2be.h
+        fltk-1.3.5/src/xutf8/lcUniConv/utf8.h
+        fltk-1.3.5/src/xutf8/lcUniConv/viscii.h
+        fltk-1.3.5/src/xutf8/utils/conv_gen.c
+        fltk-1.3.5/src/xutf8/utils/convert_map.c
+        fltk-1.3.5/src/xutf8/utils/create_table.c
+        fltk-1.3.5/src/xutf8/utils/euc_tw.c
+        fltk-1.3.5/src/xutf8/case.c
+        fltk-1.3.5/src/xutf8/fl_wcwidth.c
+        fltk-1.3.5/src/xutf8/imKStoUCS.c
+        fltk-1.3.5/src/xutf8/is_right2left.c
+        fltk-1.3.5/src/xutf8/is_spacing.c
+        fltk-1.3.5/src/xutf8/keysym2Ucs.c
+        fltk-1.3.5/src/xutf8/mk_wcwidth.c
+        fltk-1.3.5/src/xutf8/test.c
+        fltk-1.3.5/src/xutf8/test2.c
+        fltk-1.3.5/src/xutf8/ucs2fontmap.c
+        fltk-1.3.5/src/xutf8/utf8Input.c
+        fltk-1.3.5/src/xutf8/utf8Utils.c
+        fltk-1.3.5/src/xutf8/utf8Wrap.c
+        fltk-1.3.5/src/xutf8/Ximint.h
+        fltk-1.3.5/src/xutf8/Xlibint.h
+        fltk-1.3.5/src/cgdebug.h
+        fltk-1.3.5/src/cmap.cxx
+        fltk-1.3.5/src/dump_compose.c
+        fltk-1.3.5/src/fastarrow.h
+        fltk-1.3.5/src/filename_absolute.cxx
+        fltk-1.3.5/src/filename_expand.cxx
+        fltk-1.3.5/src/filename_ext.cxx
+        fltk-1.3.5/src/filename_isdir.cxx
+        fltk-1.3.5/src/filename_list.cxx
+        fltk-1.3.5/src/filename_match.cxx
+        fltk-1.3.5/src/filename_setext.cxx
+        fltk-1.3.5/src/Fl.cxx
+        fltk-1.3.5/src/Fl_abort.cxx
+        fltk-1.3.5/src/Fl_add_idle.cxx
+        fltk-1.3.5/src/Fl_Adjuster.cxx
+        fltk-1.3.5/src/fl_arc.cxx
+        fltk-1.3.5/src/fl_arci.cxx
+        fltk-1.3.5/src/Fl_arg.cxx
+        fltk-1.3.5/src/fl_ask.cxx
+        fltk-1.3.5/src/Fl_Bitmap.cxx
+        fltk-1.3.5/src/Fl_BMP_Image.cxx
+        fltk-1.3.5/src/Fl_Box.cxx
+        fltk-1.3.5/src/fl_boxtype.cxx
+        fltk-1.3.5/src/Fl_Browser.cxx
+        fltk-1.3.5/src/Fl_Browser_.cxx
+        fltk-1.3.5/src/Fl_Browser_load.cxx
+        fltk-1.3.5/src/Fl_Button.cxx
+        fltk-1.3.5/src/fl_call_main.c
+        fltk-1.3.5/src/Fl_Chart.cxx
+        fltk-1.3.5/src/Fl_Check_Browser.cxx
+        fltk-1.3.5/src/Fl_Check_Button.cxx
+        fltk-1.3.5/src/Fl_Choice.cxx
+        fltk-1.3.5/src/Fl_Clock.cxx
+        fltk-1.3.5/src/fl_cmap.h
+        fltk-1.3.5/src/Fl_cocoa.mm
+        fltk-1.3.5/src/fl_color.cxx
+        fltk-1.3.5/src/Fl_Color_Chooser.cxx
+        fltk-1.3.5/src/fl_color_mac.cxx
+        fltk-1.3.5/src/fl_color_win32.cxx
+        fltk-1.3.5/src/Fl_compose.cxx
+        fltk-1.3.5/src/Fl_Copy_Surface.cxx
+        fltk-1.3.5/src/Fl_Counter.cxx
+        fltk-1.3.5/src/fl_cursor.cxx
+        fltk-1.3.5/src/fl_curve.cxx
+        fltk-1.3.5/src/Fl_Device.cxx
+        fltk-1.3.5/src/Fl_Dial.cxx
+        fltk-1.3.5/src/fl_diamond_box.cxx
+        fltk-1.3.5/src/Fl_display.cxx
+        fltk-1.3.5/src/fl_dnd.cxx
+        fltk-1.3.5/src/fl_dnd_win32.cxx
+        fltk-1.3.5/src/fl_dnd_x.cxx
+        fltk-1.3.5/src/Fl_Double_Window.cxx
+        fltk-1.3.5/src/fl_draw.cxx
+        fltk-1.3.5/src/fl_draw_image.cxx
+        fltk-1.3.5/src/fl_draw_image_mac.cxx
+        fltk-1.3.5/src/fl_draw_image_win32.cxx
+        fltk-1.3.5/src/fl_draw_pixmap.cxx
+        fltk-1.3.5/src/fl_encoding_latin1.cxx
+        fltk-1.3.5/src/fl_encoding_mac_roman.cxx
+        fltk-1.3.5/src/fl_engraved_label.cxx
+        fltk-1.3.5/src/Fl_File_Browser.cxx
+        fltk-1.3.5/src/Fl_File_Chooser.cxx
+        fltk-1.3.5/src/Fl_File_Chooser2.cxx
+        fltk-1.3.5/src/fl_file_dir.cxx
+        fltk-1.3.5/src/Fl_File_Icon.cxx
+        fltk-1.3.5/src/Fl_File_Icon2.cxx
+        fltk-1.3.5/src/Fl_File_Input.cxx
+        fltk-1.3.5/src/fl_font.cxx
+        fltk-1.3.5/src/Fl_Font.H
+        fltk-1.3.5/src/fl_font_mac.cxx
+        fltk-1.3.5/src/fl_font_win32.cxx
+        fltk-1.3.5/src/fl_font_x.cxx
+        fltk-1.3.5/src/fl_font_xft.cxx
+        fltk-1.3.5/src/Fl_GDI_Printer.cxx
+        fltk-1.3.5/src/Fl_get_key.cxx
+        fltk-1.3.5/src/Fl_get_key_mac.cxx
+        fltk-1.3.5/src/Fl_get_key_win32.cxx
+        fltk-1.3.5/src/Fl_get_system_colors.cxx
+        fltk-1.3.5/src/Fl_GIF_Image.cxx
+        fltk-1.3.5/src/Fl_Gl_Choice.cxx
+        fltk-1.3.5/src/Fl_Gl_Choice.H
+        fltk-1.3.5/src/Fl_Gl_Device_Plugin.cxx
+        fltk-1.3.5/src/Fl_Gl_Overlay.cxx
+        fltk-1.3.5/src/Fl_Gl_Window.cxx
+        fltk-1.3.5/src/fl_gleam.cxx
+        fltk-1.3.5/src/Fl_grab.cxx
+        fltk-1.3.5/src/Fl_Group.cxx
+        fltk-1.3.5/src/fl_gtk.cxx
+        fltk-1.3.5/src/Fl_Help_Dialog.cxx
+        fltk-1.3.5/src/Fl_Help_Dialog_Dox.cxx
+        fltk-1.3.5/src/Fl_Help_View.cxx
+        fltk-1.3.5/src/Fl_Image.cxx
+        fltk-1.3.5/src/Fl_Image_Surface.cxx
+        fltk-1.3.5/src/fl_images_core.cxx
+        fltk-1.3.5/src/Fl_Input.cxx
+        fltk-1.3.5/src/Fl_Input_.cxx
+        fltk-1.3.5/src/Fl_JPEG_Image.cxx
+        fltk-1.3.5/src/fl_labeltype.cxx
+        fltk-1.3.5/src/Fl_Light_Button.cxx
+        fltk-1.3.5/src/fl_line_style.cxx
+        fltk-1.3.5/src/Fl_lock.cxx
+        fltk-1.3.5/src/Fl_Menu.cxx
+        fltk-1.3.5/src/Fl_Menu_.cxx
+        fltk-1.3.5/src/Fl_Menu_add.cxx
+        fltk-1.3.5/src/Fl_Menu_Bar.cxx
+        fltk-1.3.5/src/Fl_Menu_Button.cxx
+        fltk-1.3.5/src/Fl_Menu_global.cxx
+        fltk-1.3.5/src/Fl_Menu_Window.cxx
+        fltk-1.3.5/src/Fl_Multi_Label.cxx
+        fltk-1.3.5/src/Fl_Native_File_Chooser.cxx
+        fltk-1.3.5/src/Fl_Native_File_Chooser_common.cxx
+        fltk-1.3.5/src/Fl_Native_File_Chooser_FLTK.cxx
+        fltk-1.3.5/src/Fl_Native_File_Chooser_GTK.cxx
+        fltk-1.3.5/src/Fl_Native_File_Chooser_MAC.mm
+        fltk-1.3.5/src/Fl_Native_File_Chooser_WIN32.cxx
+        fltk-1.3.5/src/fl_open_uri.cxx
+        fltk-1.3.5/src/fl_oval_box.cxx
+        fltk-1.3.5/src/fl_overlay.cxx
+        fltk-1.3.5/src/fl_overlay_visual.cxx
+        fltk-1.3.5/src/Fl_Overlay_Window.cxx
+        fltk-1.3.5/src/Fl_own_colormap.cxx
+        fltk-1.3.5/src/Fl_Pack.cxx
+        fltk-1.3.5/src/Fl_Paged_Device.cxx
+        fltk-1.3.5/src/Fl_Pixmap.cxx
+        fltk-1.3.5/src/fl_plastic.cxx
+        fltk-1.3.5/src/Fl_PNG_Image.cxx
+        fltk-1.3.5/src/Fl_PNM_Image.cxx
+        fltk-1.3.5/src/Fl_Positioner.cxx
+        fltk-1.3.5/src/Fl_PostScript.cxx
+        fltk-1.3.5/src/Fl_Preferences.cxx
+        fltk-1.3.5/src/Fl_Printer.cxx
+        fltk-1.3.5/src/Fl_Progress.cxx
+        fltk-1.3.5/src/Fl_Quartz_Printer.mm
+        fltk-1.3.5/src/fl_read_image.cxx
+        fltk-1.3.5/src/fl_read_image_mac.cxx
+        fltk-1.3.5/src/fl_read_image_win32.cxx
+        fltk-1.3.5/src/fl_rect.cxx
+        fltk-1.3.5/src/Fl_Repeat_Button.cxx
+        fltk-1.3.5/src/Fl_Return_Button.cxx
+        fltk-1.3.5/src/Fl_Roller.cxx
+        fltk-1.3.5/src/fl_round_box.cxx
+        fltk-1.3.5/src/Fl_Round_Button.cxx
+        fltk-1.3.5/src/fl_rounded_box.cxx
+        fltk-1.3.5/src/Fl_Scroll.cxx
+        fltk-1.3.5/src/fl_scroll_area.cxx
+        fltk-1.3.5/src/Fl_Scrollbar.cxx
+        fltk-1.3.5/src/fl_set_font.cxx
+        fltk-1.3.5/src/fl_set_fonts.cxx
+        fltk-1.3.5/src/fl_set_fonts_mac.cxx
+        fltk-1.3.5/src/fl_set_fonts_win32.cxx
+        fltk-1.3.5/src/fl_set_fonts_x.cxx
+        fltk-1.3.5/src/fl_set_fonts_xft.cxx
+        fltk-1.3.5/src/fl_shadow_box.cxx
+        fltk-1.3.5/src/Fl_Shared_Image.cxx
+        fltk-1.3.5/src/fl_shortcut.cxx
+        fltk-1.3.5/src/fl_show_colormap.cxx
+        fltk-1.3.5/src/Fl_Single_Window.cxx
+        fltk-1.3.5/src/Fl_Slider.cxx
+        fltk-1.3.5/src/fl_symbols.cxx
+        fltk-1.3.5/src/Fl_Sys_Menu_Bar.mm
+        fltk-1.3.5/src/Fl_Table.cxx
+        fltk-1.3.5/src/Fl_Table_Row.cxx
+        fltk-1.3.5/src/Fl_Tabs.cxx
+        fltk-1.3.5/src/Fl_Text_Buffer.cxx
+        fltk-1.3.5/src/Fl_Text_Display.cxx
+        fltk-1.3.5/src/Fl_Text_Editor.cxx
+        fltk-1.3.5/src/Fl_Tile.cxx
+        fltk-1.3.5/src/Fl_Tiled_Image.cxx
+        fltk-1.3.5/src/Fl_Tooltip.cxx
+        fltk-1.3.5/src/Fl_Tree.cxx
+        fltk-1.3.5/src/Fl_Tree_Item.cxx
+        fltk-1.3.5/src/Fl_Tree_Item_Array.cxx
+        fltk-1.3.5/src/Fl_Tree_Prefs.cxx
+        fltk-1.3.5/src/fl_utf.c
+        fltk-1.3.5/src/fl_utf8.cxx
+        fltk-1.3.5/src/Fl_Valuator.cxx
+        fltk-1.3.5/src/Fl_Value_Input.cxx
+        fltk-1.3.5/src/Fl_Value_Output.cxx
+        fltk-1.3.5/src/Fl_Value_Slider.cxx
+        fltk-1.3.5/src/fl_vertex.cxx
+        fltk-1.3.5/src/Fl_visual.cxx
+        fltk-1.3.5/src/Fl_Widget.cxx
+        fltk-1.3.5/src/Fl_win32.cxx
+        fltk-1.3.5/src/Fl_Window.cxx
+        fltk-1.3.5/src/Fl_Window_fullscreen.cxx
+        fltk-1.3.5/src/Fl_Window_hotspot.cxx
+        fltk-1.3.5/src/Fl_Window_iconize.cxx
+        fltk-1.3.5/src/Fl_Window_shape.cxx
+        fltk-1.3.5/src/Fl_Wizard.cxx
+        fltk-1.3.5/src/Fl_x.cxx
+        fltk-1.3.5/src/Fl_XBM_Image.cxx
+        fltk-1.3.5/src/Fl_XColor.H
+        fltk-1.3.5/src/Fl_XPM_Image.cxx
+        fltk-1.3.5/src/flstring.c
+        fltk-1.3.5/src/flstring.h
+        fltk-1.3.5/src/forms_bitmap.cxx
+        fltk-1.3.5/src/forms_compatability.cxx
+        fltk-1.3.5/src/forms_free.cxx
+        fltk-1.3.5/src/forms_fselect.cxx
+        fltk-1.3.5/src/forms_pixmap.cxx
+        fltk-1.3.5/src/forms_timer.cxx
+        fltk-1.3.5/src/freeglut_geometry.cxx
+        fltk-1.3.5/src/freeglut_stroke_mono_roman.cxx
+        fltk-1.3.5/src/freeglut_stroke_roman.cxx
+        fltk-1.3.5/src/freeglut_teapot.cxx
+        fltk-1.3.5/src/freeglut_teapot_data.h
+        fltk-1.3.5/src/gl_draw.cxx
+        fltk-1.3.5/src/gl_start.cxx
+        fltk-1.3.5/src/glut_compatability.cxx
+        fltk-1.3.5/src/glut_font.cxx
+        fltk-1.3.5/src/mediumarrow.h
+        fltk-1.3.5/src/numericsort.c
+        fltk-1.3.5/src/print_panel.cxx
+        fltk-1.3.5/src/print_panel.h
+        fltk-1.3.5/src/ps_image.cxx
+        fltk-1.3.5/src/scandir.c
+        fltk-1.3.5/src/scandir_posix.c
+        fltk-1.3.5/src/scandir_win32.c
+        fltk-1.3.5/src/screen_xywh.cxx
+        fltk-1.3.5/src/slowarrow.h
+        fltk-1.3.5/src/vsnprintf.c
+        fltk-1.3.5/src/Xutf8.h
+        fltk-1.3.5/test/adjuster.cxx
+        fltk-1.3.5/test/animated.cxx
+        fltk-1.3.5/test/arc.cxx
+        fltk-1.3.5/test/ask.cxx
+        fltk-1.3.5/test/bitmap.cxx
+        fltk-1.3.5/test/blocks.cxx
+        fltk-1.3.5/test/boxtype.cxx
+        fltk-1.3.5/test/browser.cxx
+        fltk-1.3.5/test/button.cxx
+        fltk-1.3.5/test/buttons.cxx
+        fltk-1.3.5/test/cairo_test.cxx
+        fltk-1.3.5/test/checkers.cxx
+        fltk-1.3.5/test/clock.cxx
+        fltk-1.3.5/test/colbrowser.cxx
+        fltk-1.3.5/test/color_chooser.cxx
+        fltk-1.3.5/test/connect.cxx
+        fltk-1.3.5/test/cube.cxx
+        fltk-1.3.5/test/CubeMain.cxx
+        fltk-1.3.5/test/CubeView.cxx
+        fltk-1.3.5/test/CubeView.h
+        fltk-1.3.5/test/cursor.cxx
+        fltk-1.3.5/test/curve.cxx
+        fltk-1.3.5/test/demo.cxx
+        fltk-1.3.5/test/device.cxx
+        fltk-1.3.5/test/doublebuffer.cxx
+        fltk-1.3.5/test/editor.cxx
+        fltk-1.3.5/test/file_chooser.cxx
+        fltk-1.3.5/test/fonts.cxx
+        fltk-1.3.5/test/forms.cxx
+        fltk-1.3.5/test/fractals.cxx
+        fltk-1.3.5/test/fracviewer.cxx
+        fltk-1.3.5/test/fracviewer.h
+        fltk-1.3.5/test/fromdos.c
+        fltk-1.3.5/test/fullscreen.cxx
+        fltk-1.3.5/test/gl_overlay.cxx
+        fltk-1.3.5/test/glpuzzle.cxx
+        fltk-1.3.5/test/hello.cxx
+        fltk-1.3.5/test/help.cxx
+        fltk-1.3.5/test/icon.cxx
+        fltk-1.3.5/test/iconize.cxx
+        fltk-1.3.5/test/image.cxx
+        fltk-1.3.5/test/input.cxx
+        fltk-1.3.5/test/input_choice.cxx
+        fltk-1.3.5/test/keyboard.cxx
+        fltk-1.3.5/test/keyboard.h
+        fltk-1.3.5/test/label.cxx
+        fltk-1.3.5/test/line_style.cxx
+        fltk-1.3.5/test/list_visuals.cxx
+        fltk-1.3.5/test/mandelbrot.cxx
+        fltk-1.3.5/test/mandelbrot.h
+        fltk-1.3.5/test/menubar.cxx
+        fltk-1.3.5/test/message.cxx
+        fltk-1.3.5/test/minimum.cxx
+        fltk-1.3.5/test/native-filechooser.cxx
+        fltk-1.3.5/test/navigation.cxx
+        fltk-1.3.5/test/offscreen.cxx
+        fltk-1.3.5/test/output.cxx
+        fltk-1.3.5/test/overlay.cxx
+        fltk-1.3.5/test/pack.cxx
+        fltk-1.3.5/test/pixmap.cxx
+        fltk-1.3.5/test/pixmap_browser.cxx
+        fltk-1.3.5/test/resizebox.cxx
+        fltk-1.3.5/test/rotated_text.cxx
+        fltk-1.3.5/test/scroll.cxx
+        fltk-1.3.5/test/shape.cxx
+        fltk-1.3.5/test/subwindow.cxx
+        fltk-1.3.5/test/sudoku.cxx
+        fltk-1.3.5/test/sudokurc.h
+        fltk-1.3.5/test/symbols.cxx
+        fltk-1.3.5/test/table.cxx
+        fltk-1.3.5/test/threads.cxx
+        fltk-1.3.5/test/threads.h
+        fltk-1.3.5/test/tile.cxx
+        fltk-1.3.5/test/tiled_image.cxx
+        fltk-1.3.5/test/trackball.c
+        fltk-1.3.5/test/trackball.h
+        fltk-1.3.5/test/twowin.cxx
+        fltk-1.3.5/test/unittest_about.cxx
+        fltk-1.3.5/test/unittest_circles.cxx
+        fltk-1.3.5/test/unittest_images.cxx
+        fltk-1.3.5/test/unittest_lines.cxx
+        fltk-1.3.5/test/unittest_points.cxx
+        fltk-1.3.5/test/unittest_rects.cxx
+        fltk-1.3.5/test/unittest_schemes.cxx
+        fltk-1.3.5/test/unittest_scrollbarsize.cxx
+        fltk-1.3.5/test/unittest_symbol.cxx
+        fltk-1.3.5/test/unittest_text.cxx
+        fltk-1.3.5/test/unittest_viewport.cxx
+        fltk-1.3.5/test/unittests.cxx
+        fltk-1.3.5/test/utf8.cxx
+        fltk-1.3.5/test/windowfocus.cxx
+        fltk-1.3.5/zlib/adler32.c
+        fltk-1.3.5/zlib/compress.c
+        fltk-1.3.5/zlib/crc32.c
+        fltk-1.3.5/zlib/crc32.h
+        fltk-1.3.5/zlib/deflate.c
+        fltk-1.3.5/zlib/deflate.h
+        fltk-1.3.5/zlib/gzclose.c
+        fltk-1.3.5/zlib/gzguts.h
+        fltk-1.3.5/zlib/gzlib.c
+        fltk-1.3.5/zlib/gzread.c
+        fltk-1.3.5/zlib/gzwrite.c
+        fltk-1.3.5/zlib/infback.c
+        fltk-1.3.5/zlib/inffast.c
+        fltk-1.3.5/zlib/inffast.h
+        fltk-1.3.5/zlib/inffixed.h
+        fltk-1.3.5/zlib/inflate.c
+        fltk-1.3.5/zlib/inflate.h
+        fltk-1.3.5/zlib/inftrees.c
+        fltk-1.3.5/zlib/inftrees.h
+        fltk-1.3.5/zlib/trees.c
+        fltk-1.3.5/zlib/trees.h
+        fltk-1.3.5/zlib/uncompr.c
+        fltk-1.3.5/zlib/zconf.h
+        fltk-1.3.5/zlib/zlib.h
+        fltk-1.3.5/zlib/zutil.c
+        fltk-1.3.5/zlib/zutil.h
+        fltk-1.3.5/forms.h
+        fltk-1.3.5/mac_endianness.h
+        Gettext/include/libintl.h
+        Gettext/share/gettext/intl/bindtextdom.c
+        Gettext/share/gettext/intl/dcgettext.c
+        Gettext/share/gettext/intl/dcigettext.c
+        Gettext/share/gettext/intl/dcngettext.c
+        Gettext/share/gettext/intl/dgettext.c
+        Gettext/share/gettext/intl/dngettext.c
+        Gettext/share/gettext/intl/eval-plural.h
+        Gettext/share/gettext/intl/explodename.c
+        Gettext/share/gettext/intl/finddomain.c
+        Gettext/share/gettext/intl/gettext.c
+        Gettext/share/gettext/intl/gettextP.h
+        Gettext/share/gettext/intl/gmo.h
+        Gettext/share/gettext/intl/hash-string.h
+        Gettext/share/gettext/intl/intl-compat.c
+        Gettext/share/gettext/intl/l10nflist.c
+        Gettext/share/gettext/intl/langprefs.c
+        Gettext/share/gettext/intl/loadinfo.h
+        Gettext/share/gettext/intl/loadmsgcat.c
+        Gettext/share/gettext/intl/localcharset.c
+        Gettext/share/gettext/intl/localcharset.h
+        Gettext/share/gettext/intl/localealias.c
+        Gettext/share/gettext/intl/localename.c
+        Gettext/share/gettext/intl/log.c
+        Gettext/share/gettext/intl/ngettext.c
+        Gettext/share/gettext/intl/os2compat.c
+        Gettext/share/gettext/intl/os2compat.h
+        Gettext/share/gettext/intl/osdep.c
+        Gettext/share/gettext/intl/plural-exp.c
+        Gettext/share/gettext/intl/plural-exp.h
+        Gettext/share/gettext/intl/plural.c
+        Gettext/share/gettext/intl/printf-args.c
+        Gettext/share/gettext/intl/printf-args.h
+        Gettext/share/gettext/intl/printf-parse.c
+        Gettext/share/gettext/intl/printf-parse.h
+        Gettext/share/gettext/intl/printf.c
+        Gettext/share/gettext/intl/relocatable.c
+        Gettext/share/gettext/intl/relocatable.h
+        Gettext/share/gettext/intl/textdomain.c
+        Gettext/share/gettext/intl/vasnprintf.c
+        Gettext/share/gettext/intl/vasnprintf.h
+        Gettext/share/gettext/intl/vasnwprintf.h
+        Gettext/share/gettext/intl/wprintf-parse.h
+        Gettext/share/gettext/intl/xsize.h
+        Gettext/share/gettext/gettext.h
+        gnutls/lib/gnutls/abstract.h
+        gnutls/lib/gnutls/compat.h
+        gnutls/lib/gnutls/crypto.h
+        gnutls/lib/gnutls/dtls.h
+        gnutls/lib/gnutls/gnutls.h
+        gnutls/lib/gnutls/gnutlsxx.h
+        gnutls/lib/gnutls/ocsp.h
+        gnutls/lib/gnutls/openpgp.h
+        gnutls/lib/gnutls/pkcs11.h
+        gnutls/lib/gnutls/pkcs12.h
+        gnutls/lib/gnutls/pkcs7.h
+        gnutls/lib/gnutls/self-test.h
+        gnutls/lib/gnutls/socket.h
+        gnutls/lib/gnutls/system-keys.h
+        gnutls/lib/gnutls/tpm.h
+        gnutls/lib/gnutls/urls.h
+        gnutls/lib/gnutls/x509-ext.h
+        gnutls/lib/gnutls/x509.h
+        libjpeg-turbo-2.0.3/cmake-build-debug/jconfig.h
+        libjpeg-turbo-2.0.3/cmake-build-debug/jconfigint.h
+        libjpeg-turbo-2.0.3/java/org_libjpegturbo_turbojpeg_TJ.h
+        libjpeg-turbo-2.0.3/java/org_libjpegturbo_turbojpeg_TJCompressor.h
+        libjpeg-turbo-2.0.3/java/org_libjpegturbo_turbojpeg_TJDecompressor.h
+        libjpeg-turbo-2.0.3/java/org_libjpegturbo_turbojpeg_TJTransformer.h
+        libjpeg-turbo-2.0.3/md5/md5.c
+        libjpeg-turbo-2.0.3/md5/md5.h
+        libjpeg-turbo-2.0.3/md5/md5cmp.c
+        libjpeg-turbo-2.0.3/md5/md5hl.c
+        libjpeg-turbo-2.0.3/simd/arm/jsimd.c
+        libjpeg-turbo-2.0.3/simd/arm64/jsimd.c
+        libjpeg-turbo-2.0.3/simd/i386/jsimd.c
+        libjpeg-turbo-2.0.3/simd/loongson/jccolext-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jccolor-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jcsample-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jcsample.h
+        libjpeg-turbo-2.0.3/simd/loongson/jdcolext-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jdcolor-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jdsample-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jfdctint-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jidctint-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jquanti-mmi.c
+        libjpeg-turbo-2.0.3/simd/loongson/jsimd.c
+        libjpeg-turbo-2.0.3/simd/loongson/jsimd_mmi.h
+        libjpeg-turbo-2.0.3/simd/loongson/loongson-mmintrin.h
+        libjpeg-turbo-2.0.3/simd/mips/jsimd.c
+        libjpeg-turbo-2.0.3/simd/mips/jsimd_dspr2_asm.h
+        libjpeg-turbo-2.0.3/simd/nasm/jsimdcfg.inc.h
+        libjpeg-turbo-2.0.3/simd/powerpc/jccolext-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jccolor-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jcgray-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jcgryext-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jcsample-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jcsample.h
+        libjpeg-turbo-2.0.3/simd/powerpc/jdcolext-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jdcolor-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jdmerge-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jdmrgext-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jdsample-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jfdctfst-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jfdctint-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jidctfst-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jidctint-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jquanti-altivec.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jsimd.c
+        libjpeg-turbo-2.0.3/simd/powerpc/jsimd_altivec.h
+        libjpeg-turbo-2.0.3/simd/x86_64/jsimd.c
+        libjpeg-turbo-2.0.3/simd/jsimd.h
+        libjpeg-turbo-2.0.3/testimages/test1.icc
+        libjpeg-turbo-2.0.3/testimages/test2.icc
+        libjpeg-turbo-2.0.3/cderror.h
+        libjpeg-turbo-2.0.3/cdjpeg.c
+        libjpeg-turbo-2.0.3/cdjpeg.h
+        libjpeg-turbo-2.0.3/cjpeg.c
+        libjpeg-turbo-2.0.3/cmyk.h
+        libjpeg-turbo-2.0.3/djpeg.c
+        libjpeg-turbo-2.0.3/jaricom.c
+        libjpeg-turbo-2.0.3/jcapimin.c
+        libjpeg-turbo-2.0.3/jcapistd.c
+        libjpeg-turbo-2.0.3/jcarith.c
+        libjpeg-turbo-2.0.3/jccoefct.c
+        libjpeg-turbo-2.0.3/jccolext.c
+        libjpeg-turbo-2.0.3/jccolor.c
+        libjpeg-turbo-2.0.3/jcdctmgr.c
+        libjpeg-turbo-2.0.3/jchuff.c
+        libjpeg-turbo-2.0.3/jchuff.h
+        libjpeg-turbo-2.0.3/jcicc.c
+        libjpeg-turbo-2.0.3/jcinit.c
+        libjpeg-turbo-2.0.3/jcmainct.c
+        libjpeg-turbo-2.0.3/jcmarker.c
+        libjpeg-turbo-2.0.3/jcmaster.c
+        libjpeg-turbo-2.0.3/jcomapi.c
+        libjpeg-turbo-2.0.3/jconfig.h
+        libjpeg-turbo-2.0.3/jcparam.c
+        libjpeg-turbo-2.0.3/jcphuff.c
+        libjpeg-turbo-2.0.3/jcprepct.c
+        libjpeg-turbo-2.0.3/jcsample.c
+        libjpeg-turbo-2.0.3/jcstest.c
+        libjpeg-turbo-2.0.3/jctrans.c
+        libjpeg-turbo-2.0.3/jdapimin.c
+        libjpeg-turbo-2.0.3/jdapistd.c
+        libjpeg-turbo-2.0.3/jdarith.c
+        libjpeg-turbo-2.0.3/jdatadst-tj.c
+        libjpeg-turbo-2.0.3/jdatadst.c
+        libjpeg-turbo-2.0.3/jdatasrc-tj.c
+        libjpeg-turbo-2.0.3/jdatasrc.c
+        libjpeg-turbo-2.0.3/jdcoefct.c
+        libjpeg-turbo-2.0.3/jdcoefct.h
+        libjpeg-turbo-2.0.3/jdcol565.c
+        libjpeg-turbo-2.0.3/jdcolext.c
+        libjpeg-turbo-2.0.3/jdcolor.c
+        libjpeg-turbo-2.0.3/jdct.h
+        libjpeg-turbo-2.0.3/jddctmgr.c
+        libjpeg-turbo-2.0.3/jdhuff.c
+        libjpeg-turbo-2.0.3/jdhuff.h
+        libjpeg-turbo-2.0.3/jdicc.c
+        libjpeg-turbo-2.0.3/jdinput.c
+        libjpeg-turbo-2.0.3/jdmainct.c
+        libjpeg-turbo-2.0.3/jdmainct.h
+        libjpeg-turbo-2.0.3/jdmarker.c
+        libjpeg-turbo-2.0.3/jdmaster.c
+        libjpeg-turbo-2.0.3/jdmaster.h
+        libjpeg-turbo-2.0.3/jdmerge.c
+        libjpeg-turbo-2.0.3/jdmrg565.c
+        libjpeg-turbo-2.0.3/jdmrgext.c
+        libjpeg-turbo-2.0.3/jdphuff.c
+        libjpeg-turbo-2.0.3/jdpostct.c
+        libjpeg-turbo-2.0.3/jdsample.c
+        libjpeg-turbo-2.0.3/jdsample.h
+        libjpeg-turbo-2.0.3/jdtrans.c
+        libjpeg-turbo-2.0.3/jerror.c
+        libjpeg-turbo-2.0.3/jerror.h
+        libjpeg-turbo-2.0.3/jfdctflt.c
+        libjpeg-turbo-2.0.3/jfdctfst.c
+        libjpeg-turbo-2.0.3/jfdctint.c
+        libjpeg-turbo-2.0.3/jidctflt.c
+        libjpeg-turbo-2.0.3/jidctfst.c
+        libjpeg-turbo-2.0.3/jidctint.c
+        libjpeg-turbo-2.0.3/jidctred.c
+        libjpeg-turbo-2.0.3/jinclude.h
+        libjpeg-turbo-2.0.3/jmemmgr.c
+        libjpeg-turbo-2.0.3/jmemnobs.c
+        libjpeg-turbo-2.0.3/jmemsys.h
+        libjpeg-turbo-2.0.3/jmorecfg.h
+        libjpeg-turbo-2.0.3/jpeg_nbits_table.h
+        libjpeg-turbo-2.0.3/jpegcomp.h
+        libjpeg-turbo-2.0.3/jpegint.h
+        libjpeg-turbo-2.0.3/jpeglib.h
+        libjpeg-turbo-2.0.3/jpegtran.c
+        libjpeg-turbo-2.0.3/jquant1.c
+        libjpeg-turbo-2.0.3/jquant2.c
+        libjpeg-turbo-2.0.3/jsimd.h
+        libjpeg-turbo-2.0.3/jsimd_none.c
+        libjpeg-turbo-2.0.3/jsimddct.h
+        libjpeg-turbo-2.0.3/jstdhuff.c
+        libjpeg-turbo-2.0.3/jutils.c
+        libjpeg-turbo-2.0.3/jversion.h
+        libjpeg-turbo-2.0.3/rdbmp.c
+        libjpeg-turbo-2.0.3/rdcolmap.c
+        libjpeg-turbo-2.0.3/rdgif.c
+        libjpeg-turbo-2.0.3/rdjpgcom.c
+        libjpeg-turbo-2.0.3/rdppm.c
+        libjpeg-turbo-2.0.3/rdrle.c
+        libjpeg-turbo-2.0.3/rdswitch.c
+        libjpeg-turbo-2.0.3/rdtarga.c
+        libjpeg-turbo-2.0.3/tjbench.c
+        libjpeg-turbo-2.0.3/tjexample.c
+        libjpeg-turbo-2.0.3/tjunittest.c
+        libjpeg-turbo-2.0.3/tjutil.c
+        libjpeg-turbo-2.0.3/tjutil.h
+        libjpeg-turbo-2.0.3/transupp.c
+        libjpeg-turbo-2.0.3/transupp.h
+        libjpeg-turbo-2.0.3/turbojpeg-jni.c
+        libjpeg-turbo-2.0.3/turbojpeg.c
+        libjpeg-turbo-2.0.3/turbojpeg.h
+        libjpeg-turbo-2.0.3/wrbmp.c
+        libjpeg-turbo-2.0.3/wrgif.c
+        libjpeg-turbo-2.0.3/wrjpgcom.c
+        libjpeg-turbo-2.0.3/wrppm.c
+        libjpeg-turbo-2.0.3/wrrle.c
+        libjpeg-turbo-2.0.3/wrtarga.c
+        tigervnc/cmake-build-debug/win/resdefs.h
+        tigervnc/cmake-build-debug/config.h
+        tigervnc/common/network/Socket.cxx
+        tigervnc/common/network/Socket.h
+        tigervnc/common/network/TcpSocket.cxx
+        tigervnc/common/network/TcpSocket.h
+        tigervnc/common/network/UnixSocket.cxx
+        tigervnc/common/network/UnixSocket.h
+        tigervnc/common/os/Mutex.cxx
+        tigervnc/common/os/Mutex.h
+        tigervnc/common/os/os.cxx
+        tigervnc/common/os/os.h
+        tigervnc/common/os/Thread.cxx
+        tigervnc/common/os/Thread.h
+        tigervnc/common/os/w32tiger.c
+        tigervnc/common/os/w32tiger.h
+        tigervnc/common/os/winerrno.h
+        tigervnc/common/rdr/Exception.cxx
+        tigervnc/common/rdr/Exception.h
+        tigervnc/common/rdr/FdInStream.cxx
+        tigervnc/common/rdr/FdInStream.h
+        tigervnc/common/rdr/FdOutStream.cxx
+        tigervnc/common/rdr/FdOutStream.h
+        tigervnc/common/rdr/FileInStream.cxx
+        tigervnc/common/rdr/FileInStream.h
+        tigervnc/common/rdr/FixedMemOutStream.h
+        tigervnc/common/rdr/HexInStream.cxx
+        tigervnc/common/rdr/HexInStream.h
+        tigervnc/common/rdr/HexOutStream.cxx
+        tigervnc/common/rdr/HexOutStream.h
+        tigervnc/common/rdr/InStream.cxx
+        tigervnc/common/rdr/InStream.h
+        tigervnc/common/rdr/MemInStream.h
+        tigervnc/common/rdr/MemOutStream.h
+        tigervnc/common/rdr/OutStream.h
+        tigervnc/common/rdr/RandomStream.cxx
+        tigervnc/common/rdr/RandomStream.h
+        tigervnc/common/rdr/TLSException.cxx
+        tigervnc/common/rdr/TLSException.h
+        tigervnc/common/rdr/TLSInStream.cxx
+        tigervnc/common/rdr/TLSInStream.h
+        tigervnc/common/rdr/TLSOutStream.cxx
+        tigervnc/common/rdr/TLSOutStream.h
+        tigervnc/common/rdr/types.h
+        tigervnc/common/rdr/ZlibInStream.cxx
+        tigervnc/common/rdr/ZlibInStream.h
+        tigervnc/common/rdr/ZlibOutStream.cxx
+        tigervnc/common/rdr/ZlibOutStream.h
+        tigervnc/common/rfb/Blacklist.cxx
+        tigervnc/common/rfb/Blacklist.h
+        tigervnc/common/rfb/CConnection.cxx
+        tigervnc/common/rfb/CConnection.h
+        tigervnc/common/rfb/ClientParams.cxx
+        tigervnc/common/rfb/ClientParams.h
+        tigervnc/common/rfb/clipboardTypes.h
+        tigervnc/common/rfb/CMsgHandler.cxx
+        tigervnc/common/rfb/CMsgHandler.h
+        tigervnc/common/rfb/CMsgReader.cxx
+        tigervnc/common/rfb/CMsgReader.h
+        tigervnc/common/rfb/CMsgWriter.cxx
+        tigervnc/common/rfb/CMsgWriter.h
+        tigervnc/common/rfb/ComparingUpdateTracker.cxx
+        tigervnc/common/rfb/ComparingUpdateTracker.h
+        tigervnc/common/rfb/Configuration.cxx
+        tigervnc/common/rfb/Configuration.h
+        tigervnc/common/rfb/Congestion.cxx
+        tigervnc/common/rfb/Congestion.h
+        tigervnc/common/rfb/CopyRectDecoder.cxx
+        tigervnc/common/rfb/CopyRectDecoder.h
+        tigervnc/common/rfb/CSecurity.h
+        tigervnc/common/rfb/CSecurityNone.h
+        tigervnc/common/rfb/CSecurityPlain.cxx
+        tigervnc/common/rfb/CSecurityPlain.h
+        tigervnc/common/rfb/CSecurityStack.cxx
+        tigervnc/common/rfb/CSecurityStack.h
+        tigervnc/common/rfb/CSecurityTLS.cxx
+        tigervnc/common/rfb/CSecurityTLS.h
+        tigervnc/common/rfb/CSecurityVeNCrypt.cxx
+        tigervnc/common/rfb/CSecurityVeNCrypt.h
+        tigervnc/common/rfb/CSecurityVncAuth.cxx
+        tigervnc/common/rfb/CSecurityVncAuth.h
+        tigervnc/common/rfb/Cursor.cxx
+        tigervnc/common/rfb/Cursor.h
+        tigervnc/common/rfb/d3des.c
+        tigervnc/common/rfb/d3des.h
+        tigervnc/common/rfb/DecodeManager.cxx
+        tigervnc/common/rfb/DecodeManager.h
+        tigervnc/common/rfb/Decoder.cxx
+        tigervnc/common/rfb/Decoder.h
+        tigervnc/common/rfb/EncodeManager.cxx
+        tigervnc/common/rfb/EncodeManager.h
+        tigervnc/common/rfb/EncodeManagerBPP.cxx
+        tigervnc/common/rfb/Encoder.cxx
+        tigervnc/common/rfb/Encoder.h
+        tigervnc/common/rfb/encodings.cxx
+        tigervnc/common/rfb/encodings.h
+        tigervnc/common/rfb/Exception.h
+        tigervnc/common/rfb/fenceTypes.h
+        tigervnc/common/rfb/hextileConstants.h
+        tigervnc/common/rfb/hextileDecode.h
+        tigervnc/common/rfb/HextileDecoder.cxx
+        tigervnc/common/rfb/HextileDecoder.h
+        tigervnc/common/rfb/hextileEncode.h
+        tigervnc/common/rfb/hextileEncodeBetter.h
+        tigervnc/common/rfb/HextileEncoder.cxx
+        tigervnc/common/rfb/HextileEncoder.h
+        tigervnc/common/rfb/Hostname.h
+        tigervnc/common/rfb/InputHandler.h
+        tigervnc/common/rfb/JpegCompressor.cxx
+        tigervnc/common/rfb/JpegCompressor.h
+        tigervnc/common/rfb/JpegDecompressor.cxx
+        tigervnc/common/rfb/JpegDecompressor.h
+        tigervnc/common/rfb/KeyRemapper.cxx
+        tigervnc/common/rfb/KeyRemapper.h
+        tigervnc/common/rfb/keysymdef.h
+        tigervnc/common/rfb/ledStates.h
+        tigervnc/common/rfb/Logger.cxx
+        tigervnc/common/rfb/Logger.h
+        tigervnc/common/rfb/Logger_file.cxx
+        tigervnc/common/rfb/Logger_file.h
+        tigervnc/common/rfb/Logger_stdio.cxx
+        tigervnc/common/rfb/Logger_stdio.h
+        tigervnc/common/rfb/Logger_syslog.cxx
+        tigervnc/common/rfb/Logger_syslog.h
+        tigervnc/common/rfb/LogWriter.cxx
+        tigervnc/common/rfb/LogWriter.h
+        tigervnc/common/rfb/msgTypes.h
+        tigervnc/common/rfb/Palette.h
+        tigervnc/common/rfb/pam.c
+        tigervnc/common/rfb/pam.h
+        tigervnc/common/rfb/Password.cxx
+        tigervnc/common/rfb/Password.h
+        tigervnc/common/rfb/Pixel.h
+        tigervnc/common/rfb/PixelBuffer.cxx
+        tigervnc/common/rfb/PixelBuffer.h
+        tigervnc/common/rfb/PixelFormat.cxx
+        tigervnc/common/rfb/PixelFormat.h
+        tigervnc/common/rfb/PixelFormat.inl
+        tigervnc/common/rfb/PixelFormatBPP.cxx
+        tigervnc/common/rfb/qemuTypes.h
+        tigervnc/common/rfb/RawDecoder.cxx
+        tigervnc/common/rfb/RawDecoder.h
+        tigervnc/common/rfb/RawEncoder.cxx
+        tigervnc/common/rfb/RawEncoder.h
+        tigervnc/common/rfb/Rect.h
+        tigervnc/common/rfb/Region.cxx
+        tigervnc/common/rfb/Region.h
+        tigervnc/common/rfb/rreDecode.h
+        tigervnc/common/rfb/RREDecoder.cxx
+        tigervnc/common/rfb/RREDecoder.h
+        tigervnc/common/rfb/rreEncode.h
+        tigervnc/common/rfb/RREEncoder.cxx
+        tigervnc/common/rfb/RREEncoder.h
+        tigervnc/common/rfb/ScaleFilters.cxx
+        tigervnc/common/rfb/ScaleFilters.h
+        tigervnc/common/rfb/SConnection.cxx
+        tigervnc/common/rfb/SConnection.h
+        tigervnc/common/rfb/ScreenSet.h
+        tigervnc/common/rfb/screenTypes.h
+        tigervnc/common/rfb/SDesktop.h
+        tigervnc/common/rfb/Security.cxx
+        tigervnc/common/rfb/Security.h
+        tigervnc/common/rfb/SecurityClient.cxx
+        tigervnc/common/rfb/SecurityClient.h
+        tigervnc/common/rfb/SecurityServer.cxx
+        tigervnc/common/rfb/SecurityServer.h
+        tigervnc/common/rfb/ServerCore.cxx
+        tigervnc/common/rfb/ServerCore.h
+        tigervnc/common/rfb/ServerParams.cxx
+        tigervnc/common/rfb/ServerParams.h
+        tigervnc/common/rfb/SMsgHandler.cxx
+        tigervnc/common/rfb/SMsgHandler.h
+        tigervnc/common/rfb/SMsgReader.cxx
+        tigervnc/common/rfb/SMsgReader.h
+        tigervnc/common/rfb/SMsgWriter.cxx
+        tigervnc/common/rfb/SMsgWriter.h
+        tigervnc/common/rfb/SSecurity.h
+        tigervnc/common/rfb/SSecurityNone.h
+        tigervnc/common/rfb/SSecurityPlain.cxx
+        tigervnc/common/rfb/SSecurityPlain.h
+        tigervnc/common/rfb/SSecurityStack.cxx
+        tigervnc/common/rfb/SSecurityStack.h
+        tigervnc/common/rfb/SSecurityTLS.cxx
+        tigervnc/common/rfb/SSecurityTLS.h
+        tigervnc/common/rfb/SSecurityVeNCrypt.cxx
+        tigervnc/common/rfb/SSecurityVeNCrypt.h
+        tigervnc/common/rfb/SSecurityVncAuth.cxx
+        tigervnc/common/rfb/SSecurityVncAuth.h
+        tigervnc/common/rfb/TightConstants.h
+        tigervnc/common/rfb/tightDecode.h
+        tigervnc/common/rfb/TightDecoder.cxx
+        tigervnc/common/rfb/TightDecoder.h
+        tigervnc/common/rfb/TightEncoder.cxx
+        tigervnc/common/rfb/TightEncoder.h
+        tigervnc/common/rfb/TightEncoderBPP.cxx
+        tigervnc/common/rfb/TightJPEGEncoder.cxx
+        tigervnc/common/rfb/TightJPEGEncoder.h
+        tigervnc/common/rfb/Timer.cxx
+        tigervnc/common/rfb/Timer.h
+        tigervnc/common/rfb/UnixPasswordValidator.cxx
+        tigervnc/common/rfb/UnixPasswordValidator.h
+        tigervnc/common/rfb/UpdateTracker.cxx
+        tigervnc/common/rfb/UpdateTracker.h
+        tigervnc/common/rfb/UserMsgBox.h
+        tigervnc/common/rfb/UserPasswdGetter.h
+        tigervnc/common/rfb/util.cxx
+        tigervnc/common/rfb/util.h
+        tigervnc/common/rfb/VNCSConnectionST.cxx
+        tigervnc/common/rfb/VNCSConnectionST.h
+        tigervnc/common/rfb/VNCServer.h
+        tigervnc/common/rfb/VNCServerST.cxx
+        tigervnc/common/rfb/VNCServerST.h
+        tigervnc/common/rfb/WinPasswdValidator.cxx
+        tigervnc/common/rfb/WinPasswdValidator.h
+        tigervnc/common/rfb/XF86keysym.h
+        tigervnc/common/rfb/zrleDecode.h
+        tigervnc/common/rfb/ZRLEDecoder.cxx
+        tigervnc/common/rfb/ZRLEDecoder.h
+        tigervnc/common/rfb/ZRLEEncoder.cxx
+        tigervnc/common/rfb/ZRLEEncoder.h
+        tigervnc/common/rfb/ZRLEEncoderBPP.cxx
+        tigervnc/common/Xregion/Region.c
+        tigervnc/common/Xregion/Xlib.h
+        tigervnc/common/Xregion/Xlibint.h
+        tigervnc/common/Xregion/Xregion.h
+        tigervnc/common/Xregion/Xutil.h
+        tigervnc/Debug/Debug.cpp
+        tigervnc/Debug/Debug.h
+        tigervnc/tests/perf/convperf.cxx
+        tigervnc/tests/perf/decperf.cxx
+        tigervnc/tests/perf/encperf.cxx
+        tigervnc/tests/perf/fbperf.cxx
+        tigervnc/tests/perf/util.cxx
+        tigervnc/tests/perf/util.h
+        tigervnc/tests/unit/conv.cxx
+        tigervnc/tests/unit/convertlf.cxx
+        tigervnc/tests/unit/hostport.cxx
+        tigervnc/unix/common/randr.cxx
+        tigervnc/unix/common/RandrGlue.h
+        tigervnc/unix/common/unixcommon.h
+        tigervnc/unix/tx/TXButton.h
+        tigervnc/unix/tx/TXCheckbox.h
+        tigervnc/unix/tx/TXDialog.h
+        tigervnc/unix/tx/TXLabel.h
+        tigervnc/unix/tx/TXWindow.cxx
+        tigervnc/unix/tx/TXWindow.h
+        tigervnc/unix/vncconfig/buildtime.c
+        tigervnc/unix/vncconfig/QueryConnectDialog.cxx
+        tigervnc/unix/vncconfig/QueryConnectDialog.h
+        tigervnc/unix/vncconfig/vncconfig.cxx
+        tigervnc/unix/vncconfig/vncExt.c
+        tigervnc/unix/vncconfig/vncExt.h
+        tigervnc/unix/vncpasswd/vncpasswd.cxx
+        tigervnc/unix/x0vncserver/buildtime.c
+        tigervnc/unix/x0vncserver/Geometry.cxx
+        tigervnc/unix/x0vncserver/Geometry.h
+        tigervnc/unix/x0vncserver/Image.cxx
+        tigervnc/unix/x0vncserver/Image.h
+        tigervnc/unix/x0vncserver/PollingManager.cxx
+        tigervnc/unix/x0vncserver/PollingManager.h
+        tigervnc/unix/x0vncserver/PollingScheduler.cxx
+        tigervnc/unix/x0vncserver/PollingScheduler.h
+        tigervnc/unix/x0vncserver/qnum_to_xorgevdev.c
+        tigervnc/unix/x0vncserver/qnum_to_xorgkbd.c
+        tigervnc/unix/x0vncserver/RandrGlue.c
+        tigervnc/unix/x0vncserver/TimeMillis.cxx
+        tigervnc/unix/x0vncserver/TimeMillis.h
+        tigervnc/unix/x0vncserver/x0vncserver.cxx
+        tigervnc/unix/x0vncserver/XDesktop.cxx
+        tigervnc/unix/x0vncserver/XDesktop.h
+        tigervnc/unix/x0vncserver/XPixelBuffer.cxx
+        tigervnc/unix/x0vncserver/XPixelBuffer.h
+        tigervnc/unix/xserver/hw/vnc/buildtime.c
+        tigervnc/unix/xserver/hw/vnc/Input.c
+        tigervnc/unix/xserver/hw/vnc/Input.h
+        tigervnc/unix/xserver/hw/vnc/InputXKB.c
+        tigervnc/unix/xserver/hw/vnc/qnum_to_xorgevdev.c
+        tigervnc/unix/xserver/hw/vnc/qnum_to_xorgkbd.c
+        tigervnc/unix/xserver/hw/vnc/RandrGlue.c
+        tigervnc/unix/xserver/hw/vnc/RFBGlue.cc
+        tigervnc/unix/xserver/hw/vnc/RFBGlue.h
+        tigervnc/unix/xserver/hw/vnc/vncBlockHandler.c
+        tigervnc/unix/xserver/hw/vnc/vncBlockHandler.h
+        tigervnc/unix/xserver/hw/vnc/vncExt.c
+        tigervnc/unix/xserver/hw/vnc/vncExtInit.cc
+        tigervnc/unix/xserver/hw/vnc/vncExtInit.h
+        tigervnc/unix/xserver/hw/vnc/vncHooks.c
+        tigervnc/unix/xserver/hw/vnc/vncHooks.h
+        tigervnc/unix/xserver/hw/vnc/vncModule.c
+        tigervnc/unix/xserver/hw/vnc/vncSelection.c
+        tigervnc/unix/xserver/hw/vnc/vncSelection.h
+        tigervnc/unix/xserver/hw/vnc/xorg-version.h
+        tigervnc/unix/xserver/hw/vnc/XorgGlue.c
+        tigervnc/unix/xserver/hw/vnc/XorgGlue.h
+        tigervnc/unix/xserver/hw/vnc/XserverDesktop.cc
+        tigervnc/unix/xserver/hw/vnc/XserverDesktop.h
+        tigervnc/unix/xserver/hw/vnc/xvnc.c
+        tigervnc/vncviewer/CConn.cxx
+        tigervnc/vncviewer/CConn.h
+        tigervnc/vncviewer/cocoa.h
+        tigervnc/vncviewer/cocoa.mm
+        tigervnc/vncviewer/DesktopWindow.cxx
+        tigervnc/vncviewer/DesktopWindow.h
+        tigervnc/vncviewer/fltk_layout.h
+        tigervnc/vncviewer/gettext.h
+        tigervnc/vncviewer/i18n.h
+        tigervnc/vncviewer/keysym2ucs.c
+        tigervnc/vncviewer/keysym2ucs.h
+        tigervnc/vncviewer/menukey.cxx
+        tigervnc/vncviewer/menukey.h
+        tigervnc/vncviewer/OptionsDialog.cxx
+        tigervnc/vncviewer/OptionsDialog.h
+        tigervnc/vncviewer/osx_to_qnum.c
+        tigervnc/vncviewer/parameters.cxx
+        tigervnc/vncviewer/parameters.h
+        tigervnc/vncviewer/PlatformPixelBuffer.cxx
+        tigervnc/vncviewer/PlatformPixelBuffer.h
+        tigervnc/vncviewer/resource.h
+        tigervnc/vncviewer/ServerDialog.cxx
+        tigervnc/vncviewer/ServerDialog.h
+        tigervnc/vncviewer/Surface.cxx
+        tigervnc/vncviewer/Surface.h
+        tigervnc/vncviewer/Surface_OSX.cxx
+        tigervnc/vncviewer/Surface_Win32.cxx
+        tigervnc/vncviewer/Surface_X11.cxx
+        tigervnc/vncviewer/UserDialog.cxx
+        tigervnc/vncviewer/UserDialog.h
+        tigervnc/vncviewer/Viewport.cxx
+        tigervnc/vncviewer/Viewport.h
+        tigervnc/vncviewer/vncviewer.cxx
+        tigervnc/vncviewer/vncviewer.h
+        tigervnc/vncviewer/win32.c
+        tigervnc/vncviewer/win32.h
+        tigervnc/vncviewer/xkb_to_qnum.c
+        tigervnc/win/logmessages/messages.h
+        tigervnc/win/rfb_win32/AboutDialog.cxx
+        tigervnc/win/rfb_win32/AboutDialog.h
+        tigervnc/win/rfb_win32/BitmapInfo.h
+        tigervnc/win/rfb_win32/CleanDesktop.cxx
+        tigervnc/win/rfb_win32/CleanDesktop.h
+        tigervnc/win/rfb_win32/Clipboard.cxx
+        tigervnc/win/rfb_win32/Clipboard.h
+        tigervnc/win/rfb_win32/CompatibleBitmap.h
+        tigervnc/win/rfb_win32/ComputerName.h
+        tigervnc/win/rfb_win32/CurrentUser.cxx
+        tigervnc/win/rfb_win32/CurrentUser.h
+        tigervnc/win/rfb_win32/DeviceContext.cxx
+        tigervnc/win/rfb_win32/DeviceContext.h
+        tigervnc/win/rfb_win32/DeviceFrameBuffer.cxx
+        tigervnc/win/rfb_win32/DeviceFrameBuffer.h
+        tigervnc/win/rfb_win32/Dialog.cxx
+        tigervnc/win/rfb_win32/Dialog.h
+        tigervnc/win/rfb_win32/DIBSectionBuffer.cxx
+        tigervnc/win/rfb_win32/DIBSectionBuffer.h
+        tigervnc/win/rfb_win32/EventManager.cxx
+        tigervnc/win/rfb_win32/EventManager.h
+        tigervnc/win/rfb_win32/Handle.h
+        tigervnc/win/rfb_win32/IconInfo.h
+        tigervnc/win/rfb_win32/IntervalTimer.h
+        tigervnc/win/rfb_win32/keymap.h
+        tigervnc/win/rfb_win32/LaunchProcess.cxx
+        tigervnc/win/rfb_win32/LaunchProcess.h
+        tigervnc/win/rfb_win32/ListViewControl.cxx
+        tigervnc/win/rfb_win32/ListViewControl.h
+        tigervnc/win/rfb_win32/LocalMem.h
+        tigervnc/win/rfb_win32/ModuleFileName.h
+        tigervnc/win/rfb_win32/MonitorInfo.cxx
+        tigervnc/win/rfb_win32/MonitorInfo.h
+        tigervnc/win/rfb_win32/MsgBox.h
+        tigervnc/win/rfb_win32/MsgWindow.cxx
+        tigervnc/win/rfb_win32/MsgWindow.h
+        tigervnc/win/rfb_win32/RegConfig.cxx
+        tigervnc/win/rfb_win32/RegConfig.h
+        tigervnc/win/rfb_win32/Registry.cxx
+        tigervnc/win/rfb_win32/Registry.h
+        tigervnc/win/rfb_win32/resource.h
+        tigervnc/win/rfb_win32/SDisplay.cxx
+        tigervnc/win/rfb_win32/SDisplay.h
+        tigervnc/win/rfb_win32/SDisplayCorePolling.cxx
+        tigervnc/win/rfb_win32/SDisplayCorePolling.h
+        tigervnc/win/rfb_win32/SDisplayCoreWMHooks.cxx
+        tigervnc/win/rfb_win32/SDisplayCoreWMHooks.h
+        tigervnc/win/rfb_win32/Security.cxx
+        tigervnc/win/rfb_win32/Security.h
+        tigervnc/win/rfb_win32/SecurityPage.cxx
+        tigervnc/win/rfb_win32/SecurityPage.h
+        tigervnc/win/rfb_win32/Service.cxx
+        tigervnc/win/rfb_win32/Service.h
+        tigervnc/win/rfb_win32/SInput.cxx
+        tigervnc/win/rfb_win32/SInput.h
+        tigervnc/win/rfb_win32/SocketManager.cxx
+        tigervnc/win/rfb_win32/SocketManager.h
+        tigervnc/win/rfb_win32/TCharArray.cxx
+        tigervnc/win/rfb_win32/TCharArray.h
+        tigervnc/win/rfb_win32/TrayIcon.h
+        tigervnc/win/rfb_win32/TsSessions.cxx
+        tigervnc/win/rfb_win32/TsSessions.h
+        tigervnc/win/rfb_win32/Win32Util.cxx
+        tigervnc/win/rfb_win32/Win32Util.h
+        tigervnc/win/rfb_win32/WMCursor.cxx
+        tigervnc/win/rfb_win32/WMCursor.h
+        tigervnc/win/rfb_win32/WMHooks.cxx
+        tigervnc/win/rfb_win32/WMHooks.h
+        tigervnc/win/rfb_win32/WMNotifier.cxx
+        tigervnc/win/rfb_win32/WMNotifier.h
+        tigervnc/win/rfb_win32/WMPoller.cxx
+        tigervnc/win/rfb_win32/WMPoller.h
+        tigervnc/win/rfb_win32/WMShatter.cxx
+        tigervnc/win/rfb_win32/WMShatter.h
+        tigervnc/win/rfb_win32/WMWindowCopyRect.cxx
+        tigervnc/win/rfb_win32/WMWindowCopyRect.h
+        tigervnc/win/vncconfig/Authentication.h
+        tigervnc/win/vncconfig/Connections.h
+        tigervnc/win/vncconfig/Desktop.h
+        tigervnc/win/vncconfig/Hooking.h
+        tigervnc/win/vncconfig/Inputs.h
+        tigervnc/win/vncconfig/Legacy.cxx
+        tigervnc/win/vncconfig/Legacy.h
+        tigervnc/win/vncconfig/PasswordDialog.cxx
+        tigervnc/win/vncconfig/PasswordDialog.h
+        tigervnc/win/vncconfig/resource.h
+        tigervnc/win/vncconfig/Sharing.h
+        tigervnc/win/vncconfig/vncconfig.cxx
+        tigervnc/win/winvnc/AddNewClientDialog.h
+        tigervnc/win/winvnc/buildTime.cxx
+        tigervnc/win/winvnc/ControlPanel.cxx
+        tigervnc/win/winvnc/ControlPanel.h
+        tigervnc/win/winvnc/ListConnInfo.h
+        tigervnc/win/winvnc/ManagedListener.cxx
+        tigervnc/win/winvnc/ManagedListener.h
+        tigervnc/win/winvnc/QueryConnectDialog.cxx
+        tigervnc/win/winvnc/QueryConnectDialog.h
+        tigervnc/win/winvnc/resource.h
+        tigervnc/win/winvnc/STrayIcon.cxx
+        tigervnc/win/winvnc/STrayIcon.h
+        tigervnc/win/winvnc/VNCServerService.cxx
+        tigervnc/win/winvnc/VNCServerService.h
+        tigervnc/win/winvnc/VNCServerWin32.cxx
+        tigervnc/win/winvnc/VNCServerWin32.h
+        tigervnc/win/winvnc/winvnc.cxx
+        tigervnc/win/wm_hooks/resource.h
+        tigervnc/win/wm_hooks/wm_hooks.cxx
+        tigervnc/win/wm_hooks/wm_hooks.h
+        zlib-1.2.11/contrib/blast/blast.c
+        zlib-1.2.11/contrib/blast/blast.h
+        zlib-1.2.11/contrib/infback9/infback9.c
+        zlib-1.2.11/contrib/infback9/infback9.h
+        zlib-1.2.11/contrib/infback9/inffix9.h
+        zlib-1.2.11/contrib/infback9/inflate9.h
+        zlib-1.2.11/contrib/infback9/inftree9.c
+        zlib-1.2.11/contrib/infback9/inftree9.h
+        zlib-1.2.11/contrib/inflate86/inffas86.c
+        zlib-1.2.11/contrib/iostream/test.cpp
+        zlib-1.2.11/contrib/iostream/zfstream.cpp
+        zlib-1.2.11/contrib/iostream/zfstream.h
+        zlib-1.2.11/contrib/iostream2/zstream.h
+        zlib-1.2.11/contrib/iostream2/zstream_test.cpp
+        zlib-1.2.11/contrib/iostream3/test.cc
+        zlib-1.2.11/contrib/iostream3/zfstream.cc
+        zlib-1.2.11/contrib/iostream3/zfstream.h
+        zlib-1.2.11/contrib/masmx64/inffas8664.c
+        zlib-1.2.11/contrib/minizip/crypt.h
+        zlib-1.2.11/contrib/minizip/ioapi.c
+        zlib-1.2.11/contrib/minizip/ioapi.h
+        zlib-1.2.11/contrib/minizip/iowin32.c
+        zlib-1.2.11/contrib/minizip/iowin32.h
+        zlib-1.2.11/contrib/minizip/miniunz.c
+        zlib-1.2.11/contrib/minizip/minizip.c
+        zlib-1.2.11/contrib/minizip/mztools.c
+        zlib-1.2.11/contrib/minizip/mztools.h
+        zlib-1.2.11/contrib/minizip/unzip.c
+        zlib-1.2.11/contrib/minizip/unzip.h
+        zlib-1.2.11/contrib/minizip/zip.c
+        zlib-1.2.11/contrib/minizip/zip.h
+        zlib-1.2.11/contrib/puff/puff.c
+        zlib-1.2.11/contrib/puff/puff.h
+        zlib-1.2.11/contrib/puff/pufftest.c
+        zlib-1.2.11/contrib/testzlib/testzlib.c
+        zlib-1.2.11/contrib/untgz/untgz.c
+        zlib-1.2.11/examples/enough.c
+        zlib-1.2.11/examples/fitblk.c
+        zlib-1.2.11/examples/gun.c
+        zlib-1.2.11/examples/gzappend.c
+        zlib-1.2.11/examples/gzjoin.c
+        zlib-1.2.11/examples/gzlog.c
+        zlib-1.2.11/examples/gzlog.h
+        zlib-1.2.11/examples/zpipe.c
+        zlib-1.2.11/examples/zran.c
+        zlib-1.2.11/test/example.c
+        zlib-1.2.11/test/infcover.c
+        zlib-1.2.11/test/minigzip.c
+        zlib-1.2.11/adler32.c
+        zlib-1.2.11/compress.c
+        zlib-1.2.11/crc32.c
+        zlib-1.2.11/crc32.h
+        zlib-1.2.11/deflate.c
+        zlib-1.2.11/deflate.h
+        zlib-1.2.11/gzclose.c
+        zlib-1.2.11/gzguts.h
+        zlib-1.2.11/gzlib.c
+        zlib-1.2.11/gzread.c
+        zlib-1.2.11/gzwrite.c
+        zlib-1.2.11/infback.c
+        zlib-1.2.11/inffast.c
+        zlib-1.2.11/inffast.h
+        zlib-1.2.11/inffixed.h
+        zlib-1.2.11/inflate.c
+        zlib-1.2.11/inflate.h
+        zlib-1.2.11/inftrees.c
+        zlib-1.2.11/inftrees.h
+        zlib-1.2.11/trees.c
+        zlib-1.2.11/trees.h
+        zlib-1.2.11/uncompr.c
+        zlib-1.2.11/zconf.h
+        zlib-1.2.11/zlib.h
+        zlib-1.2.11/zutil.c
+        zlib-1.2.11/zutil.h)
